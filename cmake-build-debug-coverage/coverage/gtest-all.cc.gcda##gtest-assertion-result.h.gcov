@@ -1,6 +1,6 @@
-        -:    0:Source:/home/peter/CLionProjects/crc/googletest/googletest/include/gtest/gtest-assertion-result.h
-        -:    0:Graph:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
-        -:    0:Data:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
+        -:    0:Source:/home/peter/CLionProjects/CRC_HACK/googletest/googletest/include/gtest/gtest-assertion-result.h
+        -:    0:Graph:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
+        -:    0:Data:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
         -:    0:Runs:3
         -:    1:// Copyright 2005, Google Inc.
         -:    2:// All rights reserved.
@@ -156,16 +156,16 @@
         -:  152:  // the argument is implicitly convertible to AssertionResult. In that case
         -:  153:  // we want AssertionResult's copy constructor to be used.
         -:  154:  template <typename T>
-function _ZN7testing15AssertionResultC2IbEERKT_PNSt9enable_ifIXntsrSt14is_convertibleIS2_S0_E5valueEvE4typeE called 26 returned 100% blocks executed 100%
-       26:  155:  explicit AssertionResult(
+function _ZN7testing15AssertionResultC2IbEERKT_PNSt9enable_ifIXntsrSt14is_convertibleIS2_S0_E5valueEvE4typeE called 15 returned 100% blocks executed 100%
+       15:  155:  explicit AssertionResult(
         -:  156:      const T& success,
         -:  157:      typename std::enable_if<
         -:  158:          !std::is_convertible<T, AssertionResult>::value>::type*
         -:  159:      /*enabler*/
         -:  160:      = nullptr)
-       26:  161:      : success_(success) {}
-       26:  161-block  0
-call    0 returned 26
+       15:  161:      : success_(success) {}
+       15:  161-block  0
+call    0 returned 15
         -:  162:
         -:  163:#if defined(_MSC_VER) && (_MSC_VER < 1910 || _MSC_VER >= 1920)
         -:  164:  GTEST_DISABLE_MSC_WARNINGS_POP_()

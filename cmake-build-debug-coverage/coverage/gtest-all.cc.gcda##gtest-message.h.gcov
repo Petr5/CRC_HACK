@@ -1,6 +1,6 @@
-        -:    0:Source:/home/peter/CLionProjects/crc/googletest/googletest/include/gtest/gtest-message.h
-        -:    0:Graph:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
-        -:    0:Data:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
+        -:    0:Source:/home/peter/CLionProjects/CRC_HACK/googletest/googletest/include/gtest/gtest-message.h
+        -:    0:Graph:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
+        -:    0:Data:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
         -:    0:Runs:3
         -:    1:// Copyright 2005, Google Inc.
         -:    2:// All rights reserved.
@@ -140,7 +140,7 @@ call    0 never executed
         -:  111:
         -:  112:  // Streams a non-pointer value to this object.
         -:  113:  template <typename T>
-    1355*:  114:  inline Message& operator<<(const T& val) {
+    1344*:  114:  inline Message& operator<<(const T& val) {
         -:  115:        // Some libraries overload << for STL containers.  These
         -:  116:    // overloads are defined in the global namespace instead of ::std.
         -:  117:    //
@@ -156,8 +156,8 @@ call    0 never executed
         -:  127:    // overloads of << defined in the global namespace and those
         -:  128:    // visible via Koenig lookup are both exposed in this function.
         -:  129:    using ::operator<<;
-    1355*:  130:    *ss_ << val;
-    1355*:  131:    return *this;
+    1344*:  130:    *ss_ << val;
+    1344*:  131:    return *this;
         -:  132:  }
 ------------------
 _ZN7testing7MessagelsIA62_cEERS0_RKT_:
@@ -836,8 +836,8 @@ call    1 never executed
         -:  132:  }
 ------------------
 _ZN7testing7MessagelsIiEERS0_RKT_:
-function _ZN7testing7MessagelsIiEERS0_RKT_ called 26 returned 100% blocks executed 100%
-       26:  114:  inline Message& operator<<(const T& val) {
+function _ZN7testing7MessagelsIiEERS0_RKT_ called 22 returned 100% blocks executed 100%
+       22:  114:  inline Message& operator<<(const T& val) {
         -:  115:        // Some libraries overload << for STL containers.  These
         -:  116:    // overloads are defined in the global namespace instead of ::std.
         -:  117:    //
@@ -853,11 +853,11 @@ function _ZN7testing7MessagelsIiEERS0_RKT_ called 26 returned 100% blocks execut
         -:  127:    // overloads of << defined in the global namespace and those
         -:  128:    // visible via Koenig lookup are both exposed in this function.
         -:  129:    using ::operator<<;
-       26:  130:    *ss_ << val;
-       26:  130-block  0
-call    0 returned 26
-call    1 returned 26
-       26:  131:    return *this;
+       22:  130:    *ss_ << val;
+       22:  130-block  0
+call    0 returned 22
+call    1 returned 22
+       22:  131:    return *this;
         -:  132:  }
 ------------------
 _ZN7testing7MessagelsIA25_cEERS0_RKT_:
@@ -1061,8 +1061,8 @@ call    1 never executed
         -:  132:  }
 ------------------
 _ZN7testing7MessagelsIlEERS0_RKT_:
-function _ZN7testing7MessagelsIlEERS0_RKT_ called 24 returned 100% blocks executed 100%
-       24:  114:  inline Message& operator<<(const T& val) {
+function _ZN7testing7MessagelsIlEERS0_RKT_ called 17 returned 100% blocks executed 100%
+       17:  114:  inline Message& operator<<(const T& val) {
         -:  115:        // Some libraries overload << for STL containers.  These
         -:  116:    // overloads are defined in the global namespace instead of ::std.
         -:  117:    //
@@ -1078,11 +1078,11 @@ function _ZN7testing7MessagelsIlEERS0_RKT_ called 24 returned 100% blocks execut
         -:  127:    // overloads of << defined in the global namespace and those
         -:  128:    // visible via Koenig lookup are both exposed in this function.
         -:  129:    using ::operator<<;
-       24:  130:    *ss_ << val;
-       24:  130-block  0
-call    0 returned 24
-call    1 returned 24
-       24:  131:    return *this;
+       17:  130:    *ss_ << val;
+       17:  130-block  0
+call    0 returned 17
+call    1 returned 17
+       17:  131:    return *this;
         -:  132:  }
 ------------------
 _ZN7testing7MessagelsIA48_cEERS0_RKT_:
@@ -1740,8 +1740,8 @@ call    5 never executed
         -:  206:// ::std::string, ::wstring, or ::std::wstring object, each NUL
         -:  207:// character in it is replaced with "\\0".
         -:  208:template <typename T>
-      65*:  209:std::string StreamableToString(const T& streamable) {
-     130*:  210:  return (Message() << streamable).GetString();
+      54*:  209:std::string StreamableToString(const T& streamable) {
+     108*:  210:  return (Message() << streamable).GetString();
         -:  211:}
         -:  212:
         -:  213:}  // namespace internal

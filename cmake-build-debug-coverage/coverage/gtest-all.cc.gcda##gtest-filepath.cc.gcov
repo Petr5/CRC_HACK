@@ -1,6 +1,6 @@
-        -:    0:Source:/home/peter/CLionProjects/crc/googletest/googletest/src/gtest-filepath.cc
-        -:    0:Graph:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
-        -:    0:Data:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
+        -:    0:Source:/home/peter/CLionProjects/CRC_HACK/googletest/googletest/src/gtest-filepath.cc
+        -:    0:Graph:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
+        -:    0:Data:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
         -:    0:Runs:3
         -:    1:// Copyright 2008, Google Inc.
         -:    2:// All rights reserved.
@@ -88,13 +88,13 @@
         -:   84:#endif  // GTEST_OS_WINDOWS
         -:   85:
         -:   86:// Returns whether the given character is a valid path separator.
-function _ZN7testing8internalL15IsPathSeparatorEc called 168 returned 100% blocks executed 100%
-      168:   87:static bool IsPathSeparator(char c) {
+function _ZN7testing8internalL15IsPathSeparatorEc called 201 returned 100% blocks executed 100%
+      201:   87:static bool IsPathSeparator(char c) {
         -:   88:#if GTEST_HAS_ALT_PATH_SEP_
         -:   89:  return (c == kPathSeparator) || (c == kAlternatePathSeparator);
         -:   90:#else
-      168:   91:  return c == kPathSeparator;
-      168:   91-block  0
+      201:   91:  return c == kPathSeparator;
+      201:   91-block  0
         -:   92:#endif
         -:   93:}
         -:   94:
@@ -171,6 +171,9 @@ call    7 never executed
 call    0 never executed
 branch  1 never executed
 branch  2 never executed
+    %%%%%:  125-block  0
+branch  3 never executed
+branch  4 never executed
         -:  126:    return FilePath(
     #####:  127:        pathname_.substr(0, pathname_.length() - dot_extension.length()));
     %%%%%:  127-block  0
@@ -282,7 +285,10 @@ function _ZNK7testing8internal8FilePath14RemoveFileNameEv called 0 returned 0% b
     #####:  166:  const char* const last_sep = FindLastPathSeparator();
     %%%%%:  166-block  0
 call    0 never executed
+branch  1 never executed
+branch  2 never executed
     #####:  167:  std::string dir;
+    %%%%%:  167-block  0
 call    0 never executed
     #####:  168:  if (last_sep) {
 branch  0 never executed
@@ -602,6 +608,9 @@ call    7 never executed
 call    0 never executed
 branch  1 never executed
 branch  2 never executed
+    %%%%%:  286-block  0
+branch  3 never executed
+branch  4 never executed
     #####:  287:  return full_pathname;
     %%%%%:  287-block  0
     %%%%%:  287-block  1
@@ -641,6 +650,9 @@ function _ZNK7testing8internal8FilePath28CreateDirectoriesRecursivelyEv called 0
 call    0 never executed
 branch  1 never executed
 branch  2 never executed
+    %%%%%:  302-block  1
+branch  3 never executed
+branch  4 never executed
     #####:  303:    return false;
     %%%%%:  303-block  0
         -:  304:  }
@@ -655,10 +667,13 @@ call    3 never executed
 branch  4 never executed
 branch  5 never executed
     %%%%%:  306-block  2
-    %%%%%:  306-block  3
-    %%%%%:  306-block  4
 branch  6 never executed
 branch  7 never executed
+    %%%%%:  306-block  3
+    %%%%%:  306-block  4
+    %%%%%:  306-block  5
+branch  8 never executed
+branch  9 never executed
     #####:  307:    return true;
     %%%%%:  307-block  0
         -:  308:  }
@@ -685,7 +700,10 @@ call    5 never executed
 branch  6 never executed
 branch  7 never executed
     %%%%%:  311-block  2
+branch  8 never executed
+branch  9 never executed
     %%%%%:  311-block  3
+    %%%%%:  311-block  4
     #####:  312:}
     %%%%%:  312-block  0
 call    0 never executed
@@ -773,50 +791,50 @@ function _ZN7testing8internal8FilePath9NormalizeEv called 3 returned 100% blocks
         3:  351-block  0
 call    0 returned 3
         -:  352:
-      171:  353:  for (const char character : pathname_) {
+      204:  353:  for (const char character : pathname_) {
 call    0 returned 3
 call    1 returned 3
-      168:  353-block  0
-call    2 returned 168
-      168:  353-block  1
-call    3 returned 168
-      171:  353-block  2
-call    4 returned 171
-branch  5 taken 168
+      201:  353-block  0
+call    2 returned 201
+      201:  353-block  1
+call    3 returned 201
+      204:  353-block  2
+call    4 returned 204
+branch  5 taken 201
 branch  6 taken 3 (fallthrough)
-      168:  354:    if (!IsPathSeparator(character)) {
-call    0 returned 168
-branch  1 taken 153 (fallthrough)
-branch  2 taken 15
-      153:  355:      *(out++) = character;
-      153:  355-block  0
-call    0 returned 153
-call    1 returned 153
-      15*:  356:    } else if (out == pathname_.begin() || *std::prev(out) != kPathSeparator) {
-       15:  356-block  0
-call    0 returned 15
-call    1 returned 15
-branch  2 taken 12 (fallthrough)
+      201:  354:    if (!IsPathSeparator(character)) {
+call    0 returned 201
+branch  1 taken 183 (fallthrough)
+branch  2 taken 18
+      183:  355:      *(out++) = character;
+      183:  355-block  0
+call    0 returned 183
+call    1 returned 183
+      18*:  356:    } else if (out == pathname_.begin() || *std::prev(out) != kPathSeparator) {
+       18:  356-block  0
+call    0 returned 18
+call    1 returned 18
+branch  2 taken 15 (fallthrough)
 branch  3 taken 3
-       12:  356-block  1
-call    4 returned 12
-branch  5 taken 12 (fallthrough)
+       15:  356-block  1
+call    4 returned 15
+branch  5 taken 15 (fallthrough)
 branch  6 taken 0 (throw)
-       12:  356-block  2
-call    7 returned 12
-branch  8 taken 12 (fallthrough)
+       15:  356-block  2
+call    7 returned 15
+branch  8 taken 15 (fallthrough)
 branch  9 taken 0
-       15:  356-block  3
+       18:  356-block  3
     %%%%%:  356-block  4
-       15:  356-block  5
-branch 10 taken 15 (fallthrough)
+       18:  356-block  5
+branch 10 taken 18 (fallthrough)
 branch 11 taken 0
     $$$$$:  356-block  6
     $$$$$:  356-block  7
-       15:  357:      *(out++) = kPathSeparator;
-       15:  357-block  0
-call    0 returned 15
-call    1 returned 15
+       18:  357:      *(out++) = kPathSeparator;
+       18:  357-block  0
+call    0 returned 18
+call    1 returned 18
         -:  358:    } else {
     #####:  359:      continue;
     %%%%%:  359-block  0

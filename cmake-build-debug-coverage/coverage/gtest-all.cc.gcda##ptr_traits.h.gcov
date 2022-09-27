@@ -1,6 +1,6 @@
         -:    0:Source:/usr/include/c++/11/bits/ptr_traits.h
-        -:    0:Graph:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
-        -:    0:Data:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
+        -:    0:Graph:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
+        -:    0:Data:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
         -:    0:Runs:3
         -:    1:// Pointer Traits -*- C++ -*-
         -:    2:
@@ -150,22 +150,22 @@
         -:  146:       *  @return @c addressof(__r)
         -:  147:      */
         -:  148:      static _GLIBCXX20_CONSTEXPR pointer
-    #####:  149:      pointer_to(__make_not_void<element_type>& __r) noexcept
-    #####:  150:      { return std::addressof(__r); }
+        2:  149:      pointer_to(__make_not_void<element_type>& __r) noexcept
+        2:  150:      { return std::addressof(__r); }
 ------------------
 _ZNSt14pointer_traitsIPNSt8__detail10_Hash_nodeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEELb1EEEE10pointer_toERS8_:
-function _ZNSt14pointer_traitsIPNSt8__detail10_Hash_nodeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEELb1EEEE10pointer_toERS8_ called 0 returned 0% blocks executed 0%
-    #####:  149:      pointer_to(__make_not_void<element_type>& __r) noexcept
-    #####:  150:      { return std::addressof(__r); }
-    %%%%%:  150-block  0
-call    0 never executed
+function _ZNSt14pointer_traitsIPNSt8__detail10_Hash_nodeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEELb1EEEE10pointer_toERS8_ called 1 returned 100% blocks executed 100%
+        1:  149:      pointer_to(__make_not_void<element_type>& __r) noexcept
+        1:  150:      { return std::addressof(__r); }
+        1:  150-block  0
+call    0 returned 1
 ------------------
 _ZNSt14pointer_traitsIPPNSt8__detail15_Hash_node_baseEE10pointer_toERS2_:
-function _ZNSt14pointer_traitsIPPNSt8__detail15_Hash_node_baseEE10pointer_toERS2_ called 0 returned 0% blocks executed 0%
-    #####:  149:      pointer_to(__make_not_void<element_type>& __r) noexcept
-    #####:  150:      { return std::addressof(__r); }
-    %%%%%:  150-block  0
-call    0 never executed
+function _ZNSt14pointer_traitsIPPNSt8__detail15_Hash_node_baseEE10pointer_toERS2_ called 1 returned 100% blocks executed 100%
+        1:  149:      pointer_to(__make_not_void<element_type>& __r) noexcept
+        1:  150:      { return std::addressof(__r); }
+        1:  150-block  0
+call    0 returned 1
 ------------------
         -:  151:    };
         -:  152:
@@ -175,10 +175,10 @@ call    0 never executed
         -:  156:
         -:  157:  template<typename _Tp>
         -:  158:    constexpr _Tp*
-    #####:  159:    __to_address(_Tp* __ptr) noexcept
+        2:  159:    __to_address(_Tp* __ptr) noexcept
         -:  160:    {
         -:  161:      static_assert(!std::is_function<_Tp>::value, "not a function pointer");
-    #####:  162:      return __ptr;
+        2:  162:      return __ptr;
         -:  163:    }
         -:  164:
         -:  165:#if __cplusplus <= 201703L

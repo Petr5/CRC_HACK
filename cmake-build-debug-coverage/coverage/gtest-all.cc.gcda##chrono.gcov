@@ -1,6 +1,6 @@
         -:    0:Source:/usr/include/c++/11/chrono
-        -:    0:Graph:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
-        -:    0:Data:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
+        -:    0:Graph:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
+        -:    0:Data:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
         -:    0:Runs:3
         -:    1:// <chrono> -*- C++ -*-
         -:    2:
@@ -224,15 +224,15 @@
         -:  220:      {
         -:  221:	template<typename _Rep, typename _Period>
         -:  222:	  static constexpr _ToDur
-function _ZNSt6chrono20__duration_cast_implINS_8durationIlSt5ratioILl1ELl1000EEEES2_ILl1ELl1000000EElLb1ELb0EE6__castIlS2_ILl1ELl1000000000EEEES4_RKNS1_IT_T0_EE called 50 returned 100% blocks executed 100%
-       50:  223:	  __cast(const duration<_Rep, _Period>& __d)
+function _ZNSt6chrono20__duration_cast_implINS_8durationIlSt5ratioILl1ELl1000EEEES2_ILl1ELl1000000EElLb1ELb0EE6__castIlS2_ILl1ELl1000000000EEEES4_RKNS1_IT_T0_EE called 36 returned 100% blocks executed 100%
+       36:  223:	  __cast(const duration<_Rep, _Period>& __d)
         -:  224:	  {
         -:  225:	    typedef typename _ToDur::rep			__to_rep;
-      100:  226:	    return _ToDur(static_cast<__to_rep>(
-       50:  227:	      static_cast<_CR>(__d.count()) / static_cast<_CR>(_CF::den)));
-       50:  227-block  0
-call    0 returned 50
-call    1 returned 50
+       72:  226:	    return _ToDur(static_cast<__to_rep>(
+       36:  227:	      static_cast<_CR>(__d.count()) / static_cast<_CR>(_CF::den)));
+       36:  227-block  0
+call    0 returned 36
+call    1 returned 36
         -:  228:	  }
         -:  229:      };
         -:  230:
@@ -241,15 +241,15 @@ call    1 returned 50
         -:  233:      {
         -:  234:	template<typename _Rep, typename _Period>
         -:  235:	  static constexpr _ToDur
-function _ZNSt6chrono20__duration_cast_implINS_8durationIlSt5ratioILl1ELl1000000000EEEES2_ILl1000000000ELl1EElLb0ELb1EE6__castIlS2_ILl1ELl1EEEES4_RKNS1_IT_T0_EE called 26 returned 100% blocks executed 100%
-       26:  236:	  __cast(const duration<_Rep, _Period>& __d)
+function _ZNSt6chrono20__duration_cast_implINS_8durationIlSt5ratioILl1ELl1000000000EEEES2_ILl1000000000ELl1EElLb0ELb1EE6__castIlS2_ILl1ELl1EEEES4_RKNS1_IT_T0_EE called 19 returned 100% blocks executed 100%
+       19:  236:	  __cast(const duration<_Rep, _Period>& __d)
         -:  237:	  {
         -:  238:	    typedef typename _ToDur::rep			__to_rep;
-       52:  239:	    return _ToDur(static_cast<__to_rep>(
-       26:  240:	      static_cast<_CR>(__d.count()) * static_cast<_CR>(_CF::num)));
-       26:  240-block  0
-call    0 returned 26
-call    1 returned 26
+       38:  239:	    return _ToDur(static_cast<__to_rep>(
+       19:  240:	      static_cast<_CR>(__d.count()) * static_cast<_CR>(_CF::num)));
+       19:  240-block  0
+call    0 returned 19
+call    1 returned 19
         -:  241:	  }
         -:  242:      };
         -:  243:
@@ -276,7 +276,7 @@ call    1 returned 26
         -:  264:    /// duration_cast
         -:  265:    template<typename _ToDur, typename _Rep, typename _Period>
         -:  266:      constexpr __enable_if_is_duration<_ToDur>
-       76:  267:      duration_cast(const duration<_Rep, _Period>& __d)
+       55:  267:      duration_cast(const duration<_Rep, _Period>& __d)
         -:  268:      {
         -:  269:	typedef typename _ToDur::period				__to_period;
         -:  270:	typedef typename _ToDur::rep				__to_rep;
@@ -285,12 +285,12 @@ call    1 returned 26
         -:  273:	  							__cr;
         -:  274:	typedef  __duration_cast_impl<_ToDur, __cf, __cr,
         -:  275:				      __cf::num == 1, __cf::den == 1> __dc;
-       76:  276:	return __dc::__cast(__d);
+       55:  276:	return __dc::__cast(__d);
         -:  277:      }
 ------------------
 _ZNSt6chrono13duration_castINS_8durationIlSt5ratioILl1ELl1000000000EEEElS2_ILl1ELl1EEEENSt9enable_ifIXsrNS_13__is_durationIT_EE5valueES8_E4typeERKNS1_IT0_T1_EE:
-function _ZNSt6chrono13duration_castINS_8durationIlSt5ratioILl1ELl1000000000EEEElS2_ILl1ELl1EEEENSt9enable_ifIXsrNS_13__is_durationIT_EE5valueES8_E4typeERKNS1_IT0_T1_EE called 26 returned 100% blocks executed 100%
-       26:  267:      duration_cast(const duration<_Rep, _Period>& __d)
+function _ZNSt6chrono13duration_castINS_8durationIlSt5ratioILl1ELl1000000000EEEElS2_ILl1ELl1EEEENSt9enable_ifIXsrNS_13__is_durationIT_EE5valueES8_E4typeERKNS1_IT0_T1_EE called 19 returned 100% blocks executed 100%
+       19:  267:      duration_cast(const duration<_Rep, _Period>& __d)
         -:  268:      {
         -:  269:	typedef typename _ToDur::period				__to_period;
         -:  270:	typedef typename _ToDur::rep				__to_rep;
@@ -299,14 +299,14 @@ function _ZNSt6chrono13duration_castINS_8durationIlSt5ratioILl1ELl1000000000EEEE
         -:  273:	  							__cr;
         -:  274:	typedef  __duration_cast_impl<_ToDur, __cf, __cr,
         -:  275:				      __cf::num == 1, __cf::den == 1> __dc;
-       26:  276:	return __dc::__cast(__d);
-       26:  276-block  0
-call    0 returned 26
+       19:  276:	return __dc::__cast(__d);
+       19:  276-block  0
+call    0 returned 19
         -:  277:      }
 ------------------
 _ZNSt6chrono13duration_castINS_8durationIlSt5ratioILl1ELl1000EEEElS2_ILl1ELl1000000000EEEENSt9enable_ifIXsrNS_13__is_durationIT_EE5valueES8_E4typeERKNS1_IT0_T1_EE:
-function _ZNSt6chrono13duration_castINS_8durationIlSt5ratioILl1ELl1000EEEElS2_ILl1ELl1000000000EEEENSt9enable_ifIXsrNS_13__is_durationIT_EE5valueES8_E4typeERKNS1_IT0_T1_EE called 50 returned 100% blocks executed 100%
-       50:  267:      duration_cast(const duration<_Rep, _Period>& __d)
+function _ZNSt6chrono13duration_castINS_8durationIlSt5ratioILl1ELl1000EEEElS2_ILl1ELl1000000000EEEENSt9enable_ifIXsrNS_13__is_durationIT_EE5valueES8_E4typeERKNS1_IT0_T1_EE called 36 returned 100% blocks executed 100%
+       36:  267:      duration_cast(const duration<_Rep, _Period>& __d)
         -:  268:      {
         -:  269:	typedef typename _ToDur::period				__to_period;
         -:  270:	typedef typename _ToDur::rep				__to_rep;
@@ -315,9 +315,9 @@ function _ZNSt6chrono13duration_castINS_8durationIlSt5ratioILl1ELl1000EEEElS2_IL
         -:  273:	  							__cr;
         -:  274:	typedef  __duration_cast_impl<_ToDur, __cf, __cr,
         -:  275:				      __cf::num == 1, __cf::den == 1> __dc;
-       50:  276:	return __dc::__cast(__d);
-       50:  276-block  0
-call    0 returned 50
+       36:  276:	return __dc::__cast(__d);
+       36:  276-block  0
+call    0 returned 36
         -:  277:      }
 ------------------
         -:  278:
@@ -563,23 +563,23 @@ call    0 returned 50
         -:  518:	template<typename _Rep2, typename = _Require<
         -:  519:		 is_convertible<const _Rep2&, rep>,
         -:  520:		 __or_<__is_float<rep>, __not_<__is_float<_Rep2>>>>>
-      152:  521:	  constexpr explicit duration(const _Rep2& __rep)
-      152:  522:	  : __r(static_cast<rep>(__rep)) { }
+      110:  521:	  constexpr explicit duration(const _Rep2& __rep)
+      110:  522:	  : __r(static_cast<rep>(__rep)) { }
 ------------------
 _ZNSt6chrono8durationIlSt5ratioILl1ELl1000EEEC2IlvEERKT_:
-function _ZNSt6chrono8durationIlSt5ratioILl1ELl1000EEEC2IlvEERKT_ called 50 returned 100% blocks executed 100%
-       50:  521:	  constexpr explicit duration(const _Rep2& __rep)
-       50:  522:	  : __r(static_cast<rep>(__rep)) { }
+function _ZNSt6chrono8durationIlSt5ratioILl1ELl1000EEEC2IlvEERKT_ called 36 returned 100% blocks executed 100%
+       36:  521:	  constexpr explicit duration(const _Rep2& __rep)
+       36:  522:	  : __r(static_cast<rep>(__rep)) { }
 ------------------
 _ZNSt6chrono8durationIlSt5ratioILl1ELl1EEEC1IlvEERKT_:
-function _ZNSt6chrono8durationIlSt5ratioILl1ELl1EEEC1IlvEERKT_ called 26 returned 100% blocks executed 100%
-       26:  521:	  constexpr explicit duration(const _Rep2& __rep)
-       26:  522:	  : __r(static_cast<rep>(__rep)) { }
+function _ZNSt6chrono8durationIlSt5ratioILl1ELl1EEEC1IlvEERKT_ called 19 returned 100% blocks executed 100%
+       19:  521:	  constexpr explicit duration(const _Rep2& __rep)
+       19:  522:	  : __r(static_cast<rep>(__rep)) { }
 ------------------
 _ZNSt6chrono8durationIlSt5ratioILl1ELl1000000000EEEC1IlvEERKT_:
-function _ZNSt6chrono8durationIlSt5ratioILl1ELl1000000000EEEC1IlvEERKT_ called 76 returned 100% blocks executed 100%
-       76:  521:	  constexpr explicit duration(const _Rep2& __rep)
-       76:  522:	  : __r(static_cast<rep>(__rep)) { }
+function _ZNSt6chrono8durationIlSt5ratioILl1ELl1000000000EEEC1IlvEERKT_ called 55 returned 100% blocks executed 100%
+       55:  521:	  constexpr explicit duration(const _Rep2& __rep)
+       55:  522:	  : __r(static_cast<rep>(__rep)) { }
 ------------------
         -:  523:
         -:  524:	template<typename _Rep2, typename _Period2, typename = _Require<
@@ -595,26 +595,26 @@ function _ZNSt6chrono8durationIlSt5ratioILl1ELl1000000000EEEC1IlvEERKT_ called 7
         -:  534:
         -:  535:	// 20.11.5.2 observer
         -:  536:	constexpr rep
-      226:  537:	count() const
-      226:  538:	{ return __r; }
+      163:  537:	count() const
+      163:  538:	{ return __r; }
 ------------------
 _ZNKSt6chrono8durationIlSt5ratioILl1ELl1000EEE5countEv:
-function _ZNKSt6chrono8durationIlSt5ratioILl1ELl1000EEE5countEv called 50 returned 100% blocks executed 100%
-       50:  537:	count() const
-       50:  538:	{ return __r; }
-       50:  538-block  0
+function _ZNKSt6chrono8durationIlSt5ratioILl1ELl1000EEE5countEv called 36 returned 100% blocks executed 100%
+       36:  537:	count() const
+       36:  538:	{ return __r; }
+       36:  538-block  0
 ------------------
 _ZNKSt6chrono8durationIlSt5ratioILl1ELl1EEE5countEv:
-function _ZNKSt6chrono8durationIlSt5ratioILl1ELl1EEE5countEv called 26 returned 100% blocks executed 100%
-       26:  537:	count() const
-       26:  538:	{ return __r; }
-       26:  538-block  0
+function _ZNKSt6chrono8durationIlSt5ratioILl1ELl1EEE5countEv called 19 returned 100% blocks executed 100%
+       19:  537:	count() const
+       19:  538:	{ return __r; }
+       19:  538-block  0
 ------------------
 _ZNKSt6chrono8durationIlSt5ratioILl1ELl1000000000EEE5countEv:
-function _ZNKSt6chrono8durationIlSt5ratioILl1ELl1000000000EEE5countEv called 150 returned 100% blocks executed 100%
-      150:  537:	count() const
-      150:  538:	{ return __r; }
-      150:  538-block  0
+function _ZNKSt6chrono8durationIlSt5ratioILl1ELl1000000000EEE5countEv called 108 returned 100% blocks executed 100%
+      108:  537:	count() const
+      108:  538:	{ return __r; }
+      108:  538-block  0
 ------------------
         -:  539:
         -:  540:	// 20.11.5.3 arithmetic
@@ -737,18 +737,18 @@ function _ZNKSt6chrono8durationIlSt5ratioILl1ELl1000000000EEE5countEv called 150
         -:  657:	     typename _Rep2, typename _Period2>
         -:  658:      constexpr typename common_type<duration<_Rep1, _Period1>,
         -:  659:				     duration<_Rep2, _Period2>>::type
-function _ZNSt6chronomiIlSt5ratioILl1ELl1000000000EElS2_EENSt11common_typeIJNS_8durationIT_T0_EENS4_IT1_T2_EEEE4typeERKS7_RKSA_ called 50 returned 100% blocks executed 100%
-       50:  660:      operator-(const duration<_Rep1, _Period1>& __lhs,
+function _ZNSt6chronomiIlSt5ratioILl1ELl1000000000EElS2_EENSt11common_typeIJNS_8durationIT_T0_EENS4_IT1_T2_EEEE4typeERKS7_RKSA_ called 36 returned 100% blocks executed 100%
+       36:  660:      operator-(const duration<_Rep1, _Period1>& __lhs,
         -:  661:		const duration<_Rep2, _Period2>& __rhs)
         -:  662:      {
         -:  663:	typedef duration<_Rep1, _Period1>			__dur1;
         -:  664:	typedef duration<_Rep2, _Period2>			__dur2;
         -:  665:	typedef typename common_type<__dur1,__dur2>::type	__cd;
-       50:  666:	return __cd(__cd(__lhs).count() - __cd(__rhs).count());
-       50:  666-block  0
-call    0 returned 50
-call    1 returned 50
-call    2 returned 50
+       36:  666:	return __cd(__cd(__lhs).count() - __cd(__rhs).count());
+       36:  666-block  0
+call    0 returned 36
+call    1 returned 36
+call    2 returned 36
         -:  667:      }
         -:  668:
         -:  669:    /// @}
@@ -967,21 +967,21 @@ call    2 returned 50
         -:  882:	constexpr time_point() : __d(duration::zero())
         -:  883:	{ }
         -:  884:
-       52:  885:	constexpr explicit time_point(const duration& __dur)
-       52:  886:	: __d(__dur)
-       52:  887:	{ }
+       38:  885:	constexpr explicit time_point(const duration& __dur)
+       38:  886:	: __d(__dur)
+       38:  887:	{ }
 ------------------
 _ZNSt6chrono10time_pointINS_3_V212system_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEEEC2ERKS6_:
-function _ZNSt6chrono10time_pointINS_3_V212system_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEEEC2ERKS6_ called 26 returned 100% blocks executed 100%
-       26:  885:	constexpr explicit time_point(const duration& __dur)
-       26:  886:	: __d(__dur)
-       26:  887:	{ }
+function _ZNSt6chrono10time_pointINS_3_V212system_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEEEC2ERKS6_ called 19 returned 100% blocks executed 100%
+       19:  885:	constexpr explicit time_point(const duration& __dur)
+       19:  886:	: __d(__dur)
+       19:  887:	{ }
 ------------------
 _ZNSt6chrono10time_pointINS_3_V212system_clockENS_8durationIlSt5ratioILl1ELl1EEEEEC2ERKS6_:
-function _ZNSt6chrono10time_pointINS_3_V212system_clockENS_8durationIlSt5ratioILl1ELl1EEEEEC2ERKS6_ called 26 returned 100% blocks executed 100%
-       26:  885:	constexpr explicit time_point(const duration& __dur)
-       26:  886:	: __d(__dur)
-       26:  887:	{ }
+function _ZNSt6chrono10time_pointINS_3_V212system_clockENS_8durationIlSt5ratioILl1ELl1EEEEEC2ERKS6_ called 19 returned 100% blocks executed 100%
+       19:  885:	constexpr explicit time_point(const duration& __dur)
+       19:  886:	: __d(__dur)
+       19:  887:	{ }
 ------------------
         -:  888:
         -:  889:	// conversions
@@ -993,26 +993,26 @@ function _ZNSt6chrono10time_pointINS_3_V212system_clockENS_8durationIlSt5ratioIL
         -:  895:
         -:  896:	// observer
         -:  897:	constexpr duration
-      126:  898:	time_since_epoch() const
-      126:  899:	{ return __d; }
+       91:  898:	time_since_epoch() const
+       91:  899:	{ return __d; }
 ------------------
 _ZNKSt6chrono10time_pointINS_3_V212steady_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEEE16time_since_epochEv:
-function _ZNKSt6chrono10time_pointINS_3_V212steady_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEEE16time_since_epochEv called 48 returned 100% blocks executed 100%
-       48:  898:	time_since_epoch() const
-       48:  899:	{ return __d; }
-       48:  899-block  0
+function _ZNKSt6chrono10time_pointINS_3_V212steady_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEEE16time_since_epochEv called 34 returned 100% blocks executed 100%
+       34:  898:	time_since_epoch() const
+       34:  899:	{ return __d; }
+       34:  899-block  0
 ------------------
 _ZNKSt6chrono10time_pointINS_3_V212system_clockENS_8durationIlSt5ratioILl1ELl1EEEEE16time_since_epochEv:
-function _ZNKSt6chrono10time_pointINS_3_V212system_clockENS_8durationIlSt5ratioILl1ELl1EEEEE16time_since_epochEv called 26 returned 100% blocks executed 100%
-       26:  898:	time_since_epoch() const
-       26:  899:	{ return __d; }
-       26:  899-block  0
+function _ZNKSt6chrono10time_pointINS_3_V212system_clockENS_8durationIlSt5ratioILl1ELl1EEEEE16time_since_epochEv called 19 returned 100% blocks executed 100%
+       19:  898:	time_since_epoch() const
+       19:  899:	{ return __d; }
+       19:  899-block  0
 ------------------
 _ZNKSt6chrono10time_pointINS_3_V212system_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEEE16time_since_epochEv:
-function _ZNKSt6chrono10time_pointINS_3_V212system_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEEE16time_since_epochEv called 52 returned 100% blocks executed 100%
-       52:  898:	time_since_epoch() const
-       52:  899:	{ return __d; }
-       52:  899-block  0
+function _ZNKSt6chrono10time_pointINS_3_V212system_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEEE16time_since_epochEv called 38 returned 100% blocks executed 100%
+       38:  898:	time_since_epoch() const
+       38:  899:	{ return __d; }
+       38:  899-block  0
 ------------------
         -:  900:
         -:  901:#if __cplusplus > 201703L
@@ -1071,19 +1071,19 @@ function _ZNKSt6chrono10time_pointINS_3_V212system_clockENS_8durationIlSt5ratioI
         -:  954:    template<typename _ToDur, typename _Clock, typename _Dur>
         -:  955:      constexpr typename enable_if<__is_duration<_ToDur>::value,
         -:  956:				   time_point<_Clock, _ToDur>>::type
-function _ZNSt6chrono15time_point_castINS_8durationIlSt5ratioILl1ELl1000000000EEEENS_3_V212system_clockENS1_IlS2_ILl1ELl1EEEEEENSt9enable_ifIXsrNS_13__is_durationIT_EE5valueENS_10time_pointIT0_SB_EEE4typeERKNSD_ISE_T1_EE called 26 returned 100% blocks executed 100%
-       26:  957:      time_point_cast(const time_point<_Clock, _Dur>& __t)
+function _ZNSt6chrono15time_point_castINS_8durationIlSt5ratioILl1ELl1000000000EEEENS_3_V212system_clockENS1_IlS2_ILl1ELl1EEEEEENSt9enable_ifIXsrNS_13__is_durationIT_EE5valueENS_10time_pointIT0_SB_EEE4typeERKNSD_ISE_T1_EE called 19 returned 100% blocks executed 100%
+       19:  957:      time_point_cast(const time_point<_Clock, _Dur>& __t)
         -:  958:      {
         -:  959:	typedef time_point<_Clock, _ToDur>			__time_point;
-       26:  960:	return __time_point(duration_cast<_ToDur>(__t.time_since_epoch()));
-       26:  960-block  0
-call    0 returned 26
-call    1 returned 26
-branch  2 taken 26 (fallthrough)
+       19:  960:	return __time_point(duration_cast<_ToDur>(__t.time_since_epoch()));
+       19:  960-block  0
+call    0 returned 19
+call    1 returned 19
+branch  2 taken 19 (fallthrough)
 branch  3 taken 0 (throw)
-       26:  960-block  1
-call    4 returned 26
-       26:  960-block  2
+       19:  960-block  1
+call    4 returned 19
+       19:  960-block  2
         -:  961:      }
         -:  962:
         -:  963:#if __cplusplus > 201402L
@@ -1165,29 +1165,29 @@ call    4 returned 26
         -: 1039:    /// The difference between two time points (as a duration)
         -: 1040:    template<typename _Clock, typename _Dur1, typename _Dur2>
         -: 1041:      constexpr typename common_type<_Dur1, _Dur2>::type
-       50: 1042:      operator-(const time_point<_Clock, _Dur1>& __lhs,
+       36: 1042:      operator-(const time_point<_Clock, _Dur1>& __lhs,
         -: 1043:		const time_point<_Clock, _Dur2>& __rhs)
-       50: 1044:      { return __lhs.time_since_epoch() - __rhs.time_since_epoch(); }
+       36: 1044:      { return __lhs.time_since_epoch() - __rhs.time_since_epoch(); }
 ------------------
 _ZNSt6chronomiINS_3_V212system_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEES6_EENSt11common_typeIJT0_T1_EE4typeERKNS_10time_pointIT_S8_EERKNSC_ISD_S9_EE:
-function _ZNSt6chronomiINS_3_V212system_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEES6_EENSt11common_typeIJT0_T1_EE4typeERKNS_10time_pointIT_S8_EERKNSC_ISD_S9_EE called 26 returned 100% blocks executed 100%
-       26: 1042:      operator-(const time_point<_Clock, _Dur1>& __lhs,
+function _ZNSt6chronomiINS_3_V212system_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEES6_EENSt11common_typeIJT0_T1_EE4typeERKNS_10time_pointIT_S8_EERKNSC_ISD_S9_EE called 19 returned 100% blocks executed 100%
+       19: 1042:      operator-(const time_point<_Clock, _Dur1>& __lhs,
         -: 1043:		const time_point<_Clock, _Dur2>& __rhs)
-       26: 1044:      { return __lhs.time_since_epoch() - __rhs.time_since_epoch(); }
-       26: 1044-block  0
-call    0 returned 26
-call    1 returned 26
-call    2 returned 26
+       19: 1044:      { return __lhs.time_since_epoch() - __rhs.time_since_epoch(); }
+       19: 1044-block  0
+call    0 returned 19
+call    1 returned 19
+call    2 returned 19
 ------------------
 _ZNSt6chronomiINS_3_V212steady_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEES6_EENSt11common_typeIJT0_T1_EE4typeERKNS_10time_pointIT_S8_EERKNSC_ISD_S9_EE:
-function _ZNSt6chronomiINS_3_V212steady_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEES6_EENSt11common_typeIJT0_T1_EE4typeERKNS_10time_pointIT_S8_EERKNSC_ISD_S9_EE called 24 returned 100% blocks executed 100%
-       24: 1042:      operator-(const time_point<_Clock, _Dur1>& __lhs,
+function _ZNSt6chronomiINS_3_V212steady_clockENS_8durationIlSt5ratioILl1ELl1000000000EEEES6_EENSt11common_typeIJT0_T1_EE4typeERKNS_10time_pointIT_S8_EERKNSC_ISD_S9_EE called 17 returned 100% blocks executed 100%
+       17: 1042:      operator-(const time_point<_Clock, _Dur1>& __lhs,
         -: 1043:		const time_point<_Clock, _Dur2>& __rhs)
-       24: 1044:      { return __lhs.time_since_epoch() - __rhs.time_since_epoch(); }
-       24: 1044-block  0
-call    0 returned 24
-call    1 returned 24
-call    2 returned 24
+       17: 1044:      { return __lhs.time_since_epoch() - __rhs.time_since_epoch(); }
+       17: 1044-block  0
+call    0 returned 17
+call    1 returned 17
+call    2 returned 17
 ------------------
         -: 1045:    /// @}
         -: 1046:
@@ -1294,16 +1294,16 @@ call    2 returned 24
         -: 1147:      }
         -: 1148:
         -: 1149:      static time_point
-function _ZNSt6chrono3_V212system_clock11from_time_tEl called 26 returned 100% blocks executed 100%
-       26: 1150:      from_time_t(std::time_t __t) noexcept
+function _ZNSt6chrono3_V212system_clock11from_time_tEl called 19 returned 100% blocks executed 100%
+       19: 1150:      from_time_t(std::time_t __t) noexcept
         -: 1151:      {
         -: 1152:	typedef chrono::time_point<system_clock, seconds>	__from;
         -: 1153:	return time_point_cast<system_clock::duration>
-       26: 1154:	       (__from(chrono::seconds(__t)));
-       26: 1154-block  0
-call    0 returned 26
-call    1 returned 26
-call    2 returned 26
+       19: 1154:	       (__from(chrono::seconds(__t)));
+       19: 1154-block  0
+call    0 returned 19
+call    1 returned 19
+call    2 returned 19
         -: 1155:      }
         -: 1156:    };
         -: 1157:

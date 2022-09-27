@@ -1,6 +1,6 @@
         -:    0:Source:/usr/include/c++/11/bits/basic_string.h
-        -:    0:Graph:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
-        -:    0:Data:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
+        -:    0:Graph:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
+        -:    0:Data:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
         -:    0:Runs:3
         -:    1:// Components for manipulating sequences of characters -*- C++ -*-
         -:    2:
@@ -6361,14 +6361,14 @@ call    0 never executed
         -: 6157:#if __cplusplus >= 201103L
         -: 6158:  template<typename _CharT, typename _Traits, typename _Alloc>
         -: 6159:    inline basic_string<_CharT, _Traits, _Alloc>
-function _ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_RKS8_ called 21 returned 100% blocks executed 100%
-       21: 6160:    operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+function _ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_RKS8_ called 24 returned 100% blocks executed 100%
+       24: 6160:    operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
         -: 6161:	      const basic_string<_CharT, _Traits, _Alloc>& __rhs)
-       21: 6162:    { return std::move(__lhs.append(__rhs)); }
-       21: 6162-block  0
-call    0 returned 21
-call    1 returned 21
-call    2 returned 21
+       24: 6162:    { return std::move(__lhs.append(__rhs)); }
+       24: 6162-block  0
+call    0 returned 24
+call    1 returned 24
+call    2 returned 24
         -: 6163:
         -: 6164:  template<typename _CharT, typename _Traits, typename _Alloc>
         -: 6165:    inline basic_string<_CharT, _Traits, _Alloc>
@@ -6444,14 +6444,14 @@ call    2 never executed
         -: 6203:
         -: 6204:  template<typename _CharT, typename _Traits, typename _Alloc>
         -: 6205:    inline basic_string<_CharT, _Traits, _Alloc>
-function _ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_PKS5_ called 136 returned 100% blocks executed 100%
-      136: 6206:    operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+function _ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_PKS5_ called 128 returned 100% blocks executed 100%
+      128: 6206:    operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
         -: 6207:	      const _CharT* __rhs)
-      136: 6208:    { return std::move(__lhs.append(__rhs)); }
-      136: 6208-block  0
-call    0 returned 136
-call    1 returned 136
-call    2 returned 136
+      128: 6208:    { return std::move(__lhs.append(__rhs)); }
+      128: 6208-block  0
+call    0 returned 128
+call    1 returned 128
+call    2 returned 128
         -: 6209:
         -: 6210:  template<typename _CharT, typename _Traits, typename _Alloc>
         -: 6211:    inline basic_string<_CharT, _Traits, _Alloc>
@@ -6764,13 +6764,13 @@ call    0 never executed
         -: 6490:   */
         -: 6491:  template<typename _CharT, typename _Traits, typename _Alloc>
         -: 6492:    inline void
-function _ZSt4swapIcSt11char_traitsIcESaIcEEvRNSt7__cxx1112basic_stringIT_T0_T1_EES9_ called 0 returned 0% blocks executed 0%
-    #####: 6493:    swap(basic_string<_CharT, _Traits, _Alloc>& __lhs,
+function _ZSt4swapIcSt11char_traitsIcESaIcEEvRNSt7__cxx1112basic_stringIT_T0_T1_EES9_ called 1 returned 100% blocks executed 100%
+        1: 6493:    swap(basic_string<_CharT, _Traits, _Alloc>& __lhs,
         -: 6494:	 basic_string<_CharT, _Traits, _Alloc>& __rhs)
         -: 6495:    _GLIBCXX_NOEXCEPT_IF(noexcept(__lhs.swap(__rhs)))
-    #####: 6496:    { __lhs.swap(__rhs); }
-    %%%%%: 6496-block  0
-call    0 never executed
+        1: 6496:    { __lhs.swap(__rhs); }
+        1: 6496-block  0
+call    0 returned 1
         -: 6497:
         -: 6498:
         -: 6499:  /**
@@ -7149,13 +7149,13 @@ call    0 never executed
         -: 6872:    : public __hash_base<size_t, string>
         -: 6873:    {
         -: 6874:      size_t
-function _ZNKSt4hashINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEclERKS5_ called 96 returned 100% blocks executed 100%
-       96: 6875:      operator()(const string& __s) const noexcept
-       96: 6876:      { return std::_Hash_impl::hash(__s.data(), __s.length()); }
-       96: 6876-block  0
-call    0 returned 96
-call    1 returned 96
-call    2 returned 96
+function _ZNKSt4hashINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEclERKS5_ called 105 returned 100% blocks executed 100%
+      105: 6875:      operator()(const string& __s) const noexcept
+      105: 6876:      { return std::_Hash_impl::hash(__s.data(), __s.length()); }
+      105: 6876-block  0
+call    0 returned 105
+call    1 returned 105
+call    2 returned 105
         -: 6877:    };
         -: 6878:
         -: 6879:  template<>

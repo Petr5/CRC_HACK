@@ -1,186 +1,193 @@
-        -:    0:Source:/home/peter/CLionProjects/crc/crc.cpp
-        -:    0:Graph:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/CMakeFiles/crc_run.dir/crc.cpp.gcno
-        -:    0:Data:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/CMakeFiles/crc_run.dir/crc.cpp.gcda
+        -:    0:Source:/home/peter/CLionProjects/CRC_HACK/crc.cpp
+        -:    0:Graph:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/CMakeFiles/Main.dir/crc.cpp.gcno
+        -:    0:Data:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/CMakeFiles/Main.dir/crc.cpp.gcda
         -:    0:Runs:3
         -:    1:#include "crc.h"
-        -:    2:using std::uint16_t;
-        -:    3:using namespace std;
-        -:    4:
+        -:    2:#include <filesystem>
+        -:    3:using std::uint16_t;
+        -:    4:using namespace std;
         -:    5:
-        -:    6:namespace crc{
-function _ZN3crc3crc10str_to_hexENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 8 returned 100% blocks executed 86%
-        8:    7:    string crc::str_to_hex(string ascii){
-        8:    8:        char const hex_chars[16] = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F' };
-        8:    9:        string res;
-        8:    9-block  0
-call    0 returned 8
-       30:   10:        for( int i = 0; i < ascii.size(); ++i )
-       22:   10-block  0
-       30:   10-block  1
-call    0 returned 30
-branch  1 taken 22
-branch  2 taken 8 (fallthrough)
-        -:   11:        {
-       22:   12:            char const byte = ascii[i];
-       22:   12-block  0
-call    0 returned 22
-branch  1 taken 22 (fallthrough)
+        -:    6:
+        -:    7:namespace crc{
+function _ZN3crc3crc10str_to_hexENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 4 returned 100% blocks executed 86%
+        4:    8:    string crc::str_to_hex(string ascii){
+        4:    9:        char const hex_chars[16] = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F' };
+        4:   10:        string res;
+        4:   10-block  0
+call    0 returned 4
+       15:   11:        for( int i = 0; i < ascii.size(); ++i )
+       11:   11-block  0
+       15:   11-block  1
+call    0 returned 15
+branch  1 taken 11
+branch  2 taken 4 (fallthrough)
+        -:   12:        {
+       11:   13:            char const byte = ascii[i];
+       11:   13-block  0
+call    0 returned 11
+branch  1 taken 11 (fallthrough)
 branch  2 taken 0 (throw)
-        -:   13:
-       22:   14:            res += hex_chars[ ( byte & 0xF0 ) >> 4 ];
-       22:   14-block  0
-call    0 returned 22
-branch  1 taken 22 (fallthrough)
+        -:   14:
+       11:   15:            res += hex_chars[ ( byte & 0xF0 ) >> 4 ];
+       11:   15-block  0
+call    0 returned 11
+branch  1 taken 11 (fallthrough)
 branch  2 taken 0 (throw)
-       22:   15:            res += hex_chars[ ( byte & 0x0F ) >> 0 ];
-       22:   15-block  0
-call    0 returned 22
-branch  1 taken 22 (fallthrough)
+       11:   16:            res += hex_chars[ ( byte & 0x0F ) >> 0 ];
+       11:   16-block  0
+call    0 returned 11
+branch  1 taken 11 (fallthrough)
 branch  2 taken 0 (throw)
-        -:   16:        }
-       16:   17:        return res;
-        8:   17-block  0
-        8:   17-block  1
-    =====:   18:    }
-    $$$$$:   18-block  0
+        -:   17:        }
+        8:   18:        return res;
+        4:   18-block  0
+        4:   18-block  1
+    =====:   19:    }
+    $$$$$:   19-block  0
 call    0 never executed
-        -:   19:
-function _ZN3crc3crc13calculate_crcENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 8020 returned 100% blocks executed 100%
-     8020:   20:    uint16_t crc::calculate_crc(string password){
-        -:   21:
-     8020:   22:        unsigned char* data = new unsigned char[password.size()];
-     8020:   22-block  0
-call    0 returned 8020
-call    1 returned 8020
-branch  2 taken 8020 (fallthrough)
+        -:   20:
+function _ZN3crc3crc13calculate_crcENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 4011 returned 100% blocks executed 100%
+     4011:   21:    uint16_t crc::calculate_crc(string password){
+        -:   22:
+     4011:   23:        unsigned char* data = new unsigned char[password.size()];
+     4011:   23-block  0
+call    0 returned 4011
+call    1 returned 4011
+branch  2 taken 4011 (fallthrough)
 branch  3 taken 0 (throw)
-    56128:   23:        for (int i = 0 ; i < password.size(); ++i){
-     8020:   23-block  0
-    56128:   23-block  1
-call    0 returned 56128
-branch  1 taken 48108
-branch  2 taken 8020 (fallthrough)
-    48108:   24:            data[i] = password[i];
-    48108:   24-block  0
-call    0 returned 48108
-branch  1 taken 48108 (fallthrough)
+    28076:   24:        for (int i = 0 ; i < password.size(); ++i){
+     4011:   24-block  0
+    28076:   24-block  1
+call    0 returned 28076
+branch  1 taken 24065
+branch  2 taken 4011 (fallthrough)
+    24065:   25:            data[i] = password[i];
+    24065:   25-block  0
+call    0 returned 24065
+branch  1 taken 24065 (fallthrough)
 branch  2 taken 0 (throw)
-    48108:   24-block  1
-        -:   25://            cout << data[i] << endl;
-        -:   26:        }
-     8020:   27:        std::size_t const    data_len = sizeof( data ) / sizeof( data[0] );
-     8020:   28:        boost::crc_basic<16>  crc_ccitt1( 0x1021, 0xFFFF, 0, false, false );
-     8020:   28-block  0
-call    0 returned 8020
-     8020:   29:        crc_ccitt1.process_bytes( data, data_len );
-call    0 returned 8020
-branch  1 taken 8020 (fallthrough)
+    24065:   25-block  1
+        -:   26://            cout << data[i] << endl;
+        -:   27:        }
+     4011:   28:        std::size_t const    data_len = sizeof( data ) / sizeof( data[0] );
+     4011:   29:        boost::crc_basic<16>  crc_ccitt1( 0x1021, 0xFFFF, 0, false, false );
+     4011:   29-block  0
+call    0 returned 4011
+     4011:   30:        crc_ccitt1.process_bytes( data, data_len );
+call    0 returned 4011
+branch  1 taken 4011 (fallthrough)
 branch  2 taken 0 (throw)
-     8020:   30:        uint16_t res = crc_ccitt1.checksum();
-     8020:   30-block  0
-call    0 returned 8020
-branch  1 taken 8020 (fallthrough)
+     4011:   31:        uint16_t res = crc_ccitt1.checksum();
+     4011:   31-block  0
+call    0 returned 4011
+branch  1 taken 4011 (fallthrough)
 branch  2 taken 0 (throw)
-     8020:   31:        return res;
-     8020:   31-block  0
-     8020:   31-block  1
-        -:   32:    }
-        -:   33:
-function _ZN3crc3crc11brute_forceB5cxx11Et called 16 returned 100% blocks executed 70%
-       16:   34:    pair<string, bool> crc::brute_force(uint16_t hash_password){
-       16:   35:        fstream fin("500-worst-passwords2.txt");
-       16:   35-block  0
-call    0 returned 16
-call    1 returned 16
-branch  2 taken 16 (fallthrough)
+     4011:   32:        return res;
+     4011:   32-block  0
+     4011:   32-block  1
+        -:   33:    }
+        -:   34:
+function _ZN3crc3crc11brute_forceB5cxx11Et called 8 returned 100% blocks executed 68%
+        8:   35:    pair<string, bool> crc::brute_force(uint16_t hash_password){
+        8:   36:        fstream fin("../500-worst-passwords2.txt");
+        8:   36-block  0
+call    0 returned 8
+call    1 returned 8
+branch  2 taken 8 (fallthrough)
 branch  3 taken 0 (throw)
-       16:   36:        string candidate_pwd;
-       16:   36-block  0
-call    0 returned 16
-       16:   37:        string res;
-call    0 returned 16
-       16:   38:        if (!fin.is_open()){
-call    0 returned 16
-branch  1 taken 16 (fallthrough)
+        8:   37:        string candidate_pwd;
+        8:   37-block  0
+call    0 returned 8
+        8:   38:        string res;
+call    0 returned 8
+        8:   39:        if (!fin.is_open()){
+call    0 returned 8
+branch  1 taken 8 (fallthrough)
 branch  2 taken 0 (throw)
-       16:   38-block  0
+        8:   39-block  0
 branch  3 taken 0 (fallthrough)
-branch  4 taken 16
-    #####:   39:            cout << "file doesn't open " << endl;
-    %%%%%:   39-block  0
+branch  4 taken 8
+    #####:   40:            cerr << "file doesn't open " << endl;
+    %%%%%:   40-block  0
 call    0 never executed
 branch  1 never executed
 branch  2 never executed
-    %%%%%:   39-block  1
+    %%%%%:   40-block  1
 call    3 never executed
 branch  4 never executed
 branch  5 never executed
-        -:   40:        }
-     8032:   41:        while (getline(fin, candidate_pwd)){
-       16:   41-block  0
-     8032:   41-block  1
-call    0 returned 8032
-branch  1 taken 8032 (fallthrough)
+        -:   41:        }
+     4016:   42:        while (getline(fin, candidate_pwd)){
+        8:   42-block  0
+     4016:   42-block  1
+call    0 returned 4016
+branch  1 taken 4016 (fallthrough)
 branch  2 taken 0 (throw)
-     8032:   41-block  2
-call    3 returned 8032
-branch  4 taken 8032 (fallthrough)
+     4016:   42-block  2
+call    3 returned 4016
+branch  4 taken 4016 (fallthrough)
 branch  5 taken 0 (throw)
-     8032:   41-block  3
-branch  6 taken 8016
-branch  7 taken 16 (fallthrough)
-     8016:   42:            if (calculate_crc(candidate_pwd) == hash_password){
-     8016:   42-block  0
-call    0 returned 8016
-branch  1 taken 8016 (fallthrough)
+     4016:   42-block  3
+branch  6 taken 4008
+branch  7 taken 8 (fallthrough)
+     4008:   43:            if (calculate_crc(candidate_pwd) == hash_password){
+     4008:   43-block  0
+call    0 returned 4008
+branch  1 taken 4008 (fallthrough)
 branch  2 taken 0 (throw)
-     8016:   42-block  1
-call    3 returned 8016
-branch  4 taken 8016 (fallthrough)
+     4008:   43-block  1
+call    3 returned 4008
+branch  4 taken 4008 (fallthrough)
 branch  5 taken 0 (throw)
-     8016:   42-block  2
-call    6 returned 8016
-branch  7 taken 12 (fallthrough)
-branch  8 taken 8004
-    $$$$$:   42-block  3
+     4008:   43-block  2
+call    6 returned 4008
+branch  7 taken 6 (fallthrough)
+branch  8 taken 4002
+    $$$$$:   43-block  3
 call    9 never executed
-    $$$$$:   42-block  4
-        -:   43:
-       12:   44:                res = candidate_pwd;
-       12:   44-block  0
-call    0 returned 12
-branch  1 taken 12 (fallthrough)
+    $$$$$:   43-block  4
+        -:   44:
+        6:   45:                res = candidate_pwd;
+        6:   45-block  0
+call    0 returned 6
+branch  1 taken 6 (fallthrough)
 branch  2 taken 0 (throw)
-        -:   45:            }
-        -:   46:        }
-       16:   47:        bool pwd_exist = false;
-       16:   48:        if (!res.empty()) pwd_exist = true;
-       16:   48-block  0
-call    0 returned 16
-branch  1 taken 12 (fallthrough)
-branch  2 taken 4
-       12:   48-block  1
-       32:   49:        return make_pair(res, pwd_exist);
-       16:   49-block  0
-call    0 returned 16
-branch  1 taken 16 (fallthrough)
+        -:   46:            }
+        -:   47:        }
+        8:   48:        bool pwd_exist = false;
+        8:   49:        if (!res.empty()) pwd_exist = true;
+        8:   49-block  0
+call    0 returned 8
+branch  1 taken 6 (fallthrough)
+branch  2 taken 2
+        6:   49-block  1
+        8:   50:        std::filesystem::path cwd = std::filesystem::current_path();
+        8:   50-block  0
+call    0 returned 8
+branch  1 taken 8 (fallthrough)
 branch  2 taken 0 (throw)
-       16:   49-block  1
-       16:   50:    }
-       16:   50-block  0
-call    0 returned 16
-call    1 returned 16
-call    2 returned 16
-    $$$$$:   50-block  1
-call    3 never executed
-    $$$$$:   50-block  2
+        -:   51://        cout << "current directory is " <<  cwd << endl;
+       16:   52:        return make_pair(res, pwd_exist);
+        8:   52-block  0
+call    0 returned 8
+branch  1 taken 8 (fallthrough)
+branch  2 taken 0 (throw)
+        8:   52-block  1
+        8:   53:    }
+        8:   53-block  0
+call    0 returned 8
+call    1 returned 8
+call    2 returned 8
+call    3 returned 8
+    $$$$$:   53-block  1
 call    4 never executed
-    $$$$$:   50-block  3
+    $$$$$:   53-block  2
 call    5 never executed
-        -:   51:};
-        -:   52:
-        -:   53:
-        -:   54:
+    $$$$$:   53-block  3
+call    6 never executed
+    $$$$$:   53-block  4
+call    7 never executed
+        -:   54:};
         -:   55:
         -:   56:
         -:   57:
@@ -207,41 +214,44 @@ call    5 never executed
         -:   78:
         -:   79:
         -:   80:
-        -:   81://
-        -:   82://
-        -:   83://#include <boost/crc.hpp>      // for boost::crc_basic, boost::crc_optimal
-        -:   84://#include <boost/cstdint.hpp>  // for boost::uint16_t
+        -:   81:
+        -:   82:
+        -:   83:
+        -:   84://
         -:   85://
-        -:   86://#include <algorithm>  // for std::for_each
-        -:   87://#include <cassert>    // for assert
-        -:   88://#include <cstddef>    // for std::size_t
-        -:   89://#include <iostream>   // for std::cout
-        -:   90://#include <ostream>    // for std::endl
-        -:   91://
-        -:   92://
-        -:   93://// Main function
-        -:   94://int
-        -:   95://main ()
-        -:   96://{
-        -:   97://    // This is "123456789" in ASCII
-        -:   98://    unsigned char const  data[] = { 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37,
-        -:   99://                                    0x38, 0x39 };
-        -:  100://    std::size_t const    data_len = sizeof( data ) / sizeof( data[0] );
-        -:  101://
-        -:  102://    // The expected CRC for the given data
-        -:  103://    boost::uint16_t const  expected = 0x29B1;
+        -:   86://#include <boost/crc.hpp>      // for boost::crc_basic, boost::crc_optimal
+        -:   87://#include <boost/cstdint.hpp>  // for boost::uint16_t
+        -:   88://
+        -:   89://#include <algorithm>  // for std::for_each
+        -:   90://#include <cassert>    // for assert
+        -:   91://#include <cstddef>    // for std::size_t
+        -:   92://#include <iostream>   // for std::cout
+        -:   93://#include <ostream>    // for std::endl
+        -:   94://
+        -:   95://
+        -:   96://// Main function
+        -:   97://int
+        -:   98://main ()
+        -:   99://{
+        -:  100://    // This is "123456789" in ASCII
+        -:  101://    unsigned char const  data[] = { 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37,
+        -:  102://                                    0x38, 0x39 };
+        -:  103://    std::size_t const    data_len = sizeof( data ) / sizeof( data[0] );
         -:  104://
-        -:  105://    // Simulate CRC-CCITT
-        -:  106://    boost::crc_basic<16>  crc_ccitt1( 0x1021, 0xFFFF, 0, false, false );
-        -:  107://    crc_ccitt1.process_bytes( data, data_len );
-        -:  108://    assert( crc_ccitt1.checksum() == expected );
-        -:  109://
-        -:  110://    // Repeat with the optimal version (assuming a 16-bit type exists)
-        -:  111://    boost::crc_optimal<16, 0x1021, 0xFFFF, 0, false, false>  crc_ccitt2;
-        -:  112://    crc_ccitt2 = std::for_each( data, data + data_len, crc_ccitt2 );
-        -:  113://    assert( crc_ccitt2() == expected );
-        -:  114://
-        -:  115://    std::cout << "All tests passed." << std::endl;
-        -:  116://    return 0;
-        -:  117://}
-        -:  118:
+        -:  105://    // The expected CRC for the given data
+        -:  106://    boost::uint16_t const  expected = 0x29B1;
+        -:  107://
+        -:  108://    // Simulate CRC-CCITT
+        -:  109://    boost::crc_basic<16>  crc_ccitt1( 0x1021, 0xFFFF, 0, false, false );
+        -:  110://    crc_ccitt1.process_bytes( data, data_len );
+        -:  111://    assert( crc_ccitt1.checksum() == expected );
+        -:  112://
+        -:  113://    // Repeat with the optimal version (assuming a 16-bit type exists)
+        -:  114://    boost::crc_optimal<16, 0x1021, 0xFFFF, 0, false, false>  crc_ccitt2;
+        -:  115://    crc_ccitt2 = std::for_each( data, data + data_len, crc_ccitt2 );
+        -:  116://    assert( crc_ccitt2() == expected );
+        -:  117://
+        -:  118://    std::cout << "All tests passed." << std::endl;
+        -:  119://    return 0;
+        -:  120://}
+        -:  121:

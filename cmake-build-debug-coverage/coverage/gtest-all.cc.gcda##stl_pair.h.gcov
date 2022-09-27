@@ -1,6 +1,6 @@
         -:    0:Source:/usr/include/c++/11/bits/stl_pair.h
-        -:    0:Graph:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
-        -:    0:Data:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
+        -:    0:Graph:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
+        -:    0:Data:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
         -:    0:Runs:3
         -:    1:// Pair implementation -*- C++ -*-
         -:    2:
@@ -368,16 +368,16 @@ call    0 never executed
         -:  349:			  && _PCCP::template
         -:  350:			   _ImplicitlyMoveConvertiblePair<_U1, _U2>(),
         -:  351:                         bool>::type=true>
-    #####:  352:	constexpr pair(_U1&& __x, _U2&& __y)
-    #####:  353:	: first(std::forward<_U1>(__x)), second(std::forward<_U2>(__y)) { }
+       1*:  352:	constexpr pair(_U1&& __x, _U2&& __y)
+       1*:  353:	: first(std::forward<_U1>(__x)), second(std::forward<_U2>(__y)) { }
 ------------------
 _ZNSt4pairINSt8__detail14_Node_iteratorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEELb1ELb1EEEbEC2IRS8_bLb1EEEOT_OT0_:
-function _ZNSt4pairINSt8__detail14_Node_iteratorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEELb1ELb1EEEbEC2IRS8_bLb1EEEOT_OT0_ called 0 returned 0% blocks executed 0%
-    #####:  352:	constexpr pair(_U1&& __x, _U2&& __y)
-    #####:  353:	: first(std::forward<_U1>(__x)), second(std::forward<_U2>(__y)) { }
-    %%%%%:  353-block  0
-call    0 never executed
-call    1 never executed
+function _ZNSt4pairINSt8__detail14_Node_iteratorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEELb1ELb1EEEbEC2IRS8_bLb1EEEOT_OT0_ called 1 returned 100% blocks executed 100%
+        1:  352:	constexpr pair(_U1&& __x, _U2&& __y)
+        1:  353:	: first(std::forward<_U1>(__x)), second(std::forward<_U2>(__y)) { }
+        1:  353-block  0
+call    0 returned 1
+call    1 returned 1
 ------------------
 _ZNSt4pairINSt8__detail14_Node_iteratorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEELb1ELb1EEEbEC2IS8_bLb1EEEOT_OT0_:
 function _ZNSt4pairINSt8__detail14_Node_iteratorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEELb1ELb1EEEbEC2IS8_bLb1EEEOT_OT0_ called 0 returned 0% blocks executed 0%

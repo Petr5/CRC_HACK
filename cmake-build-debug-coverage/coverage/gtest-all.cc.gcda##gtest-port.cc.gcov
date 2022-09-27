@@ -1,6 +1,6 @@
-        -:    0:Source:/home/peter/CLionProjects/crc/googletest/googletest/src/gtest-port.cc
-        -:    0:Graph:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
-        -:    0:Data:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
+        -:    0:Source:/home/peter/CLionProjects/CRC_HACK/googletest/googletest/src/gtest-port.cc
+        -:    0:Graph:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
+        -:    0:Data:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
         -:    0:Runs:3
         -:    1:// Copyright 2008, Google Inc.
         -:    2:// All rights reserved.
@@ -1753,10 +1753,13 @@ function _ZN7testing8internal18SetInjectableArgvsERKSt6vectorINSt7__cxx1112basic
 call    0 never executed
     %%%%%: 1247-block  0
 call    1 never executed
-call    2 never executed
-    $$$$$: 1247-block  1
-call    3 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%: 1247-block  1
+call    4 never executed
     $$$$$: 1247-block  2
+call    5 never executed
+    $$$$$: 1247-block  3
     #####: 1248:      new std::vector<std::string>(new_argvs.begin(), new_argvs.end()));
     %%%%%: 1248-block  0
 call    0 never executed

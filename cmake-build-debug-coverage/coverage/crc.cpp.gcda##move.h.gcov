@@ -1,6 +1,6 @@
         -:    0:Source:/usr/include/c++/11/bits/move.h
-        -:    0:Graph:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/CMakeFiles/crc_run.dir/crc.cpp.gcno
-        -:    0:Data:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/CMakeFiles/crc_run.dir/crc.cpp.gcda
+        -:    0:Graph:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/CMakeFiles/Main.dir/crc.cpp.gcno
+        -:    0:Data:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/CMakeFiles/Main.dir/crc.cpp.gcda
         -:    0:Runs:3
         -:    1:// Move, forward and identity for C++11 + swap -*- C++ -*-
         -:    2:
@@ -78,8 +78,8 @@
         -:   74:  template<typename _Tp>
         -:   75:    _GLIBCXX_NODISCARD
         -:   76:    constexpr _Tp&&
-      32*:   77:    forward(typename std::remove_reference<_Tp>::type& __t) noexcept
-      32*:   78:    { return static_cast<_Tp&&>(__t); }
+      17*:   77:    forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+      17*:   78:    { return static_cast<_Tp&&>(__t); }
 ------------------
 _ZSt7forwardIRbEOT_RNSt16remove_referenceIS1_E4typeE:
 function _ZSt7forwardIRbEOT_RNSt16remove_referenceIS1_E4typeE called 0 returned 0% blocks executed 0%
@@ -88,10 +88,10 @@ function _ZSt7forwardIRbEOT_RNSt16remove_referenceIS1_E4typeE called 0 returned 
     %%%%%:   78-block  0
 ------------------
 _ZSt7forwardIRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEOT_RNSt16remove_referenceIS7_E4typeE:
-function _ZSt7forwardIRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEOT_RNSt16remove_referenceIS7_E4typeE called 32 returned 100% blocks executed 100%
-       32:   77:    forward(typename std::remove_reference<_Tp>::type& __t) noexcept
-       32:   78:    { return static_cast<_Tp&&>(__t); }
-       32:   78-block  0
+function _ZSt7forwardIRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEOT_RNSt16remove_referenceIS7_E4typeE called 17 returned 100% blocks executed 100%
+       17:   77:    forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+       17:   78:    { return static_cast<_Tp&&>(__t); }
+       17:   78-block  0
 ------------------
         -:   79:
         -:   80:  /**
@@ -118,10 +118,21 @@ function _ZSt7forwardIRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEOT_R
         -:  101:  template<typename _Tp>
         -:  102:    _GLIBCXX_NODISCARD
         -:  103:    constexpr typename std::remove_reference<_Tp>::type&&
+       8*:  104:    move(_Tp&& __t) noexcept
+       8*:  105:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
+------------------
+_ZSt4moveIRPNSt10filesystem7__cxx114path5_List5_ImplEEONSt16remove_referenceIT_E4typeEOS8_:
+function _ZSt4moveIRPNSt10filesystem7__cxx114path5_List5_ImplEEONSt16remove_referenceIT_E4typeEOS8_ called 8 returned 100% blocks executed 100%
+        8:  104:    move(_Tp&& __t) noexcept
+        8:  105:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
+        8:  105-block  0
+------------------
+_ZSt4moveIRSaIcEEONSt16remove_referenceIT_E4typeEOS3_:
 function _ZSt4moveIRSaIcEEONSt16remove_referenceIT_E4typeEOS3_ called 0 returned 0% blocks executed 0%
     #####:  104:    move(_Tp&& __t) noexcept
     #####:  105:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
     %%%%%:  105-block  0
+------------------
         -:  106:
         -:  107:
         -:  108:  template<typename _Tp>

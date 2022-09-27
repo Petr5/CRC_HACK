@@ -1,6 +1,6 @@
         -:    0:Source:/usr/include/c++/11/ext/alloc_traits.h
-        -:    0:Graph:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
-        -:    0:Data:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
+        -:    0:Graph:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
+        -:    0:Data:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
         -:    0:Runs:3
         -:    1:// Allocator traits -*- C++ -*-
         -:    2:
@@ -130,11 +130,11 @@ function _ZN9__gnu_cxx14__alloc_traitsISaIcEcE17_S_select_on_copyERKS1_ called 0
 call    0 never executed
 ------------------
         -:   99:
-function _ZN9__gnu_cxx14__alloc_traitsISaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEES6_E10_S_on_swapERS7_S9_ called 21 returned 100% blocks executed 100%
-       21:  100:    static _GLIBCXX14_CONSTEXPR void _S_on_swap(_Alloc& __a, _Alloc& __b)
-       21:  101:    { std::__alloc_on_swap(__a, __b); }
-       21:  101-block  0
-call    0 returned 21
+function _ZN9__gnu_cxx14__alloc_traitsISaINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEES6_E10_S_on_swapERS7_S9_ called 24 returned 100% blocks executed 100%
+       24:  100:    static _GLIBCXX14_CONSTEXPR void _S_on_swap(_Alloc& __a, _Alloc& __b)
+       24:  101:    { std::__alloc_on_swap(__a, __b); }
+       24:  101-block  0
+call    0 returned 24
         -:  102:
         -:  103:    static constexpr bool _S_propagate_on_copy_assign()
         -:  104:    { return _Base_type::propagate_on_container_copy_assignment::value; }

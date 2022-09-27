@@ -1,6 +1,6 @@
         -:    0:Source:/usr/include/c++/11/bits/stl_function.h
-        -:    0:Graph:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
-        -:    0:Data:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
+        -:    0:Graph:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
+        -:    0:Data:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
         -:    0:Runs:3
         -:    1:// Functor implementations -*- C++ -*-
         -:    2:
@@ -370,11 +370,11 @@
         -:  366:    {
         -:  367:      _GLIBCXX14_CONSTEXPR
         -:  368:      bool
-function _ZNKSt8equal_toINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEclERKS5_S8_ called 0 returned 0% blocks executed 0%
-    #####:  369:      operator()(const _Tp& __x, const _Tp& __y) const
-    #####:  370:      { return __x == __y; }
-    %%%%%:  370-block  0
-call    0 never executed
+function _ZNKSt8equal_toINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEclERKS5_S8_ called 1 returned 100% blocks executed 100%
+        1:  369:      operator()(const _Tp& __x, const _Tp& __y) const
+        1:  370:      { return __x == __y; }
+        1:  370-block  0
+call    0 returned 1
         -:  371:    };
         -:  372:
         -:  373:  /// One of the @link comparison_functors comparison functors@endlink.

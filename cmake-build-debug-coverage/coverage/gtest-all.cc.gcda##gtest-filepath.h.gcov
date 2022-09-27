@@ -1,6 +1,6 @@
-        -:    0:Source:/home/peter/CLionProjects/crc/googletest/googletest/include/gtest/internal/gtest-filepath.h
-        -:    0:Graph:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
-        -:    0:Data:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
+        -:    0:Source:/home/peter/CLionProjects/CRC_HACK/googletest/googletest/include/gtest/internal/gtest-filepath.h
+        -:    0:Graph:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
+        -:    0:Data:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
         -:    0:Runs:3
         -:    1:// Copyright 2008, Google Inc.
         -:    2:// All rights reserved.
@@ -147,10 +147,10 @@ call    0 never executed
         -:  110:                                         const char* extension);
         -:  111:
         -:  112:  // Returns true if and only if the path is "".
-function _ZNK7testing8internal8FilePath7IsEmptyEv called 24 returned 100% blocks executed 100%
-       24:  113:  bool IsEmpty() const { return pathname_.empty(); }
-       24:  113-block  0
-call    0 returned 24
+function _ZNK7testing8internal8FilePath7IsEmptyEv called 27 returned 100% blocks executed 100%
+       27:  113:  bool IsEmpty() const { return pathname_.empty(); }
+       27:  113-block  0
+call    0 returned 27
         -:  114:
         -:  115:  // If input name has a trailing separator character, removes it and returns
         -:  116:  // the name, otherwise return the name string unmodified.

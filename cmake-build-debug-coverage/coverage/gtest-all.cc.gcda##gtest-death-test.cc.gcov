@@ -1,6 +1,6 @@
-        -:    0:Source:/home/peter/CLionProjects/crc/googletest/googletest/src/gtest-death-test.cc
-        -:    0:Graph:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
-        -:    0:Data:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
+        -:    0:Source:/home/peter/CLionProjects/CRC_HACK/googletest/googletest/src/gtest-death-test.cc
+        -:    0:Graph:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
+        -:    0:Data:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
         -:    0:Runs:3
         -:    1:// Copyright 2005, Google Inc.
         -:    2:// All rights reserved.
@@ -317,6 +317,10 @@ function _ZN7testing8internal20ExitedUnsuccessfullyEi called 0 returned 0% block
     %%%%%:  234-block  0
 call    0 never executed
 call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  234-block  1
+    %%%%%:  234-block  2
         -:  235:}
         -:  236:
         -:  237:#if !GTEST_OS_WINDOWS && !GTEST_OS_FUCHSIA
@@ -2240,79 +2244,82 @@ call    1 never executed
 branch  2 never executed
 branch  3 never executed
     %%%%%: 1112-block  1
-call    4 never executed
+branch  4 never executed
 branch  5 never executed
-branch  6 never executed
     %%%%%: 1112-block  2
-call    7 never executed
-call    8 never executed
-branch  9 never executed
-branch 10 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
     %%%%%: 1112-block  3
-call   11 never executed
+call    9 never executed
+call   10 never executed
+branch 11 never executed
 branch 12 never executed
-branch 13 never executed
     %%%%%: 1112-block  4
-call   14 never executed
+call   13 never executed
+branch 14 never executed
 branch 15 never executed
-branch 16 never executed
     %%%%%: 1112-block  5
-call   17 never executed
+call   16 never executed
+branch 17 never executed
 branch 18 never executed
-branch 19 never executed
     %%%%%: 1112-block  6
-call   20 never executed
+call   19 never executed
+branch 20 never executed
 branch 21 never executed
-branch 22 never executed
     %%%%%: 1112-block  7
-call   23 never executed
+call   22 never executed
+branch 23 never executed
 branch 24 never executed
-branch 25 never executed
     %%%%%: 1112-block  8
-call   26 never executed
+call   25 never executed
+branch 26 never executed
 branch 27 never executed
-branch 28 never executed
     %%%%%: 1112-block  9
-call   29 never executed
-call   30 never executed
+call   28 never executed
+branch 29 never executed
+branch 30 never executed
+    %%%%%: 1112-block 10
 call   31 never executed
 call   32 never executed
 call   33 never executed
 call   34 never executed
 call   35 never executed
 call   36 never executed
-    %%%%%: 1112-block 10
 call   37 never executed
-branch 38 never executed
-branch 39 never executed
+call   38 never executed
     %%%%%: 1112-block 11
+call   39 never executed
 branch 40 never executed
 branch 41 never executed
-    $$$$$: 1112-block 12
-call   42 never executed
+    %%%%%: 1112-block 12
+branch 42 never executed
+branch 43 never executed
     $$$$$: 1112-block 13
-    $$$$$: 1112-block 14
-call   43 never executed
-    $$$$$: 1112-block 15
-    $$$$$: 1112-block 16
 call   44 never executed
-    $$$$$: 1112-block 17
-    $$$$$: 1112-block 18
+    $$$$$: 1112-block 14
+    $$$$$: 1112-block 15
 call   45 never executed
-    $$$$$: 1112-block 19
-    $$$$$: 1112-block 20
+    $$$$$: 1112-block 16
+    $$$$$: 1112-block 17
 call   46 never executed
-    $$$$$: 1112-block 21
-    $$$$$: 1112-block 22
+    $$$$$: 1112-block 18
+    $$$$$: 1112-block 19
 call   47 never executed
-    $$$$$: 1112-block 23
-    $$$$$: 1112-block 24
+    $$$$$: 1112-block 20
+    $$$$$: 1112-block 21
 call   48 never executed
-    $$$$$: 1112-block 25
-    $$$$$: 1112-block 26
+    $$$$$: 1112-block 22
+    $$$$$: 1112-block 23
 call   49 never executed
+    $$$$$: 1112-block 24
+    $$$$$: 1112-block 25
+call   50 never executed
+    $$$$$: 1112-block 26
     $$$$$: 1112-block 27
+call   51 never executed
     $$$$$: 1112-block 28
+    $$$$$: 1112-block 29
         -: 1113:
     #####: 1114:  DeathTest::set_last_death_test_message("");
     %%%%%: 1114-block  0
@@ -2359,79 +2366,82 @@ call    0 never executed
 branch  1 never executed
 branch  2 never executed
     %%%%%: 1126-block  1
-call    3 never executed
+branch  3 never executed
 branch  4 never executed
-branch  5 never executed
     %%%%%: 1126-block  2
-call    6 never executed
-call    7 never executed
-branch  8 never executed
-branch  9 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
     %%%%%: 1126-block  3
-call   10 never executed
+call    8 never executed
+call    9 never executed
+branch 10 never executed
 branch 11 never executed
-branch 12 never executed
     %%%%%: 1126-block  4
-call   13 never executed
+call   12 never executed
+branch 13 never executed
 branch 14 never executed
-branch 15 never executed
     %%%%%: 1126-block  5
-call   16 never executed
+call   15 never executed
+branch 16 never executed
 branch 17 never executed
-branch 18 never executed
     %%%%%: 1126-block  6
-call   19 never executed
+call   18 never executed
+branch 19 never executed
 branch 20 never executed
-branch 21 never executed
     %%%%%: 1126-block  7
-call   22 never executed
+call   21 never executed
+branch 22 never executed
 branch 23 never executed
-branch 24 never executed
     %%%%%: 1126-block  8
-call   25 never executed
+call   24 never executed
+branch 25 never executed
 branch 26 never executed
-branch 27 never executed
     %%%%%: 1126-block  9
-call   28 never executed
-call   29 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    %%%%%: 1126-block 10
 call   30 never executed
 call   31 never executed
 call   32 never executed
 call   33 never executed
 call   34 never executed
 call   35 never executed
-    %%%%%: 1126-block 10
 call   36 never executed
-branch 37 never executed
-branch 38 never executed
+call   37 never executed
     %%%%%: 1126-block 11
+call   38 never executed
 branch 39 never executed
 branch 40 never executed
-    $$$$$: 1126-block 12
-call   41 never executed
+    %%%%%: 1126-block 12
+branch 41 never executed
+branch 42 never executed
     $$$$$: 1126-block 13
-    $$$$$: 1126-block 14
-call   42 never executed
-    $$$$$: 1126-block 15
-    $$$$$: 1126-block 16
 call   43 never executed
-    $$$$$: 1126-block 17
-    $$$$$: 1126-block 18
+    $$$$$: 1126-block 14
+    $$$$$: 1126-block 15
 call   44 never executed
-    $$$$$: 1126-block 19
-    $$$$$: 1126-block 20
+    $$$$$: 1126-block 16
+    $$$$$: 1126-block 17
 call   45 never executed
-    $$$$$: 1126-block 21
-    $$$$$: 1126-block 22
+    $$$$$: 1126-block 18
+    $$$$$: 1126-block 19
 call   46 never executed
-    $$$$$: 1126-block 23
-    $$$$$: 1126-block 24
+    $$$$$: 1126-block 20
+    $$$$$: 1126-block 21
 call   47 never executed
-    $$$$$: 1126-block 25
-    $$$$$: 1126-block 26
+    $$$$$: 1126-block 22
+    $$$$$: 1126-block 23
 call   48 never executed
+    $$$$$: 1126-block 24
+    $$$$$: 1126-block 25
+call   49 never executed
+    $$$$$: 1126-block 26
     $$$$$: 1126-block 27
+call   50 never executed
     $$$$$: 1126-block 28
+    $$$$$: 1126-block 29
     #####: 1127:  set_child_pid(child_pid);
     %%%%%: 1127-block  0
 call    0 never executed
@@ -2551,8 +2561,11 @@ branch  2 never executed
     %%%%%: 1137-block  0
 call    3 never executed
 call    4 never executed
+branch  5 never executed
+branch  6 never executed
     #####: 1138:    g_in_fast_death_test_child = true;
     #####: 1139:    return EXECUTE_TEST;
+    %%%%%: 1139-block  0
         -: 1140:  } else {
     #####: 1141:    GTEST_DEATH_TEST_CHECK_SYSCALL_(close(pipe_fd[1]));
     %%%%%: 1141-block  0
@@ -3265,79 +3278,82 @@ call    0 never executed
 branch  1 never executed
 branch  2 never executed
     %%%%%: 1345-block  1
-call    3 never executed
+branch  3 never executed
 branch  4 never executed
-branch  5 never executed
     %%%%%: 1345-block  2
-call    6 never executed
-call    7 never executed
-branch  8 never executed
-branch  9 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
     %%%%%: 1345-block  3
-call   10 never executed
+call    8 never executed
+call    9 never executed
+branch 10 never executed
 branch 11 never executed
-branch 12 never executed
     %%%%%: 1345-block  4
-call   13 never executed
+call   12 never executed
+branch 13 never executed
 branch 14 never executed
-branch 15 never executed
     %%%%%: 1345-block  5
-call   16 never executed
+call   15 never executed
+branch 16 never executed
 branch 17 never executed
-branch 18 never executed
     %%%%%: 1345-block  6
-call   19 never executed
+call   18 never executed
+branch 19 never executed
 branch 20 never executed
-branch 21 never executed
     %%%%%: 1345-block  7
-call   22 never executed
+call   21 never executed
+branch 22 never executed
 branch 23 never executed
-branch 24 never executed
     %%%%%: 1345-block  8
-call   25 never executed
+call   24 never executed
+branch 25 never executed
 branch 26 never executed
-branch 27 never executed
     %%%%%: 1345-block  9
-call   28 never executed
-call   29 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    %%%%%: 1345-block 10
 call   30 never executed
 call   31 never executed
 call   32 never executed
 call   33 never executed
 call   34 never executed
 call   35 never executed
-    %%%%%: 1345-block 10
 call   36 never executed
-branch 37 never executed
-branch 38 never executed
+call   37 never executed
     %%%%%: 1345-block 11
+call   38 never executed
 branch 39 never executed
 branch 40 never executed
-    $$$$$: 1345-block 12
-call   41 never executed
+    %%%%%: 1345-block 12
+branch 41 never executed
+branch 42 never executed
     $$$$$: 1345-block 13
-    $$$$$: 1345-block 14
-call   42 never executed
-    $$$$$: 1345-block 15
-    $$$$$: 1345-block 16
 call   43 never executed
-    $$$$$: 1345-block 17
-    $$$$$: 1345-block 18
+    $$$$$: 1345-block 14
+    $$$$$: 1345-block 15
 call   44 never executed
-    $$$$$: 1345-block 19
-    $$$$$: 1345-block 20
+    $$$$$: 1345-block 16
+    $$$$$: 1345-block 17
 call   45 never executed
-    $$$$$: 1345-block 21
-    $$$$$: 1345-block 22
+    $$$$$: 1345-block 18
+    $$$$$: 1345-block 19
 call   46 never executed
-    $$$$$: 1345-block 23
-    $$$$$: 1345-block 24
+    $$$$$: 1345-block 20
+    $$$$$: 1345-block 21
 call   47 never executed
-    $$$$$: 1345-block 25
-    $$$$$: 1345-block 26
+    $$$$$: 1345-block 22
+    $$$$$: 1345-block 23
 call   48 never executed
+    $$$$$: 1345-block 24
+    $$$$$: 1345-block 25
+call   49 never executed
+    $$$$$: 1345-block 26
     $$$$$: 1345-block 27
+call   50 never executed
     $$$$$: 1345-block 28
+    $$$$$: 1345-block 29
         -: 1346:
         -: 1347:    // Maximum stack alignment in bytes:  For a downward-growing stack, this
         -: 1348:    // amount is subtracted from size of the stack space to get an address
@@ -3369,79 +3385,82 @@ call    4 never executed
 branch  5 never executed
 branch  6 never executed
     %%%%%: 1357-block  5
-call    7 never executed
+branch  7 never executed
 branch  8 never executed
-branch  9 never executed
     %%%%%: 1357-block  6
-call   10 never executed
-call   11 never executed
-branch 12 never executed
-branch 13 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
     %%%%%: 1357-block  7
-call   14 never executed
+call   12 never executed
+call   13 never executed
+branch 14 never executed
 branch 15 never executed
-branch 16 never executed
     %%%%%: 1357-block  8
-call   17 never executed
+call   16 never executed
+branch 17 never executed
 branch 18 never executed
-branch 19 never executed
     %%%%%: 1357-block  9
-call   20 never executed
+call   19 never executed
+branch 20 never executed
 branch 21 never executed
-branch 22 never executed
     %%%%%: 1357-block 10
-call   23 never executed
+call   22 never executed
+branch 23 never executed
 branch 24 never executed
-branch 25 never executed
     %%%%%: 1357-block 11
-call   26 never executed
+call   25 never executed
+branch 26 never executed
 branch 27 never executed
-branch 28 never executed
     %%%%%: 1357-block 12
-call   29 never executed
+call   28 never executed
+branch 29 never executed
 branch 30 never executed
-branch 31 never executed
     %%%%%: 1357-block 13
-call   32 never executed
-call   33 never executed
+call   31 never executed
+branch 32 never executed
+branch 33 never executed
+    %%%%%: 1357-block 14
 call   34 never executed
 call   35 never executed
 call   36 never executed
 call   37 never executed
 call   38 never executed
 call   39 never executed
-    %%%%%: 1357-block 14
 call   40 never executed
-branch 41 never executed
-branch 42 never executed
+call   41 never executed
     %%%%%: 1357-block 15
+call   42 never executed
 branch 43 never executed
 branch 44 never executed
-    $$$$$: 1357-block 16
-call   45 never executed
+    %%%%%: 1357-block 16
+branch 45 never executed
+branch 46 never executed
     $$$$$: 1357-block 17
-    $$$$$: 1357-block 18
-call   46 never executed
-    $$$$$: 1357-block 19
-    $$$$$: 1357-block 20
 call   47 never executed
-    $$$$$: 1357-block 21
-    $$$$$: 1357-block 22
+    $$$$$: 1357-block 18
+    $$$$$: 1357-block 19
 call   48 never executed
-    $$$$$: 1357-block 23
-    $$$$$: 1357-block 24
+    $$$$$: 1357-block 20
+    $$$$$: 1357-block 21
 call   49 never executed
-    $$$$$: 1357-block 25
-    $$$$$: 1357-block 26
+    $$$$$: 1357-block 22
+    $$$$$: 1357-block 23
 call   50 never executed
-    $$$$$: 1357-block 27
-    $$$$$: 1357-block 28
+    $$$$$: 1357-block 24
+    $$$$$: 1357-block 25
 call   51 never executed
-    $$$$$: 1357-block 29
-    $$$$$: 1357-block 30
+    $$$$$: 1357-block 26
+    $$$$$: 1357-block 27
 call   52 never executed
+    $$$$$: 1357-block 28
+    $$$$$: 1357-block 29
+call   53 never executed
+    $$$$$: 1357-block 30
     $$$$$: 1357-block 31
+call   54 never executed
     $$$$$: 1357-block 32
+    $$$$$: 1357-block 33
         -: 1358:        static_cast<size_t>(stack_size) > kMaxStackAlignment &&
         -: 1359:        reinterpret_cast<uintptr_t>(stack_top) % kMaxStackAlignment == 0);
         -: 1360:
@@ -3456,79 +3475,82 @@ call    1 never executed
 branch  2 never executed
 branch  3 never executed
     %%%%%: 1363-block  1
-call    4 never executed
+branch  4 never executed
 branch  5 never executed
-branch  6 never executed
     %%%%%: 1363-block  2
-call    7 never executed
-call    8 never executed
-branch  9 never executed
-branch 10 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
     %%%%%: 1363-block  3
-call   11 never executed
+call    9 never executed
+call   10 never executed
+branch 11 never executed
 branch 12 never executed
-branch 13 never executed
     %%%%%: 1363-block  4
-call   14 never executed
+call   13 never executed
+branch 14 never executed
 branch 15 never executed
-branch 16 never executed
     %%%%%: 1363-block  5
-call   17 never executed
+call   16 never executed
+branch 17 never executed
 branch 18 never executed
-branch 19 never executed
     %%%%%: 1363-block  6
-call   20 never executed
+call   19 never executed
+branch 20 never executed
 branch 21 never executed
-branch 22 never executed
     %%%%%: 1363-block  7
-call   23 never executed
+call   22 never executed
+branch 23 never executed
 branch 24 never executed
-branch 25 never executed
     %%%%%: 1363-block  8
-call   26 never executed
+call   25 never executed
+branch 26 never executed
 branch 27 never executed
-branch 28 never executed
     %%%%%: 1363-block  9
-call   29 never executed
-call   30 never executed
+call   28 never executed
+branch 29 never executed
+branch 30 never executed
+    %%%%%: 1363-block 10
 call   31 never executed
 call   32 never executed
 call   33 never executed
 call   34 never executed
 call   35 never executed
 call   36 never executed
-    %%%%%: 1363-block 10
 call   37 never executed
-branch 38 never executed
-branch 39 never executed
+call   38 never executed
     %%%%%: 1363-block 11
+call   39 never executed
 branch 40 never executed
 branch 41 never executed
-    $$$$$: 1363-block 12
-call   42 never executed
+    %%%%%: 1363-block 12
+branch 42 never executed
+branch 43 never executed
     $$$$$: 1363-block 13
-    $$$$$: 1363-block 14
-call   43 never executed
-    $$$$$: 1363-block 15
-    $$$$$: 1363-block 16
 call   44 never executed
-    $$$$$: 1363-block 17
-    $$$$$: 1363-block 18
+    $$$$$: 1363-block 14
+    $$$$$: 1363-block 15
 call   45 never executed
-    $$$$$: 1363-block 19
-    $$$$$: 1363-block 20
+    $$$$$: 1363-block 16
+    $$$$$: 1363-block 17
 call   46 never executed
-    $$$$$: 1363-block 21
-    $$$$$: 1363-block 22
+    $$$$$: 1363-block 18
+    $$$$$: 1363-block 19
 call   47 never executed
-    $$$$$: 1363-block 23
-    $$$$$: 1363-block 24
+    $$$$$: 1363-block 20
+    $$$$$: 1363-block 21
 call   48 never executed
-    $$$$$: 1363-block 25
-    $$$$$: 1363-block 26
+    $$$$$: 1363-block 22
+    $$$$$: 1363-block 23
 call   49 never executed
+    $$$$$: 1363-block 24
+    $$$$$: 1363-block 25
+call   50 never executed
+    $$$$$: 1363-block 26
     $$$$$: 1363-block 27
+call   51 never executed
     $$$$$: 1363-block 28
+    $$$$$: 1363-block 29
         -: 1364:  }
         -: 1365:#else
         -: 1366:  const bool use_fork = true;
@@ -3660,79 +3682,82 @@ call    0 never executed
 branch  1 never executed
 branch  2 never executed
     %%%%%: 1379-block  1
-call    3 never executed
+branch  3 never executed
 branch  4 never executed
-branch  5 never executed
     %%%%%: 1379-block  2
-call    6 never executed
-call    7 never executed
-branch  8 never executed
-branch  9 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
     %%%%%: 1379-block  3
-call   10 never executed
+call    8 never executed
+call    9 never executed
+branch 10 never executed
 branch 11 never executed
-branch 12 never executed
     %%%%%: 1379-block  4
-call   13 never executed
+call   12 never executed
+branch 13 never executed
 branch 14 never executed
-branch 15 never executed
     %%%%%: 1379-block  5
-call   16 never executed
+call   15 never executed
+branch 16 never executed
 branch 17 never executed
-branch 18 never executed
     %%%%%: 1379-block  6
-call   19 never executed
+call   18 never executed
+branch 19 never executed
 branch 20 never executed
-branch 21 never executed
     %%%%%: 1379-block  7
-call   22 never executed
+call   21 never executed
+branch 22 never executed
 branch 23 never executed
-branch 24 never executed
     %%%%%: 1379-block  8
-call   25 never executed
+call   24 never executed
+branch 25 never executed
 branch 26 never executed
-branch 27 never executed
     %%%%%: 1379-block  9
-call   28 never executed
-call   29 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    %%%%%: 1379-block 10
 call   30 never executed
 call   31 never executed
 call   32 never executed
 call   33 never executed
 call   34 never executed
 call   35 never executed
-    %%%%%: 1379-block 10
 call   36 never executed
-branch 37 never executed
-branch 38 never executed
+call   37 never executed
     %%%%%: 1379-block 11
+call   38 never executed
 branch 39 never executed
 branch 40 never executed
-    $$$$$: 1379-block 12
-call   41 never executed
+    %%%%%: 1379-block 12
+branch 41 never executed
+branch 42 never executed
     $$$$$: 1379-block 13
-    $$$$$: 1379-block 14
-call   42 never executed
-    $$$$$: 1379-block 15
-    $$$$$: 1379-block 16
 call   43 never executed
-    $$$$$: 1379-block 17
-    $$$$$: 1379-block 18
+    $$$$$: 1379-block 14
+    $$$$$: 1379-block 15
 call   44 never executed
-    $$$$$: 1379-block 19
-    $$$$$: 1379-block 20
+    $$$$$: 1379-block 16
+    $$$$$: 1379-block 17
 call   45 never executed
-    $$$$$: 1379-block 21
-    $$$$$: 1379-block 22
+    $$$$$: 1379-block 18
+    $$$$$: 1379-block 19
 call   46 never executed
-    $$$$$: 1379-block 23
-    $$$$$: 1379-block 24
+    $$$$$: 1379-block 20
+    $$$$$: 1379-block 21
 call   47 never executed
-    $$$$$: 1379-block 25
-    $$$$$: 1379-block 26
+    $$$$$: 1379-block 22
+    $$$$$: 1379-block 23
 call   48 never executed
+    $$$$$: 1379-block 24
+    $$$$$: 1379-block 25
+call   49 never executed
+    $$$$$: 1379-block 26
     $$$$$: 1379-block 27
+call   50 never executed
     $$$$$: 1379-block 28
+    $$$$$: 1379-block 29
     #####: 1380:  return child_pid;
     %%%%%: 1380-block  0
     %%%%%: 1380-block  1
@@ -3777,79 +3802,82 @@ call    1 never executed
 branch  2 never executed
 branch  3 never executed
     %%%%%: 1400-block  1
-call    4 never executed
+branch  4 never executed
 branch  5 never executed
-branch  6 never executed
     %%%%%: 1400-block  2
-call    7 never executed
-call    8 never executed
-branch  9 never executed
-branch 10 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
     %%%%%: 1400-block  3
-call   11 never executed
+call    9 never executed
+call   10 never executed
+branch 11 never executed
 branch 12 never executed
-branch 13 never executed
     %%%%%: 1400-block  4
-call   14 never executed
+call   13 never executed
+branch 14 never executed
 branch 15 never executed
-branch 16 never executed
     %%%%%: 1400-block  5
-call   17 never executed
+call   16 never executed
+branch 17 never executed
 branch 18 never executed
-branch 19 never executed
     %%%%%: 1400-block  6
-call   20 never executed
+call   19 never executed
+branch 20 never executed
 branch 21 never executed
-branch 22 never executed
     %%%%%: 1400-block  7
-call   23 never executed
+call   22 never executed
+branch 23 never executed
 branch 24 never executed
-branch 25 never executed
     %%%%%: 1400-block  8
-call   26 never executed
+call   25 never executed
+branch 26 never executed
 branch 27 never executed
-branch 28 never executed
     %%%%%: 1400-block  9
-call   29 never executed
-call   30 never executed
+call   28 never executed
+branch 29 never executed
+branch 30 never executed
+    %%%%%: 1400-block 10
 call   31 never executed
 call   32 never executed
 call   33 never executed
 call   34 never executed
 call   35 never executed
 call   36 never executed
-    %%%%%: 1400-block 10
 call   37 never executed
-branch 38 never executed
-branch 39 never executed
+call   38 never executed
     %%%%%: 1400-block 11
+call   39 never executed
 branch 40 never executed
 branch 41 never executed
-    $$$$$: 1400-block 12
-call   42 never executed
+    %%%%%: 1400-block 12
+branch 42 never executed
+branch 43 never executed
     $$$$$: 1400-block 13
-    $$$$$: 1400-block 14
-call   43 never executed
-    $$$$$: 1400-block 15
-    $$$$$: 1400-block 16
 call   44 never executed
-    $$$$$: 1400-block 17
-    $$$$$: 1400-block 18
+    $$$$$: 1400-block 14
+    $$$$$: 1400-block 15
 call   45 never executed
-    $$$$$: 1400-block 19
-    $$$$$: 1400-block 20
+    $$$$$: 1400-block 16
+    $$$$$: 1400-block 17
 call   46 never executed
-    $$$$$: 1400-block 21
-    $$$$$: 1400-block 22
+    $$$$$: 1400-block 18
+    $$$$$: 1400-block 19
 call   47 never executed
-    $$$$$: 1400-block 23
-    $$$$$: 1400-block 24
+    $$$$$: 1400-block 20
+    $$$$$: 1400-block 21
 call   48 never executed
-    $$$$$: 1400-block 25
-    $$$$$: 1400-block 26
+    $$$$$: 1400-block 22
+    $$$$$: 1400-block 23
 call   49 never executed
+    $$$$$: 1400-block 24
+    $$$$$: 1400-block 25
+call   50 never executed
+    $$$$$: 1400-block 26
     $$$$$: 1400-block 27
+call   51 never executed
     $$$$$: 1400-block 28
+    $$$$$: 1400-block 29
         -: 1401:  // Clear the close-on-exec flag on the write end of the pipe, lest
         -: 1402:  // it be closed when the child process does an exec:
     #####: 1403:  GTEST_DEATH_TEST_CHECK_(fcntl(pipe_fd[1], F_SETFD, 0) != -1);
@@ -3862,79 +3890,82 @@ call    3 never executed
 branch  4 never executed
 branch  5 never executed
     %%%%%: 1403-block  2
-call    6 never executed
+branch  6 never executed
 branch  7 never executed
-branch  8 never executed
     %%%%%: 1403-block  3
-call    9 never executed
-call   10 never executed
-branch 11 never executed
-branch 12 never executed
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
     %%%%%: 1403-block  4
-call   13 never executed
+call   11 never executed
+call   12 never executed
+branch 13 never executed
 branch 14 never executed
-branch 15 never executed
     %%%%%: 1403-block  5
-call   16 never executed
+call   15 never executed
+branch 16 never executed
 branch 17 never executed
-branch 18 never executed
     %%%%%: 1403-block  6
-call   19 never executed
+call   18 never executed
+branch 19 never executed
 branch 20 never executed
-branch 21 never executed
     %%%%%: 1403-block  7
-call   22 never executed
+call   21 never executed
+branch 22 never executed
 branch 23 never executed
-branch 24 never executed
     %%%%%: 1403-block  8
-call   25 never executed
+call   24 never executed
+branch 25 never executed
 branch 26 never executed
-branch 27 never executed
     %%%%%: 1403-block  9
-call   28 never executed
+call   27 never executed
+branch 28 never executed
 branch 29 never executed
-branch 30 never executed
     %%%%%: 1403-block 10
-call   31 never executed
-call   32 never executed
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    %%%%%: 1403-block 11
 call   33 never executed
 call   34 never executed
 call   35 never executed
 call   36 never executed
 call   37 never executed
 call   38 never executed
-    %%%%%: 1403-block 11
 call   39 never executed
-branch 40 never executed
-branch 41 never executed
+call   40 never executed
     %%%%%: 1403-block 12
+call   41 never executed
 branch 42 never executed
 branch 43 never executed
-    $$$$$: 1403-block 13
-call   44 never executed
+    %%%%%: 1403-block 13
+branch 44 never executed
+branch 45 never executed
     $$$$$: 1403-block 14
-    $$$$$: 1403-block 15
-call   45 never executed
-    $$$$$: 1403-block 16
-    $$$$$: 1403-block 17
 call   46 never executed
-    $$$$$: 1403-block 18
-    $$$$$: 1403-block 19
+    $$$$$: 1403-block 15
+    $$$$$: 1403-block 16
 call   47 never executed
-    $$$$$: 1403-block 20
-    $$$$$: 1403-block 21
+    $$$$$: 1403-block 17
+    $$$$$: 1403-block 18
 call   48 never executed
-    $$$$$: 1403-block 22
-    $$$$$: 1403-block 23
+    $$$$$: 1403-block 19
+    $$$$$: 1403-block 20
 call   49 never executed
-    $$$$$: 1403-block 24
-    $$$$$: 1403-block 25
+    $$$$$: 1403-block 21
+    $$$$$: 1403-block 22
 call   50 never executed
-    $$$$$: 1403-block 26
-    $$$$$: 1403-block 27
+    $$$$$: 1403-block 23
+    $$$$$: 1403-block 24
 call   51 never executed
+    $$$$$: 1403-block 25
+    $$$$$: 1403-block 26
+call   52 never executed
+    $$$$$: 1403-block 27
     $$$$$: 1403-block 28
+call   53 never executed
     $$$$$: 1403-block 29
+    $$$$$: 1403-block 30
         -: 1404:
     #####: 1405:  const std::string filter_flag = std::string("--") + GTEST_FLAG_PREFIX_ +
 call    0 never executed

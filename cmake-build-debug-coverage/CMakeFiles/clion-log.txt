@@ -1,4 +1,4 @@
-/snap/clion/206/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/206/bin/ninja/linux/ninja -DCMAKE_CXX_FLAGS=--coverage -DCMAKE_C_FLAGS=--coverage -G Ninja -S /home/peter/CLionProjects/crc -B /home/peter/CLionProjects/crc/cmake-build-debug-coverage
+/snap/clion/206/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS=--coverage -DCMAKE_C_FLAGS=--coverage -G "CodeBlocks - Unix Makefiles" -S /home/peter/CLionProjects/CRC_HACK -B /home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage
 -- The C compiler identification is GNU 11.2.0
 -- The CXX compiler identification is GNU 11.2.0
 -- Detecting C compiler ABI info
@@ -19,4 +19,4 @@
 -- Found Threads: TRUE  
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/peter/CLionProjects/crc/cmake-build-debug-coverage
+-- Build files have been written to: /home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage

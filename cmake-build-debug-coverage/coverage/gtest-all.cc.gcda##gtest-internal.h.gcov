@@ -1,6 +1,6 @@
-        -:    0:Source:/home/peter/CLionProjects/crc/googletest/googletest/include/gtest/internal/gtest-internal.h
-        -:    0:Graph:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
-        -:    0:Data:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
+        -:    0:Source:/home/peter/CLionProjects/CRC_HACK/googletest/googletest/include/gtest/internal/gtest-internal.h
+        -:    0:Graph:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
+        -:    0:Data:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
         -:    0:Runs:3
         -:    1:// Copyright 2005, Google Inc.
         -:    2:// All rights reserved.
@@ -627,12 +627,12 @@ branch  1 never executed
         -:  428:// returned for different types.  Calling the function twice with the
         -:  429:// same type argument is guaranteed to return the same ID.
         -:  430:template <typename T>
-       9*:  431:TypeId GetTypeId() {
+      12*:  431:TypeId GetTypeId() {
         -:  432:  // The compiler is required to allocate a different
         -:  433:  // TypeIdHelper<T>::dummy_ variable for each T used to instantiate
         -:  434:  // the template.  Therefore, the address of dummy_ is guaranteed to
         -:  435:  // be unique.
-       9*:  436:  return &(TypeIdHelper<T>::dummy_);
+      12*:  436:  return &(TypeIdHelper<T>::dummy_);
         -:  437:}
 ------------------
 _ZN7testing8internal9GetTypeIdINS0_12_GLOBAL__N_111FailureTestEEEPKvv:
@@ -647,14 +647,14 @@ function _ZN7testing8internal9GetTypeIdINS0_12_GLOBAL__N_111FailureTestEEEPKvv c
         -:  437:}
 ------------------
 _ZN7testing8internal9GetTypeIdINS_4TestEEEPKvv:
-function _ZN7testing8internal9GetTypeIdINS_4TestEEEPKvv called 9 returned 100% blocks executed 100%
-        9:  431:TypeId GetTypeId() {
+function _ZN7testing8internal9GetTypeIdINS_4TestEEEPKvv called 12 returned 100% blocks executed 100%
+       12:  431:TypeId GetTypeId() {
         -:  432:  // The compiler is required to allocate a different
         -:  433:  // TypeIdHelper<T>::dummy_ variable for each T used to instantiate
         -:  434:  // the template.  Therefore, the address of dummy_ is guaranteed to
         -:  435:  // be unique.
-        9:  436:  return &(TypeIdHelper<T>::dummy_);
-        9:  436-block  0
+       12:  436:  return &(TypeIdHelper<T>::dummy_);
+       12:  436-block  0
         -:  437:}
 ------------------
         -:  438:

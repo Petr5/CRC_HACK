@@ -1,6 +1,6 @@
         -:    0:Source:/usr/include/boost/crc.hpp
-        -:    0:Graph:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/CMakeFiles/crc_run.dir/crc.cpp.gcno
-        -:    0:Data:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/CMakeFiles/crc_run.dir/crc.cpp.gcda
+        -:    0:Graph:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/CMakeFiles/Main.dir/crc.cpp.gcno
+        -:    0:Data:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/CMakeFiles/Main.dir/crc.cpp.gcda
         -:    0:Runs:3
         -:    1://  Boost CRC library crc.hpp header file  -----------------------------------//
         -:    2:
@@ -385,10 +385,10 @@
         -:  381:        \todo  Check if this is the fastest way.
         -:  382:     */
         -:  383:    template < typename Unsigned >
-  513280*:  384:    Unsigned  reflect_unsigned( Unsigned x, int word_length
+  256704*:  384:    Unsigned  reflect_unsigned( Unsigned x, int word_length
         -:  385:     = std::numeric_limits<Unsigned>::digits )
         -:  386:    {
-  513280*:  387:        for ( Unsigned  l = 1u, h = l << (word_length - 1) ; h > l ; h >>= 1, l
+  256704*:  387:        for ( Unsigned  l = 1u, h = l << (word_length - 1) ; h > l ; h >>= 1, l
     #####:  388:         <<= 1 )
         -:  389:        {
     #####:  390:            Unsigned const  m = h | l, t = x & m;
@@ -397,19 +397,19 @@
     #####:  393:                x ^= m;
         -:  394:        }
         -:  395:
-  513280*:  396:        return x;
+  256704*:  396:        return x;
         -:  397:    }
 ------------------
 _ZN5boost6detail16reflect_unsignedIjEET_S2_i:
-function _ZN5boost6detail16reflect_unsignedIjEET_S2_i called 513280 returned 100% blocks executed 50%
-   513280:  384:    Unsigned  reflect_unsigned( Unsigned x, int word_length
+function _ZN5boost6detail16reflect_unsignedIjEET_S2_i called 256704 returned 100% blocks executed 50%
+   256704:  384:    Unsigned  reflect_unsigned( Unsigned x, int word_length
         -:  385:     = std::numeric_limits<Unsigned>::digits )
         -:  386:    {
-  513280*:  387:        for ( Unsigned  l = 1u, h = l << (word_length - 1) ; h > l ; h >>= 1, l
-   513280:  387-block  0
-   513280:  387-block  1
+  256704*:  387:        for ( Unsigned  l = 1u, h = l << (word_length - 1) ; h > l ; h >>= 1, l
+   256704:  387-block  0
+   256704:  387-block  1
 branch  0 taken 0
-branch  1 taken 513280 (fallthrough)
+branch  1 taken 256704 (fallthrough)
     #####:  388:         <<= 1 )
     %%%%%:  388-block  0
         -:  389:        {
@@ -426,8 +426,8 @@ branch  3 never executed
     %%%%%:  393-block  0
         -:  394:        }
         -:  395:
-   513280:  396:        return x;
-   513280:  396-block  0
+   256704:  396:        return x;
+   256704:  396-block  0
         -:  397:    }
 ------------------
 _ZN5boost6detail16reflect_unsignedItEET_S2_i:
@@ -605,17 +605,17 @@ call    0 never executed
         -:  480:     */
         -:  481:    template < typename Unsigned >
         -:  482:    inline
-function _ZN5boost6detail18reflect_optionallyIjEET_S2_bi called 513280 returned 100% blocks executed 80%
-   513280:  483:    Unsigned  reflect_optionally( Unsigned x, bool reflect, int word_length
+function _ZN5boost6detail18reflect_optionallyIjEET_S2_bi called 256704 returned 100% blocks executed 80%
+   256704:  483:    Unsigned  reflect_optionally( Unsigned x, bool reflect, int word_length
         -:  484:     = std::numeric_limits<Unsigned>::digits )
-  513280*:  485:    { return reflect ? reflect_unsigned(x, word_length) : x; }
-   513280:  485-block  0
-branch  0 taken 513280 (fallthrough)
+  256704*:  485:    { return reflect ? reflect_unsigned(x, word_length) : x; }
+   256704:  485-block  0
+branch  0 taken 256704 (fallthrough)
 branch  1 taken 0
-   513280:  485-block  1
-call    2 returned 513280
+   256704:  485-block  1
+call    2 returned 256704
     %%%%%:  485-block  2
-   513280:  485-block  3
+   256704:  485-block  3
         -:  486:
         -:  487:    /** \brief  Possibly reflects the bits of a single byte
         -:  488:
@@ -679,51 +679,51 @@ call    2 returned 513280
         -:  546:          the final CRC.
         -:  547:     */
         -:  548:    template < typename Register, typename Word >
-function _ZN5boost6detail22crc_modulo_word_updateItjEEviRT_T0_S2_ib called 513280 returned 100% blocks executed 100%
-   513280:  549:    void  crc_modulo_word_update( int register_length, Register &remainder, Word
+function _ZN5boost6detail22crc_modulo_word_updateItjEEviRT_T0_S2_ib called 256704 returned 100% blocks executed 100%
+   256704:  549:    void  crc_modulo_word_update( int register_length, Register &remainder, Word
         -:  550:     new_dividend_bits, Register truncated_divisor, int word_length, bool
         -:  551:     reflect )
         -:  552:    {
         -:  553:        // Create this masking constant outside the loop.
-   513280:  554:        Register const  high_bit_mask = UINTMAX_C(1) << (register_length - 1);
+   256704:  554:        Register const  high_bit_mask = UINTMAX_C(1) << (register_length - 1);
         -:  555:
         -:  556:        // The natural reading order for division is highest digit/bit first.
         -:  557:        // The "reflect" parameter switches this.  However, building a bit mask
         -:  558:        // for the lowest bit is the easiest....
-   513280:  559:        new_dividend_bits = reflect_optionally( new_dividend_bits, !reflect,
-   513280:  559-block  0
-call    0 returned 513280
+   256704:  559:        new_dividend_bits = reflect_optionally( new_dividend_bits, !reflect,
+   256704:  559-block  0
+call    0 returned 256704
         -:  560:         word_length );
         -:  561:
         -:  562:        // Perform modulo-2 division for each new dividend input bit
-  1026560:  563:        for ( int  i = word_length ; i ; --i, new_dividend_bits >>= 1 )
-  1026560:  563-block  0
-branch  0 taken 513280
-branch  1 taken 513280 (fallthrough)
+   513408:  563:        for ( int  i = word_length ; i ; --i, new_dividend_bits >>= 1 )
+   513408:  563-block  0
+branch  0 taken 256704
+branch  1 taken 256704 (fallthrough)
         -:  564:        {
         -:  565:            // compare the new bit with the remainder's highest
-   513280:  566:            remainder ^= ( new_dividend_bits & 1u ) ? high_bit_mask : 0u;
-   513280:  566-block  0
-branch  0 taken 201088 (fallthrough)
-branch  1 taken 312192
-   201088:  566-block  1
-   312192:  566-block  2
+   256704:  566:            remainder ^= ( new_dividend_bits & 1u ) ? high_bit_mask : 0u;
+   256704:  566-block  0
+branch  0 taken 100580 (fallthrough)
+branch  1 taken 156124
+   100580:  566-block  1
+   156124:  566-block  2
         -:  567:
         -:  568:            // perform modulo-2 division
-   513280:  569:            bool const  quotient = remainder & high_bit_mask;
+   256704:  569:            bool const  quotient = remainder & high_bit_mask;
         -:  570:
-   513280:  571:            remainder <<= 1;
-   513280:  572:            remainder ^= quotient ? truncated_divisor : 0u;
-   513280:  572-block  0
-branch  0 taken 256276 (fallthrough)
-branch  1 taken 257004
-   256276:  572-block  1
-   257004:  572-block  2
-   513280:  572-block  3
+   256704:  571:            remainder <<= 1;
+   256704:  572:            remainder ^= quotient ? truncated_divisor : 0u;
+   256704:  572-block  0
+branch  0 taken 128171 (fallthrough)
+branch  1 taken 128533
+   128171:  572-block  1
+   128533:  572-block  2
+   256704:  572-block  3
         -:  573:
         -:  574:            // The quotient isn't used for anything, so don't keep it.
         -:  575:        }
-   513280:  576:    }
+   256704:  576:    }
         -:  577:
         -:  578:    /** \brief  Update a CRC remainder by a single bit, assuming a non-augmented
         -:  579:          message
@@ -762,15 +762,15 @@ branch  1 taken 257004
         -:  612:          the final CRC.
         -:  613:     */
         -:  614:    template < typename Register >
-function _ZN5boost6detail17crc_modulo_updateItEEviRT_bS2_ called 513280 returned 100% blocks executed 100%
-   513280:  615:    inline  void  crc_modulo_update( int register_length, Register &remainder,
+function _ZN5boost6detail17crc_modulo_updateItEEviRT_bS2_ called 256704 returned 100% blocks executed 100%
+   256704:  615:    inline  void  crc_modulo_update( int register_length, Register &remainder,
         -:  616:     bool new_dividend_bit, Register truncated_divisor )
         -:  617:    {
-   513280:  618:        crc_modulo_word_update( register_length, remainder,
-   513280:  618-block  0
-call    0 returned 513280
+   256704:  618:        crc_modulo_word_update( register_length, remainder,
+   256704:  618-block  0
+call    0 returned 256704
         -:  619:         static_cast<unsigned>(new_dividend_bit), truncated_divisor, 1, false );
-   513280:  620:    }
+   256704:  620:    }
         -:  621:
         -:  622:    /** \brief  Update a CRC remainder by several bits, assuming an augmented
         -:  623:          message
@@ -1706,8 +1706,8 @@ call    0 returned 513280
         -: 1553: */
         -: 1554:template < std::size_t Bits >
         -: 1555:inline
-function _ZN5boost9crc_basicILm16EEC2Etttbb called 8020 returned 100% blocks executed 100%
-     8020: 1556:crc_basic<Bits>::crc_basic
+function _ZN5boost9crc_basicILm16EEC2Etttbb called 4011 returned 100% blocks executed 100%
+     4011: 1556:crc_basic<Bits>::crc_basic
         -: 1557:(
         -: 1558:    value_type  truncated_polynomial,
         -: 1559:    value_type  initial_remainder,      // = 0
@@ -1715,11 +1715,11 @@ function _ZN5boost9crc_basicILm16EEC2Etttbb called 8020 returned 100% blocks exe
         -: 1561:    bool        reflect_input,          // = false
         -: 1562:    bool        reflect_remainder       // = false
         -: 1563:)
-     8020: 1564:    : rem_( initial_remainder ), poly_( truncated_polynomial )
-     8020: 1565:    , init_( initial_remainder ), final_( final_xor_value )
-     8020: 1566:    , rft_in_( reflect_input ), rft_out_( reflect_remainder )
+     4011: 1564:    : rem_( initial_remainder ), poly_( truncated_polynomial )
+     4011: 1565:    , init_( initial_remainder ), final_( final_xor_value )
+     4011: 1566:    , rft_in_( reflect_input ), rft_out_( reflect_remainder )
         -: 1567:{
-     8020: 1568:}
+     4011: 1568:}
         -: 1569:
         -: 1570:/** Returns a representation of the polynomial divisor.  The value of the
         -: 1571:    2<sup>i</sup> bit is the value of the coefficient of the polynomial's
@@ -1889,16 +1889,16 @@ function _ZN5boost9crc_basicILm16EEC2Etttbb called 8020 returned 100% blocks exe
         -: 1735:template < std::size_t Bits >
         -: 1736:inline
         -: 1737:void
-function _ZN5boost9crc_basicILm16EE11process_bitEb called 513280 returned 100% blocks executed 100%
-   513280: 1738:crc_basic<Bits>::process_bit
+function _ZN5boost9crc_basicILm16EE11process_bitEb called 256704 returned 100% blocks executed 100%
+   256704: 1738:crc_basic<Bits>::process_bit
         -: 1739:(
         -: 1740:    bool  bit
         -: 1741:)
         -: 1742:{
-   513280: 1743:    detail::crc_modulo_update( bit_count, rem_, bit, poly_ );
-   513280: 1743-block  0
-call    0 returned 513280
-   513280: 1744:}
+   256704: 1743:    detail::crc_modulo_update( bit_count, rem_, bit, poly_ );
+   256704: 1743-block  0
+call    0 returned 256704
+   256704: 1744:}
         -: 1745:
         -: 1746:/** Updates the interim remainder with several altered-CRC-division steps.  Each
         -: 1747:    bit is processed separately, starting from the one at the
@@ -1917,29 +1917,29 @@ call    0 returned 513280
         -: 1760: */
         -: 1761:template < std::size_t Bits >
         -: 1762:void
-function _ZN5boost9crc_basicILm16EE12process_bitsEhm called 64160 returned 100% blocks executed 100%
-    64160: 1763:crc_basic<Bits>::process_bits
+function _ZN5boost9crc_basicILm16EE12process_bitsEhm called 32088 returned 100% blocks executed 100%
+    32088: 1763:crc_basic<Bits>::process_bits
         -: 1764:(
         -: 1765:    unsigned char  bits,
         -: 1766:    std::size_t    bit_length
         -: 1767:)
         -: 1768:{
         -: 1769:    // ignore the bits above the ones we want
-    64160: 1770:    bits <<= CHAR_BIT - bit_length;
+    32088: 1770:    bits <<= CHAR_BIT - bit_length;
         -: 1771:
         -: 1772:    // compute the CRC for each bit, starting with the upper ones
-    64160: 1773:    unsigned char const  high_bit_mask = 1u << ( CHAR_BIT - 1u );
-   577440: 1774:    for ( std::size_t i = bit_length ; i > 0u ; --i, bits <<= 1u )
-    64160: 1774-block  0
-   577440: 1774-block  1
-branch  0 taken 513280
-branch  1 taken 64160 (fallthrough)
+    32088: 1773:    unsigned char const  high_bit_mask = 1u << ( CHAR_BIT - 1u );
+   288792: 1774:    for ( std::size_t i = bit_length ; i > 0u ; --i, bits <<= 1u )
+    32088: 1774-block  0
+   288792: 1774-block  1
+branch  0 taken 256704
+branch  1 taken 32088 (fallthrough)
         -: 1775:    {
-   513280: 1776:        process_bit( static_cast<bool>(bits & high_bit_mask) );
-   513280: 1776-block  0
-call    0 returned 513280
+   256704: 1776:        process_bit( static_cast<bool>(bits & high_bit_mask) );
+   256704: 1776-block  0
+call    0 returned 256704
         -: 1777:    }
-    64160: 1778:}
+    32088: 1778:}
         -: 1779:
         -: 1780:/** Updates the interim remainder with a byte's worth of altered-CRC-division
         -: 1781:    steps.  The bits within the byte are processed from the highest place down
@@ -1955,22 +1955,22 @@ call    0 returned 513280
         -: 1791:template < std::size_t Bits >
         -: 1792:inline
         -: 1793:void
-function _ZN5boost9crc_basicILm16EE12process_byteEh called 64160 returned 100% blocks executed 67%
-    64160: 1794:crc_basic<Bits>::process_byte
+function _ZN5boost9crc_basicILm16EE12process_byteEh called 32088 returned 100% blocks executed 67%
+    32088: 1794:crc_basic<Bits>::process_byte
         -: 1795:(
         -: 1796:    unsigned char  byte
         -: 1797:)
         -: 1798:{
-   64160*: 1799:    process_bits( (rft_in_ ? detail::reflect_byte( byte ) : byte), CHAR_BIT );
-    64160: 1799-block  0
+   32088*: 1799:    process_bits( (rft_in_ ? detail::reflect_byte( byte ) : byte), CHAR_BIT );
+    32088: 1799-block  0
 branch  0 taken 0 (fallthrough)
-branch  1 taken 64160
+branch  1 taken 32088
     %%%%%: 1799-block  1
 call    2 never executed
-    64160: 1799-block  2
-    64160: 1799-block  3
-call    3 returned 64160
-    64160: 1800:}
+    32088: 1799-block  2
+    32088: 1799-block  3
+call    3 returned 32088
+    32088: 1800:}
         -: 1801:
         -: 1802:/** Updates the interim remainder with several bytes' worth of
         -: 1803:    altered-CRC-division steps.  The bits within each byte are processed from
@@ -1998,25 +1998,25 @@ call    3 returned 64160
         -: 1825: */
         -: 1826:template < std::size_t Bits >
         -: 1827:void
-function _ZN5boost9crc_basicILm16EE13process_blockEPKvS3_ called 8020 returned 100% blocks executed 100%
-     8020: 1828:crc_basic<Bits>::process_block
+function _ZN5boost9crc_basicILm16EE13process_blockEPKvS3_ called 4011 returned 100% blocks executed 100%
+     4011: 1828:crc_basic<Bits>::process_block
         -: 1829:(
         -: 1830:    void const *  bytes_begin,
         -: 1831:    void const *  bytes_end
         -: 1832:)
         -: 1833:{
-    72180: 1834:    for ( unsigned char const * p
-     8020: 1834-block  0
-    72180: 1835:     = static_cast<unsigned char const *>(bytes_begin) ; p < bytes_end ; ++p )
-    72180: 1835-block  0
-branch  0 taken 64160
-branch  1 taken 8020 (fallthrough)
+    36099: 1834:    for ( unsigned char const * p
+     4011: 1834-block  0
+    36099: 1835:     = static_cast<unsigned char const *>(bytes_begin) ; p < bytes_end ; ++p )
+    36099: 1835-block  0
+branch  0 taken 32088
+branch  1 taken 4011 (fallthrough)
         -: 1836:    {
-    64160: 1837:        process_byte( *p );
-    64160: 1837-block  0
-call    0 returned 64160
+    32088: 1837:        process_byte( *p );
+    32088: 1837-block  0
+call    0 returned 32088
         -: 1838:    }
-     8020: 1839:}
+     4011: 1839:}
         -: 1840:
         -: 1841:/** Updates the interim remainder with several bytes' worth of
         -: 1842:    altered-CRC-division steps.  The bits within each byte are processed from
@@ -2041,20 +2041,20 @@ call    0 returned 64160
         -: 1861:template < std::size_t Bits >
         -: 1862:inline
         -: 1863:void
-function _ZN5boost9crc_basicILm16EE13process_bytesEPKvm called 8020 returned 100% blocks executed 100%
-     8020: 1864:crc_basic<Bits>::process_bytes
+function _ZN5boost9crc_basicILm16EE13process_bytesEPKvm called 4011 returned 100% blocks executed 100%
+     4011: 1864:crc_basic<Bits>::process_bytes
         -: 1865:(
         -: 1866:    void const *  buffer,
         -: 1867:    std::size_t   byte_count
         -: 1868:)
         -: 1869:{
-     8020: 1870:    unsigned char const * const  b = static_cast<unsigned char const *>(
+     4011: 1870:    unsigned char const * const  b = static_cast<unsigned char const *>(
         -: 1871:     buffer );
         -: 1872:
-     8020: 1873:    process_block( b, b + byte_count );
-     8020: 1873-block  0
-call    0 returned 8020
-     8020: 1874:}
+     4011: 1873:    process_block( b, b + byte_count );
+     4011: 1873-block  0
+call    0 returned 4011
+     4011: 1874:}
         -: 1875:
         -: 1876:/** Computes the checksum of all the submitted bits since construction or the
         -: 1877:    last call to #reset.  The checksum will be the raw checksum, i.e. the
@@ -2071,20 +2071,20 @@ call    0 returned 8020
         -: 1888:template < std::size_t Bits >
         -: 1889:inline
         -: 1890:typename crc_basic<Bits>::value_type
-function _ZNK5boost9crc_basicILm16EE8checksumEv called 8020 returned 100% blocks executed 80%
-     8020: 1891:crc_basic<Bits>::checksum
+function _ZNK5boost9crc_basicILm16EE8checksumEv called 4011 returned 100% blocks executed 80%
+     4011: 1891:crc_basic<Bits>::checksum
         -: 1892:(
         -: 1893:) const
         -: 1894:{
     #####: 1895:    return ( (rft_out_ ? detail::reflect_unsigned( rem_, bit_count ) :
     %%%%%: 1895-block  0
 call    0 never executed
-     8020: 1896:     rem_) ^ final_ ) & detail::low_bits_mask_c<bit_count>::value;
-     8020: 1896-block  0
+     4011: 1896:     rem_) ^ final_ ) & detail::low_bits_mask_c<bit_count>::value;
+     4011: 1896-block  0
 branch  0 taken 0 (fallthrough)
-branch  1 taken 8020
-     8020: 1896-block  1
-     8020: 1896-block  2
+branch  1 taken 4011
+     4011: 1896-block  1
+     4011: 1896-block  2
         -: 1897:}
         -: 1898:
         -: 1899:

@@ -1,6 +1,6 @@
-        -:    0:Source:/home/peter/CLionProjects/crc/googletest/googletest/include/gtest/internal/gtest-port.h
-        -:    0:Graph:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
-        -:    0:Data:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
+        -:    0:Source:/home/peter/CLionProjects/CRC_HACK/googletest/googletest/include/gtest/internal/gtest-port.h
+        -:    0:Graph:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
+        -:    0:Data:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
         -:    0:Runs:3
         -:    1:// Copyright 2005, Google Inc.
         -:    2:// All rights reserved.
@@ -1822,13 +1822,13 @@ call   15 never executed
         -: 1673:// shares its API with MutexBase otherwise.
         -: 1674:class Mutex : public MutexBase {
         -: 1675: public:
-function _ZN7testing8internal5MutexC2Ev called 42 returned 100% blocks executed 31%
-       42: 1676:  Mutex() {
-      42*: 1677:    GTEST_CHECK_POSIX_SUCCESS_(pthread_mutex_init(&mutex_, nullptr));
-       42: 1677-block  0
-call    0 returned 42
+function _ZN7testing8internal5MutexC2Ev called 48 returned 100% blocks executed 31%
+       48: 1676:  Mutex() {
+      48*: 1677:    GTEST_CHECK_POSIX_SUCCESS_(pthread_mutex_init(&mutex_, nullptr));
+       48: 1677-block  0
+call    0 returned 48
 branch  1 taken 0 (fallthrough)
-branch  2 taken 42
+branch  2 taken 48
     %%%%%: 1677-block  1
 call    3 never executed
 call    4 never executed
@@ -1847,15 +1847,15 @@ branch 13 never executed
 call   14 never executed
     $$$$$: 1677-block  5
 call   15 never executed
-       42: 1678:    has_owner_ = false;
-       42: 1679:  }
-       42: 1679-block  0
-function _ZN7testing8internal5MutexD2Ev called 42 returned 100% blocks executed 30%
-      42*: 1680:  ~Mutex() { GTEST_CHECK_POSIX_SUCCESS_(pthread_mutex_destroy(&mutex_)); }
-       42: 1680-block  0
-call    0 returned 42
+       48: 1678:    has_owner_ = false;
+       48: 1679:  }
+       48: 1679-block  0
+function _ZN7testing8internal5MutexD2Ev called 48 returned 100% blocks executed 30%
+      48*: 1680:  ~Mutex() { GTEST_CHECK_POSIX_SUCCESS_(pthread_mutex_destroy(&mutex_)); }
+       48: 1680-block  0
+call    0 returned 48
 branch  1 taken 0 (fallthrough)
-branch  2 taken 42
+branch  2 taken 48
     %%%%%: 1680-block  1
 call    3 never executed
 call    4 never executed

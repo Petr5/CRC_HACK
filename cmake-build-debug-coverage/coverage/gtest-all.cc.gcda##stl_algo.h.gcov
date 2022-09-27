@@ -1,6 +1,6 @@
         -:    0:Source:/usr/include/c++/11/bits/stl_algo.h
-        -:    0:Graph:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
-        -:    0:Data:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
+        -:    0:Graph:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
+        -:    0:Data:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
         -:    0:Runs:3
         -:    1:// Algorithm implementation -*- C++ -*-
         -:    2:
@@ -471,24 +471,24 @@
         -:  467:  template<typename _InputIterator, typename _Predicate>
         -:  468:    _GLIBCXX20_CONSTEXPR
         -:  469:    inline bool
-      129:  470:    none_of(_InputIterator __first, _InputIterator __last, _Predicate __pred)
-      129:  471:    { return __last == _GLIBCXX_STD_A::find_if(__first, __last, __pred); }
+      146:  470:    none_of(_InputIterator __first, _InputIterator __last, _Predicate __pred)
+      146:  471:    { return __last == _GLIBCXX_STD_A::find_if(__first, __last, __pred); }
 ------------------
 _ZSt7none_ofIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEEZNK7testing8internal12_GLOBAL__N_114UnitTestFilter11MatchesNameERS8_EUlSI_E_EbT_SK_T0_:
-function _ZSt7none_ofIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEEZNK7testing8internal12_GLOBAL__N_114UnitTestFilter11MatchesNameERS8_EUlSI_E_EbT_SK_T0_ called 96 returned 100% blocks executed 100%
-       96:  470:    none_of(_InputIterator __first, _InputIterator __last, _Predicate __pred)
-       96:  471:    { return __last == _GLIBCXX_STD_A::find_if(__first, __last, __pred); }
-       96:  471-block  0
-call    0 returned 96
-call    1 returned 96
+function _ZSt7none_ofIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEEZNK7testing8internal12_GLOBAL__N_114UnitTestFilter11MatchesNameERS8_EUlSI_E_EbT_SK_T0_ called 103 returned 100% blocks executed 100%
+      103:  470:    none_of(_InputIterator __first, _InputIterator __last, _Predicate __pred)
+      103:  471:    { return __last == _GLIBCXX_STD_A::find_if(__first, __last, __pred); }
+      103:  471-block  0
+call    0 returned 103
+call    1 returned 103
 ------------------
 _ZSt7none_ofIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEZN7testing8internal12_GLOBAL__N_113IsGlobPatternERKS9_EUlcE_EbT_SH_T0_:
-function _ZSt7none_ofIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEZN7testing8internal12_GLOBAL__N_113IsGlobPatternERKS9_EUlcE_EbT_SH_T0_ called 33 returned 100% blocks executed 100%
-       33:  470:    none_of(_InputIterator __first, _InputIterator __last, _Predicate __pred)
-       33:  471:    { return __last == _GLIBCXX_STD_A::find_if(__first, __last, __pred); }
-       33:  471-block  0
-call    0 returned 33
-call    1 returned 33
+function _ZSt7none_ofIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEZN7testing8internal12_GLOBAL__N_113IsGlobPatternERKS9_EUlcE_EbT_SH_T0_ called 43 returned 100% blocks executed 100%
+       43:  470:    none_of(_InputIterator __first, _InputIterator __last, _Predicate __pred)
+       43:  471:    { return __last == _GLIBCXX_STD_A::find_if(__first, __last, __pred); }
+       43:  471-block  0
+call    0 returned 43
+call    1 returned 43
 ------------------
         -:  472:
         -:  473:  /**
@@ -507,22 +507,22 @@ call    1 returned 33
         -:  486:  template<typename _InputIterator, typename _Predicate>
         -:  487:    _GLIBCXX20_CONSTEXPR
         -:  488:    inline bool
-      129:  489:    any_of(_InputIterator __first, _InputIterator __last, _Predicate __pred)
-      129:  490:    { return !std::none_of(__first, __last, __pred); }
+      146:  489:    any_of(_InputIterator __first, _InputIterator __last, _Predicate __pred)
+      146:  490:    { return !std::none_of(__first, __last, __pred); }
 ------------------
 _ZSt6any_ofIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEEZNK7testing8internal12_GLOBAL__N_114UnitTestFilter11MatchesNameERS8_EUlSI_E_EbT_SK_T0_:
-function _ZSt6any_ofIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEEZNK7testing8internal12_GLOBAL__N_114UnitTestFilter11MatchesNameERS8_EUlSI_E_EbT_SK_T0_ called 96 returned 100% blocks executed 100%
-       96:  489:    any_of(_InputIterator __first, _InputIterator __last, _Predicate __pred)
-       96:  490:    { return !std::none_of(__first, __last, __pred); }
-       96:  490-block  0
-call    0 returned 96
+function _ZSt6any_ofIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEEZNK7testing8internal12_GLOBAL__N_114UnitTestFilter11MatchesNameERS8_EUlSI_E_EbT_SK_T0_ called 103 returned 100% blocks executed 100%
+      103:  489:    any_of(_InputIterator __first, _InputIterator __last, _Predicate __pred)
+      103:  490:    { return !std::none_of(__first, __last, __pred); }
+      103:  490-block  0
+call    0 returned 103
 ------------------
 _ZSt6any_ofIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEZN7testing8internal12_GLOBAL__N_113IsGlobPatternERKS9_EUlcE_EbT_SH_T0_:
-function _ZSt6any_ofIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEZN7testing8internal12_GLOBAL__N_113IsGlobPatternERKS9_EUlcE_EbT_SH_T0_ called 33 returned 100% blocks executed 100%
-       33:  489:    any_of(_InputIterator __first, _InputIterator __last, _Predicate __pred)
-       33:  490:    { return !std::none_of(__first, __last, __pred); }
-       33:  490-block  0
-call    0 returned 33
+function _ZSt6any_ofIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEZN7testing8internal12_GLOBAL__N_113IsGlobPatternERKS9_EUlcE_EbT_SH_T0_ called 43 returned 100% blocks executed 100%
+       43:  489:    any_of(_InputIterator __first, _InputIterator __last, _Predicate __pred)
+       43:  490:    { return !std::none_of(__first, __last, __pred); }
+       43:  490-block  0
+call    0 returned 43
 ------------------
         -:  491:
         -:  492:  /**
@@ -1540,60 +1540,60 @@ call    1 never executed
         -: 1484:  template<typename _BidirectionalIterator, typename _Predicate>
         -: 1485:    _GLIBCXX20_CONSTEXPR
         -: 1486:    _BidirectionalIterator
-function _ZSt11__partitionIN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEEPFbRKS7_EET_SH_SH_T0_St26bidirectional_iterator_tag called 18 returned 100% blocks executed 39%
-       51: 1487:    __partition(_BidirectionalIterator __first, _BidirectionalIterator __last,
+function _ZSt11__partitionIN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEEPFbRKS7_EET_SH_SH_T0_St26bidirectional_iterator_tag called 21 returned 100% blocks executed 87%
+       63: 1487:    __partition(_BidirectionalIterator __first, _BidirectionalIterator __last,
         -: 1488:		_Predicate __pred, bidirectional_iterator_tag)
         -: 1489:    {
-    #####: 1490:      while (true)
+        1: 1490:      while (true)
         -: 1491:	{
         -: 1492:	  while (true)
-       51: 1493:	    if (__first == __last)
-       51: 1493-block  0
-call    0 returned 51
-branch  1 taken 18 (fallthrough)
-branch  2 taken 33
-       18: 1494:	      return __first;
-       18: 1494-block  0
-       33: 1495:	    else if (__pred(*__first))
-       33: 1495-block  0
-call    0 returned 33
-call    1 returned 33
-branch  2 taken 33 (fallthrough)
-branch  3 taken 0
-       33: 1496:	      ++__first;
-       33: 1496-block  0
-call    0 returned 33
+       63: 1493:	    if (__first == __last)
+       63: 1493-block  0
+call    0 returned 63
+branch  1 taken 21 (fallthrough)
+branch  2 taken 42
+       21: 1494:	      return __first;
+       21: 1494-block  0
+       42: 1495:	    else if (__pred(*__first))
+       42: 1495-block  0
+call    0 returned 42
+call    1 returned 42
+branch  2 taken 41 (fallthrough)
+branch  3 taken 1
+       41: 1496:	      ++__first;
+       41: 1496-block  0
+call    0 returned 41
         -: 1497:	    else
-    #####: 1498:	      break;
-    %%%%%: 1498-block  0
-    #####: 1499:	  --__last;
-    %%%%%: 1499-block  0
-call    0 never executed
+        1: 1498:	      break;
+        1: 1498-block  0
+        1: 1499:	  --__last;
+        1: 1499-block  0
+call    0 returned 1
         -: 1500:	  while (true)
-    #####: 1501:	    if (__first == __last)
-    %%%%%: 1501-block  0
-call    0 never executed
-branch  1 never executed
-branch  2 never executed
+        1: 1501:	    if (__first == __last)
+        1: 1501-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
     #####: 1502:	      return __first;
     %%%%%: 1502-block  0
-    #####: 1503:	    else if (!bool(__pred(*__last)))
-    %%%%%: 1503-block  0
-call    0 never executed
-call    1 never executed
-branch  2 never executed
-branch  3 never executed
+        1: 1503:	    else if (!bool(__pred(*__last)))
+        1: 1503-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
     #####: 1504:	      --__last;
     %%%%%: 1504-block  0
 call    0 never executed
         -: 1505:	    else
-    #####: 1506:	      break;
-    %%%%%: 1506-block  0
-    #####: 1507:	  std::iter_swap(__first, __last);
-    %%%%%: 1507-block  0
-call    0 never executed
-    #####: 1508:	  ++__first;
-call    0 never executed
+        1: 1506:	      break;
+        1: 1506-block  0
+        1: 1507:	  std::iter_swap(__first, __last);
+        1: 1507-block  0
+call    0 returned 1
+        1: 1508:	  ++__first;
+call    0 returned 1
         -: 1509:	}
         -: 1510:    }
         -: 1511:
@@ -3899,14 +3899,14 @@ call    0 never executed
         -: 3811:  template<typename _InputIterator, typename _Function>
         -: 3812:    _GLIBCXX20_CONSTEXPR
         -: 3813:    _Function
-       35: 3814:    for_each(_InputIterator __first, _InputIterator __last, _Function __f)
+       40: 3814:    for_each(_InputIterator __first, _InputIterator __last, _Function __f)
         -: 3815:    {
         -: 3816:      // concept requirements
         -: 3817:      __glibcxx_function_requires(_InputIteratorConcept<_InputIterator>)
         -: 3818:      __glibcxx_requires_valid_range(__first, __last);
-      93*: 3819:      for (; __first != __last; ++__first)
-      58*: 3820:	__f(*__first);
-       35: 3821:      return __f; // N.B. [alg.foreach] says std::move(f) but it's redundant.
+     108*: 3819:      for (; __first != __last; ++__first)
+      68*: 3820:	__f(*__first);
+       40: 3821:      return __f; // N.B. [alg.foreach] says std::move(f) but it's redundant.
         -: 3822:    }
 ------------------
 _ZSt8for_eachIN9__gnu_cxx17__normal_iteratorIPKPN7testing11EnvironmentESt6vectorIS4_SaIS4_EEEEPFvS4_EET0_T_SE_SD_:
@@ -3954,25 +3954,25 @@ call    1 returned 3
         -: 3822:    }
 ------------------
 _ZSt8for_eachIN9__gnu_cxx17__normal_iteratorIPKPN7testing8TestInfoESt6vectorIS4_SaIS4_EEEEPFvS4_EET0_T_SE_SD_:
-function _ZSt8for_eachIN9__gnu_cxx17__normal_iteratorIPKPN7testing8TestInfoESt6vectorIS4_SaIS4_EEEEPFvS4_EET0_T_SE_SD_ called 20 returned 100% blocks executed 100%
-       20: 3814:    for_each(_InputIterator __first, _InputIterator __last, _Function __f)
+function _ZSt8for_eachIN9__gnu_cxx17__normal_iteratorIPKPN7testing8TestInfoESt6vectorIS4_SaIS4_EEEEPFvS4_EET0_T_SE_SD_ called 25 returned 100% blocks executed 100%
+       25: 3814:    for_each(_InputIterator __first, _InputIterator __last, _Function __f)
         -: 3815:    {
         -: 3816:      // concept requirements
         -: 3817:      __glibcxx_function_requires(_InputIteratorConcept<_InputIterator>)
         -: 3818:      __glibcxx_requires_valid_range(__first, __last);
-       55: 3819:      for (; __first != __last; ++__first)
-       20: 3819-block  0
-call    0 returned 35
-       55: 3819-block  1
-call    1 returned 55
-branch  2 taken 35
-branch  3 taken 20 (fallthrough)
-       35: 3820:	__f(*__first);
-       35: 3820-block  0
-call    0 returned 35
-call    1 returned 35
-       20: 3821:      return __f; // N.B. [alg.foreach] says std::move(f) but it's redundant.
-       20: 3821-block  0
+       65: 3819:      for (; __first != __last; ++__first)
+       25: 3819-block  0
+call    0 returned 40
+       65: 3819-block  1
+call    1 returned 65
+branch  2 taken 40
+branch  3 taken 25 (fallthrough)
+       40: 3820:	__f(*__first);
+       40: 3820-block  0
+call    0 returned 40
+call    1 returned 40
+       25: 3821:      return __f; // N.B. [alg.foreach] says std::move(f) but it's redundant.
+       25: 3821-block  0
         -: 3822:    }
 ------------------
 _ZSt8for_eachIN9__gnu_cxx17__normal_iteratorIPKPN7testing9TestSuiteESt6vectorIS4_SaIS4_EEEEPFvS4_EET0_T_SE_SD_:
@@ -3982,17 +3982,17 @@ function _ZSt8for_eachIN9__gnu_cxx17__normal_iteratorIPKPN7testing9TestSuiteESt6
         -: 3816:      // concept requirements
         -: 3817:      __glibcxx_function_requires(_InputIteratorConcept<_InputIterator>)
         -: 3818:      __glibcxx_requires_valid_range(__first, __last);
-       25: 3819:      for (; __first != __last; ++__first)
+       30: 3819:      for (; __first != __last; ++__first)
         5: 3819-block  0
-call    0 returned 20
-       25: 3819-block  1
-call    1 returned 25
-branch  2 taken 20
+call    0 returned 25
+       30: 3819-block  1
+call    1 returned 30
+branch  2 taken 25
 branch  3 taken 5 (fallthrough)
-       20: 3820:	__f(*__first);
-       20: 3820-block  0
-call    0 returned 20
-call    1 returned 20
+       25: 3820:	__f(*__first);
+       25: 3820-block  0
+call    0 returned 25
+call    1 returned 25
         5: 3821:      return __f; // N.B. [alg.foreach] says std::move(f) but it's redundant.
         5: 3821-block  0
         -: 3822:    }
@@ -4101,7 +4101,7 @@ call    1 never executed
         -: 3898:  template<typename _InputIterator, typename _Predicate>
         -: 3899:    _GLIBCXX20_CONSTEXPR
         -: 3900:    inline _InputIterator
-     150*: 3901:    find_if(_InputIterator __first, _InputIterator __last,
+     170*: 3901:    find_if(_InputIterator __first, _InputIterator __last,
         -: 3902:	    _Predicate __pred)
         -: 3903:    {
         -: 3904:      // concept requirements
@@ -4110,13 +4110,13 @@ call    1 never executed
         -: 3907:	      typename iterator_traits<_InputIterator>::value_type>)
         -: 3908:      __glibcxx_requires_valid_range(__first, __last);
         -: 3909:
-     129*: 3910:      return std::__find_if(__first, __last,
-     150*: 3911:			    __gnu_cxx::__ops::__pred_iter(__pred));
+     146*: 3910:      return std::__find_if(__first, __last,
+     170*: 3911:			    __gnu_cxx::__ops::__pred_iter(__pred));
         -: 3912:    }
 ------------------
 _ZSt7find_ifIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEEZNK7testing8internal12_GLOBAL__N_114UnitTestFilter11MatchesNameERS8_EUlSI_E_ET_SK_SK_T0_:
-function _ZSt7find_ifIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEEZNK7testing8internal12_GLOBAL__N_114UnitTestFilter11MatchesNameERS8_EUlSI_E_ET_SK_SK_T0_ called 96 returned 100% blocks executed 100%
-       96: 3901:    find_if(_InputIterator __first, _InputIterator __last,
+function _ZSt7find_ifIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEEZNK7testing8internal12_GLOBAL__N_114UnitTestFilter11MatchesNameERS8_EUlSI_E_ET_SK_SK_T0_ called 103 returned 100% blocks executed 100%
+      103: 3901:    find_if(_InputIterator __first, _InputIterator __last,
         -: 3902:	    _Predicate __pred)
         -: 3903:    {
         -: 3904:      // concept requirements
@@ -4125,16 +4125,16 @@ function _ZSt7find_ifIN9__gnu_cxx17__normal_iteratorIPKNSt7__cxx1112basic_string
         -: 3907:	      typename iterator_traits<_InputIterator>::value_type>)
         -: 3908:      __glibcxx_requires_valid_range(__first, __last);
         -: 3909:
-       96: 3910:      return std::__find_if(__first, __last,
-       96: 3910-block  0
-call    0 returned 96
-call    1 returned 96
-       96: 3911:			    __gnu_cxx::__ops::__pred_iter(__pred));
+      103: 3910:      return std::__find_if(__first, __last,
+      103: 3910-block  0
+call    0 returned 103
+call    1 returned 103
+      103: 3911:			    __gnu_cxx::__ops::__pred_iter(__pred));
         -: 3912:    }
 ------------------
 _ZSt7find_ifIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEZN7testing8internal12_GLOBAL__N_113IsGlobPatternERKS9_EUlcE_ET_SH_SH_T0_:
-function _ZSt7find_ifIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEZN7testing8internal12_GLOBAL__N_113IsGlobPatternERKS9_EUlcE_ET_SH_SH_T0_ called 33 returned 100% blocks executed 100%
-       33: 3901:    find_if(_InputIterator __first, _InputIterator __last,
+function _ZSt7find_ifIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEZN7testing8internal12_GLOBAL__N_113IsGlobPatternERKS9_EUlcE_ET_SH_SH_T0_ called 43 returned 100% blocks executed 100%
+       43: 3901:    find_if(_InputIterator __first, _InputIterator __last,
         -: 3902:	    _Predicate __pred)
         -: 3903:    {
         -: 3904:      // concept requirements
@@ -4143,16 +4143,16 @@ function _ZSt7find_ifIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_strin
         -: 3907:	      typename iterator_traits<_InputIterator>::value_type>)
         -: 3908:      __glibcxx_requires_valid_range(__first, __last);
         -: 3909:
-       33: 3910:      return std::__find_if(__first, __last,
-       33: 3910-block  0
-call    0 returned 33
-call    1 returned 33
-       33: 3911:			    __gnu_cxx::__ops::__pred_iter(__pred));
+       43: 3910:      return std::__find_if(__first, __last,
+       43: 3910-block  0
+call    0 returned 43
+call    1 returned 43
+       43: 3911:			    __gnu_cxx::__ops::__pred_iter(__pred));
         -: 3912:    }
 ------------------
 _ZSt7find_ifISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPPN7testing9TestSuiteESt6vectorIS5_SaIS5_EEEEENS3_8internal15TestSuiteNameIsEET_SE_SE_T0_:
-function _ZSt7find_ifISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPPN7testing9TestSuiteESt6vectorIS5_SaIS5_EEEEENS3_8internal15TestSuiteNameIsEET_SE_SE_T0_ called 21 returned 100% blocks executed 59%
-       21: 3901:    find_if(_InputIterator __first, _InputIterator __last,
+function _ZSt7find_ifISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPPN7testing9TestSuiteESt6vectorIS5_SaIS5_EEEEENS3_8internal15TestSuiteNameIsEET_SE_SE_T0_ called 24 returned 100% blocks executed 59%
+       24: 3901:    find_if(_InputIterator __first, _InputIterator __last,
         -: 3902:	    _Predicate __pred)
         -: 3903:    {
         -: 3904:      // concept requirements
@@ -4162,22 +4162,22 @@ function _ZSt7find_ifISt16reverse_iteratorIN9__gnu_cxx17__normal_iteratorIPPN7te
         -: 3908:      __glibcxx_requires_valid_range(__first, __last);
         -: 3909:
         -: 3910:      return std::__find_if(__first, __last,
-       21: 3911:			    __gnu_cxx::__ops::__pred_iter(__pred));
-       21: 3911-block  0
-call    0 returned 21
-call    1 returned 21
-branch  2 taken 21 (fallthrough)
+       24: 3911:			    __gnu_cxx::__ops::__pred_iter(__pred));
+       24: 3911-block  0
+call    0 returned 24
+call    1 returned 24
+branch  2 taken 24 (fallthrough)
 branch  3 taken 0 (throw)
-       21: 3911-block  1
-call    4 returned 21
-call    5 returned 21
-call    6 returned 21
-branch  7 taken 21 (fallthrough)
+       24: 3911-block  1
+call    4 returned 24
+call    5 returned 24
+call    6 returned 24
+branch  7 taken 24 (fallthrough)
 branch  8 taken 0 (throw)
-       21: 3911-block  2
-call    9 returned 21
-call   10 returned 21
-       21: 3911-block  3
+       24: 3911-block  2
+call    9 returned 24
+call   10 returned 24
+       24: 3911-block  3
     $$$$$: 3911-block  4
     $$$$$: 3911-block  5
     $$$$$: 3911-block  6
@@ -4952,8 +4952,8 @@ call   10 never executed
         -: 4641:  template<typename _ForwardIterator, typename _Predicate>
         -: 4642:    _GLIBCXX20_CONSTEXPR
         -: 4643:    inline _ForwardIterator
-function _ZSt9partitionIN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEEPFbRKS7_EET_SH_SH_T0_ called 18 returned 100% blocks executed 100%
-       18: 4644:    partition(_ForwardIterator __first, _ForwardIterator __last,
+function _ZSt9partitionIN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_SaIS7_EEEEPFbRKS7_EET_SH_SH_T0_ called 21 returned 100% blocks executed 100%
+       21: 4644:    partition(_ForwardIterator __first, _ForwardIterator __last,
         -: 4645:	      _Predicate   __pred)
         -: 4646:    {
         -: 4647:      // concept requirements
@@ -4963,16 +4963,16 @@ function _ZSt9partitionIN9__gnu_cxx17__normal_iteratorIPNSt7__cxx1112basic_strin
         -: 4651:	    typename iterator_traits<_ForwardIterator>::value_type>)
         -: 4652:      __glibcxx_requires_valid_range(__first, __last);
         -: 4653:
-       18: 4654:      return std::__partition(__first, __last, __pred,
-       18: 4655:			      std::__iterator_category(__first));
-       18: 4655-block  0
-call    0 returned 18
-call    1 returned 18
-branch  2 taken 18 (fallthrough)
+       21: 4654:      return std::__partition(__first, __last, __pred,
+       21: 4655:			      std::__iterator_category(__first));
+       21: 4655-block  0
+call    0 returned 21
+call    1 returned 21
+branch  2 taken 21 (fallthrough)
 branch  3 taken 0 (throw)
-       18: 4655-block  1
-       18: 4655-block  2
-       18: 4655-block  3
+       21: 4655-block  1
+       21: 4655-block  2
+       21: 4655-block  3
         -: 4656:    }
         -: 4657:
         -: 4658:

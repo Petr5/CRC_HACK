@@ -1,6 +1,6 @@
         -:    0:Source:/usr/include/boost/array.hpp
-        -:    0:Graph:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/CMakeFiles/crc_run.dir/crc.cpp.gcno
-        -:    0:Data:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/CMakeFiles/crc_run.dir/crc.cpp.gcda
+        -:    0:Graph:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/CMakeFiles/Main.dir/crc.cpp.gcno
+        -:    0:Data:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/CMakeFiles/Main.dir/crc.cpp.gcda
         -:    0:Runs:3
         -:    1:/* The following code declares class array,
         -:    2: * an STL container (as wrapper) for arrays of constant size.

@@ -1,6 +1,6 @@
         -:    0:Source:/usr/include/c++/11/bits/ios_base.h
-        -:    0:Graph:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/CMakeFiles/crc_run.dir/crc.cpp.gcno
-        -:    0:Data:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/CMakeFiles/crc_run.dir/crc.cpp.gcda
+        -:    0:Graph:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/CMakeFiles/Main.dir/crc.cpp.gcno
+        -:    0:Data:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/CMakeFiles/Main.dir/crc.cpp.gcda
         -:    0:Runs:3
         -:    1:// Iostreams base classes -*- C++ -*-
         -:    2:
@@ -130,10 +130,10 @@
         -:  126:  { return _Ios_Openmode(static_cast<int>(__a) & static_cast<int>(__b)); }
         -:  127:
         -:  128:  inline _GLIBCXX_CONSTEXPR _Ios_Openmode
-function _ZStorSt13_Ios_OpenmodeS_ called 16 returned 100% blocks executed 100%
-       16:  129:  operator|(_Ios_Openmode __a, _Ios_Openmode __b)
-       16:  130:  { return _Ios_Openmode(static_cast<int>(__a) | static_cast<int>(__b)); }
-       16:  130-block  0
+function _ZStorSt13_Ios_OpenmodeS_ called 8 returned 100% blocks executed 100%
+        8:  129:  operator|(_Ios_Openmode __a, _Ios_Openmode __b)
+        8:  130:  { return _Ios_Openmode(static_cast<int>(__a) | static_cast<int>(__b)); }
+        8:  130-block  0
         -:  131:
         -:  132:  inline _GLIBCXX_CONSTEXPR _Ios_Openmode
         -:  133:  operator^(_Ios_Openmode __a, _Ios_Openmode __b)

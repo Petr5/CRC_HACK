@@ -1,6 +1,6 @@
         -:    0:Source:/usr/include/c++/11/bits/stl_uninitialized.h
-        -:    0:Graph:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
-        -:    0:Data:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
+        -:    0:Graph:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
+        -:    0:Data:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
         -:    0:Runs:3
         -:    1:// Raw memory manipulators -*- C++ -*-
         -:    2:
@@ -1514,7 +1514,7 @@ call    0 never executed
         -:  983:
         -:  984:  template<typename _Tp, typename _Up, typename _Allocator>
         -:  985:    inline void
-      24*:  986:    __relocate_object_a(_Tp* __restrict __dest, _Up* __restrict __orig,
+      34*:  986:    __relocate_object_a(_Tp* __restrict __dest, _Up* __restrict __orig,
         -:  987:			_Allocator& __alloc)
         -:  988:    noexcept(noexcept(std::allocator_traits<_Allocator>::construct(__alloc,
         -:  989:			 __dest, std::move(*__orig)))
@@ -1522,9 +1522,9 @@ call    0 never executed
         -:  991:			    __alloc, std::__addressof(*__orig))))
         -:  992:    {
         -:  993:      typedef std::allocator_traits<_Allocator> __traits;
-      24*:  994:      __traits::construct(__alloc, __dest, std::move(*__orig));
-      24*:  995:      __traits::destroy(__alloc, std::__addressof(*__orig));
-      24*:  996:    }
+      34*:  994:      __traits::construct(__alloc, __dest, std::move(*__orig));
+      34*:  995:      __traits::destroy(__alloc, std::__addressof(*__orig));
+      34*:  996:    }
 ------------------
 _ZSt19__relocate_object_aIN7testing8internal9TraceInfoES2_SaIS2_EEvPT_PT0_RT1_:
 function _ZSt19__relocate_object_aIN7testing8internal9TraceInfoES2_SaIS2_EEvPT_PT0_RT1_ called 0 returned 0% blocks executed 0%
@@ -1584,8 +1584,8 @@ call    1 never executed
     #####:  996:    }
 ------------------
 _ZSt19__relocate_object_aINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_SaIS5_EEvPT_PT0_RT1_:
-function _ZSt19__relocate_object_aINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_SaIS5_EEvPT_PT0_RT1_ called 24 returned 100% blocks executed 100%
-       24:  986:    __relocate_object_a(_Tp* __restrict __dest, _Up* __restrict __orig,
+function _ZSt19__relocate_object_aINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_SaIS5_EEvPT_PT0_RT1_ called 34 returned 100% blocks executed 100%
+       34:  986:    __relocate_object_a(_Tp* __restrict __dest, _Up* __restrict __orig,
         -:  987:			_Allocator& __alloc)
         -:  988:    noexcept(noexcept(std::allocator_traits<_Allocator>::construct(__alloc,
         -:  989:			 __dest, std::move(*__orig)))
@@ -1593,14 +1593,14 @@ function _ZSt19__relocate_object_aINSt7__cxx1112basic_stringIcSt11char_traitsIcE
         -:  991:			    __alloc, std::__addressof(*__orig))))
         -:  992:    {
         -:  993:      typedef std::allocator_traits<_Allocator> __traits;
-       24:  994:      __traits::construct(__alloc, __dest, std::move(*__orig));
-       24:  994-block  0
-call    0 returned 24
-call    1 returned 24
-       24:  995:      __traits::destroy(__alloc, std::__addressof(*__orig));
-call    0 returned 24
-call    1 returned 24
-       24:  996:    }
+       34:  994:      __traits::construct(__alloc, __dest, std::move(*__orig));
+       34:  994-block  0
+call    0 returned 34
+call    1 returned 34
+       34:  995:      __traits::destroy(__alloc, std::__addressof(*__orig));
+call    0 returned 34
+call    1 returned 34
+       34:  996:    }
 ------------------
         -:  997:
         -:  998:  // This class may be specialized for specific types.
@@ -1611,29 +1611,29 @@ call    1 returned 24
         -: 1003:
         -: 1004:  template <typename _Tp, typename _Up>
         -: 1005:    inline __enable_if_t<std::__is_bitwise_relocatable<_Tp>::value, _Tp*>
-     114*: 1006:    __relocate_a_1(_Tp* __first, _Tp* __last,
+     138*: 1006:    __relocate_a_1(_Tp* __first, _Tp* __last,
         -: 1007:		   _Tp* __result, allocator<_Up>&) noexcept
         -: 1008:    {
-     114*: 1009:      ptrdiff_t __count = __last - __first;
-     114*: 1010:      if (__count > 0)
-      24*: 1011:	__builtin_memmove(__result, __first, __count * sizeof(_Tp));
-     114*: 1012:      return __result + __count;
+     138*: 1009:      ptrdiff_t __count = __last - __first;
+     138*: 1010:      if (__count > 0)
+      30*: 1011:	__builtin_memmove(__result, __first, __count * sizeof(_Tp));
+     138*: 1012:      return __result + __count;
         -: 1013:    }
 ------------------
 _ZSt14__relocate_a_1IiiENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS2_E4typeES4_S4_S4_RSaIT0_E:
-function _ZSt14__relocate_a_1IiiENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS2_E4typeES4_S4_S4_RSaIT0_E called 54 returned 100% blocks executed 100%
-       54: 1006:    __relocate_a_1(_Tp* __first, _Tp* __last,
+function _ZSt14__relocate_a_1IiiENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS2_E4typeES4_S4_S4_RSaIT0_E called 66 returned 100% blocks executed 100%
+       66: 1006:    __relocate_a_1(_Tp* __first, _Tp* __last,
         -: 1007:		   _Tp* __result, allocator<_Up>&) noexcept
         -: 1008:    {
-       54: 1009:      ptrdiff_t __count = __last - __first;
-       54: 1010:      if (__count > 0)
-       54: 1010-block  0
-branch  0 taken 12 (fallthrough)
-branch  1 taken 42
-       12: 1011:	__builtin_memmove(__result, __first, __count * sizeof(_Tp));
-       12: 1011-block  0
-       54: 1012:      return __result + __count;
-       54: 1012-block  0
+       66: 1009:      ptrdiff_t __count = __last - __first;
+       66: 1010:      if (__count > 0)
+       66: 1010-block  0
+branch  0 taken 15 (fallthrough)
+branch  1 taken 51
+       15: 1011:	__builtin_memmove(__result, __first, __count * sizeof(_Tp));
+       15: 1011-block  0
+       66: 1012:      return __result + __count;
+       66: 1012-block  0
         -: 1013:    }
 ------------------
 _ZSt14__relocate_a_1ImmENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS2_E4typeES4_S4_S4_RSaIT0_E:
@@ -1669,19 +1669,19 @@ branch  1 never executed
         -: 1013:    }
 ------------------
 _ZSt14__relocate_a_1IPN7testing9TestSuiteES2_ENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS5_E4typeES7_S7_S7_RSaIT0_E:
-function _ZSt14__relocate_a_1IPN7testing9TestSuiteES2_ENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS5_E4typeES7_S7_S7_RSaIT0_E called 18 returned 100% blocks executed 100%
-       18: 1006:    __relocate_a_1(_Tp* __first, _Tp* __last,
+function _ZSt14__relocate_a_1IPN7testing9TestSuiteES2_ENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS5_E4typeES7_S7_S7_RSaIT0_E called 24 returned 100% blocks executed 100%
+       24: 1006:    __relocate_a_1(_Tp* __first, _Tp* __last,
         -: 1007:		   _Tp* __result, allocator<_Up>&) noexcept
         -: 1008:    {
-       18: 1009:      ptrdiff_t __count = __last - __first;
-       18: 1010:      if (__count > 0)
-       18: 1010-block  0
-branch  0 taken 6 (fallthrough)
-branch  1 taken 12
-        6: 1011:	__builtin_memmove(__result, __first, __count * sizeof(_Tp));
-        6: 1011-block  0
-       18: 1012:      return __result + __count;
-       18: 1012-block  0
+       24: 1009:      ptrdiff_t __count = __last - __first;
+       24: 1010:      if (__count > 0)
+       24: 1010-block  0
+branch  0 taken 9 (fallthrough)
+branch  1 taken 15
+        9: 1011:	__builtin_memmove(__result, __first, __count * sizeof(_Tp));
+        9: 1011-block  0
+       24: 1012:      return __result + __count;
+       24: 1012-block  0
         -: 1013:    }
 ------------------
 _ZSt14__relocate_a_1IPN7testing11EnvironmentES2_ENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS5_E4typeES7_S7_S7_RSaIT0_E:
@@ -1717,19 +1717,19 @@ branch  1 taken 6
         -: 1013:    }
 ------------------
 _ZSt14__relocate_a_1IPN7testing8TestInfoES2_ENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS5_E4typeES7_S7_S7_RSaIT0_E:
-function _ZSt14__relocate_a_1IPN7testing8TestInfoES2_ENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS5_E4typeES7_S7_S7_RSaIT0_E called 36 returned 100% blocks executed 100%
-       36: 1006:    __relocate_a_1(_Tp* __first, _Tp* __last,
+function _ZSt14__relocate_a_1IPN7testing8TestInfoES2_ENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS5_E4typeES7_S7_S7_RSaIT0_E called 42 returned 100% blocks executed 100%
+       42: 1006:    __relocate_a_1(_Tp* __first, _Tp* __last,
         -: 1007:		   _Tp* __result, allocator<_Up>&) noexcept
         -: 1008:    {
-       36: 1009:      ptrdiff_t __count = __last - __first;
-       36: 1010:      if (__count > 0)
-       36: 1010-block  0
+       42: 1009:      ptrdiff_t __count = __last - __first;
+       42: 1010:      if (__count > 0)
+       42: 1010-block  0
 branch  0 taken 6 (fallthrough)
-branch  1 taken 30
+branch  1 taken 36
         6: 1011:	__builtin_memmove(__result, __first, __count * sizeof(_Tp));
         6: 1011-block  0
-       36: 1012:      return __result + __count;
-       36: 1012-block  0
+       42: 1012:      return __result + __count;
+       42: 1012-block  0
         -: 1013:    }
 ------------------
 _ZSt14__relocate_a_1IN7testing8internal13edit_distance8EditTypeES3_ENSt9enable_ifIXsrSt24__is_bitwise_relocatableIT_vE5valueEPS6_E4typeES8_S8_S8_RSaIT0_E:
@@ -1752,7 +1752,7 @@ branch  1 never executed
         -: 1015:  template <typename _InputIterator, typename _ForwardIterator,
         -: 1016:	    typename _Allocator>
         -: 1017:    inline _ForwardIterator
-     108*: 1018:    __relocate_a_1(_InputIterator __first, _InputIterator __last,
+     129*: 1018:    __relocate_a_1(_InputIterator __first, _InputIterator __last,
         -: 1019:		   _ForwardIterator __result, _Allocator& __alloc)
         -: 1020:    noexcept(noexcept(std::__relocate_object_a(std::addressof(*__result),
         -: 1021:					       std::addressof(*__first),
@@ -1764,11 +1764,11 @@ branch  1 never executed
         -: 1027:	_ValueType2;
         -: 1028:      static_assert(std::is_same<_ValueType, _ValueType2>::value,
         -: 1029:	  "relocation is only possible for values of the same type");
-     108*: 1030:      _ForwardIterator __cur = __result;
-     132*: 1031:      for (; __first != __last; ++__first, (void)++__cur)
-      24*: 1032:	std::__relocate_object_a(std::__addressof(*__cur),
+     129*: 1030:      _ForwardIterator __cur = __result;
+     163*: 1031:      for (; __first != __last; ++__first, (void)++__cur)
+      34*: 1032:	std::__relocate_object_a(std::__addressof(*__cur),
         -: 1033:				 std::__addressof(*__first), __alloc);
-     108*: 1034:      return __cur;
+     129*: 1034:      return __cur;
         -: 1035:    }
 ------------------
 _ZSt14__relocate_a_1IPN7testing8internal9TraceInfoES3_SaIS2_EET0_T_S6_S5_RT1_:
@@ -1862,8 +1862,8 @@ call    2 never executed
         -: 1035:    }
 ------------------
 _ZSt14__relocate_a_1IPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_SaIS5_EET0_T_S9_S8_RT1_:
-function _ZSt14__relocate_a_1IPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_SaIS5_EET0_T_S9_S8_RT1_ called 108 returned 100% blocks executed 100%
-      108: 1018:    __relocate_a_1(_InputIterator __first, _InputIterator __last,
+function _ZSt14__relocate_a_1IPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_SaIS5_EET0_T_S9_S8_RT1_ called 129 returned 100% blocks executed 100%
+      129: 1018:    __relocate_a_1(_InputIterator __first, _InputIterator __last,
         -: 1019:		   _ForwardIterator __result, _Allocator& __alloc)
         -: 1020:    noexcept(noexcept(std::__relocate_object_a(std::addressof(*__result),
         -: 1021:					       std::addressof(*__first),
@@ -1875,35 +1875,35 @@ function _ZSt14__relocate_a_1IPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIc
         -: 1027:	_ValueType2;
         -: 1028:      static_assert(std::is_same<_ValueType, _ValueType2>::value,
         -: 1029:	  "relocation is only possible for values of the same type");
-      108: 1030:      _ForwardIterator __cur = __result;
-      132: 1031:      for (; __first != __last; ++__first, (void)++__cur)
-      108: 1031-block  0
-      132: 1031-block  1
-branch  0 taken 24
-branch  1 taken 108 (fallthrough)
-       24: 1032:	std::__relocate_object_a(std::__addressof(*__cur),
-       24: 1032-block  0
-call    0 returned 24
-call    1 returned 24
-call    2 returned 24
+      129: 1030:      _ForwardIterator __cur = __result;
+      163: 1031:      for (; __first != __last; ++__first, (void)++__cur)
+      129: 1031-block  0
+      163: 1031-block  1
+branch  0 taken 34
+branch  1 taken 129 (fallthrough)
+       34: 1032:	std::__relocate_object_a(std::__addressof(*__cur),
+       34: 1032-block  0
+call    0 returned 34
+call    1 returned 34
+call    2 returned 34
         -: 1033:				 std::__addressof(*__first), __alloc);
-      108: 1034:      return __cur;
-      108: 1034-block  0
+      129: 1034:      return __cur;
+      129: 1034-block  0
         -: 1035:    }
 ------------------
         -: 1036:
         -: 1037:  template <typename _InputIterator, typename _ForwardIterator,
         -: 1038:	    typename _Allocator>
         -: 1039:    inline _ForwardIterator
-     222*: 1040:    __relocate_a(_InputIterator __first, _InputIterator __last,
+     267*: 1040:    __relocate_a(_InputIterator __first, _InputIterator __last,
         -: 1041:		 _ForwardIterator __result, _Allocator& __alloc)
         -: 1042:    noexcept(noexcept(__relocate_a_1(std::__niter_base(__first),
         -: 1043:				     std::__niter_base(__last),
         -: 1044:				     std::__niter_base(__result), __alloc)))
         -: 1045:    {
-     222*: 1046:      return __relocate_a_1(std::__niter_base(__first),
+     267*: 1046:      return __relocate_a_1(std::__niter_base(__first),
         -: 1047:			    std::__niter_base(__last),
-     222*: 1048:			    std::__niter_base(__result), __alloc);
+     267*: 1048:			    std::__niter_base(__result), __alloc);
         -: 1049:    }
         -: 1050:
         -: 1051:  /// @endcond

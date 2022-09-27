@@ -17,10 +17,13 @@ using namespace std;
 namespace crc{
     class crc{
     public:
-
+        void make_word(string s, int len);
+        string brute_force(unsigned int known_hash);
         string str_to_hex(string ascii);
-        uint16_t calculate_crc(string password);
-        pair<string, bool> brute_force(uint16_t hash_password);
+        unsigned int calculate_crc(string password);
+        pair<string, bool> brute_force_dict(unsigned int hash_password);
+    private:
+        unsigned int CRC32_function(unsigned char *buf, unsigned long len);
     };
 }
 

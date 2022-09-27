@@ -1,6 +1,6 @@
-        -:    0:Source:/home/peter/CLionProjects/crc/googletest/googletest/src/gtest-assertion-result.cc
-        -:    0:Graph:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
-        -:    0:Data:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
+        -:    0:Source:/home/peter/CLionProjects/CRC_HACK/googletest/googletest/src/gtest-assertion-result.cc
+        -:    0:Graph:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
+        -:    0:Data:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
         -:    0:Runs:3
         -:    1:// Copyright 2005, Google Inc.
         -:    2:// All rights reserved.
@@ -103,10 +103,10 @@ branch  6 never executed
 call    0 never executed
         -:   64:
         -:   65:// Makes a successful assertion result.
-function _ZN7testing16AssertionSuccessEv called 26 returned 100% blocks executed 100%
-       26:   66:AssertionResult AssertionSuccess() { return AssertionResult(true); }
-       26:   66-block  0
-call    0 returned 26
+function _ZN7testing16AssertionSuccessEv called 15 returned 100% blocks executed 100%
+       15:   66:AssertionResult AssertionSuccess() { return AssertionResult(true); }
+       15:   66-block  0
+call    0 returned 15
         -:   67:
         -:   68:// Makes a failed assertion result.
 function _ZN7testing16AssertionFailureEv called 0 returned 0% blocks executed 0%

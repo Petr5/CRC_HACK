@@ -1,6 +1,6 @@
         -:    0:Source:/usr/include/c++/11/ext/aligned_buffer.h
-        -:    0:Graph:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
-        -:    0:Data:/home/peter/CLionProjects/crc/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
+        -:    0:Graph:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcno
+        -:    0:Data:/home/peter/CLionProjects/CRC_HACK/cmake-build-debug-coverage/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.gcda
         -:    0:Runs:3
         -:    1:// Aligned memory buffer -*- C++ -*-
         -:    2:
@@ -224,34 +224,34 @@ call    0 never executed
         -:   99:      __aligned_buffer(std::nullptr_t) { }
         -:  100:
         -:  101:      void*
-function _ZN9__gnu_cxx16__aligned_bufferINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE7_M_addrEv called 0 returned 0% blocks executed 0%
-    #####:  102:      _M_addr() noexcept
+function _ZN9__gnu_cxx16__aligned_bufferINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE7_M_addrEv called 2 returned 100% blocks executed 100%
+        2:  102:      _M_addr() noexcept
         -:  103:      {
-    #####:  104:        return static_cast<void*>(&_M_storage);
-    %%%%%:  104-block  0
+        2:  104:        return static_cast<void*>(&_M_storage);
+        2:  104-block  0
         -:  105:      }
         -:  106:
         -:  107:      const void*
-function _ZNK9__gnu_cxx16__aligned_bufferINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE7_M_addrEv called 0 returned 0% blocks executed 0%
-    #####:  108:      _M_addr() const noexcept
+function _ZNK9__gnu_cxx16__aligned_bufferINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE7_M_addrEv called 1 returned 100% blocks executed 100%
+        1:  108:      _M_addr() const noexcept
         -:  109:      {
-    #####:  110:        return static_cast<const void*>(&_M_storage);
-    %%%%%:  110-block  0
+        1:  110:        return static_cast<const void*>(&_M_storage);
+        1:  110-block  0
         -:  111:      }
         -:  112:
         -:  113:      _Tp*
-function _ZN9__gnu_cxx16__aligned_bufferINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE6_M_ptrEv called 0 returned 0% blocks executed 0%
-    #####:  114:      _M_ptr() noexcept
-    #####:  115:      { return static_cast<_Tp*>(_M_addr()); }
-    %%%%%:  115-block  0
-call    0 never executed
+function _ZN9__gnu_cxx16__aligned_bufferINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE6_M_ptrEv called 2 returned 100% blocks executed 100%
+        2:  114:      _M_ptr() noexcept
+        2:  115:      { return static_cast<_Tp*>(_M_addr()); }
+        2:  115-block  0
+call    0 returned 2
         -:  116:
         -:  117:      const _Tp*
-function _ZNK9__gnu_cxx16__aligned_bufferINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE6_M_ptrEv called 0 returned 0% blocks executed 0%
-    #####:  118:      _M_ptr() const noexcept
-    #####:  119:      { return static_cast<const _Tp*>(_M_addr()); }
-    %%%%%:  119-block  0
-call    0 never executed
+function _ZNK9__gnu_cxx16__aligned_bufferINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE6_M_ptrEv called 1 returned 100% blocks executed 100%
+        1:  118:      _M_ptr() const noexcept
+        1:  119:      { return static_cast<const _Tp*>(_M_addr()); }
+        1:  119-block  0
+call    0 returned 1
         -:  120:    };
         -:  121:#endif
         -:  122:
