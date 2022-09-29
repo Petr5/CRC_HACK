@@ -53,10 +53,10 @@ RM = /snap/clion/206/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/peter/CLionProjects/CRC_HACK
+CMAKE_SOURCE_DIR = /home/peter/CLionProjects/CRC_HACK2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/peter/CLionProjects/CRC_HACK/cmake-build-debug
+CMAKE_BINARY_DIR = /home/peter/CLionProjects/CRC_HACK2/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/MainProgram.dir/depend.make
@@ -72,30 +72,30 @@ include CMakeFiles/MainProgram.dir/flags.make
 CMakeFiles/MainProgram.dir/main.cpp.o: CMakeFiles/MainProgram.dir/flags.make
 CMakeFiles/MainProgram.dir/main.cpp.o: ../main.cpp
 CMakeFiles/MainProgram.dir/main.cpp.o: CMakeFiles/MainProgram.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peter/CLionProjects/CRC_HACK/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MainProgram.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MainProgram.dir/main.cpp.o -MF CMakeFiles/MainProgram.dir/main.cpp.o.d -o CMakeFiles/MainProgram.dir/main.cpp.o -c /home/peter/CLionProjects/CRC_HACK/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peter/CLionProjects/CRC_HACK2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MainProgram.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MainProgram.dir/main.cpp.o -MF CMakeFiles/MainProgram.dir/main.cpp.o.d -o CMakeFiles/MainProgram.dir/main.cpp.o -c /home/peter/CLionProjects/CRC_HACK2/main.cpp
 
 CMakeFiles/MainProgram.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MainProgram.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peter/CLionProjects/CRC_HACK/main.cpp > CMakeFiles/MainProgram.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peter/CLionProjects/CRC_HACK2/main.cpp > CMakeFiles/MainProgram.dir/main.cpp.i
 
 CMakeFiles/MainProgram.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MainProgram.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peter/CLionProjects/CRC_HACK/main.cpp -o CMakeFiles/MainProgram.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peter/CLionProjects/CRC_HACK2/main.cpp -o CMakeFiles/MainProgram.dir/main.cpp.s
 
 CMakeFiles/MainProgram.dir/crc.cpp.o: CMakeFiles/MainProgram.dir/flags.make
 CMakeFiles/MainProgram.dir/crc.cpp.o: ../crc.cpp
 CMakeFiles/MainProgram.dir/crc.cpp.o: CMakeFiles/MainProgram.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peter/CLionProjects/CRC_HACK/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MainProgram.dir/crc.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MainProgram.dir/crc.cpp.o -MF CMakeFiles/MainProgram.dir/crc.cpp.o.d -o CMakeFiles/MainProgram.dir/crc.cpp.o -c /home/peter/CLionProjects/CRC_HACK/crc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peter/CLionProjects/CRC_HACK2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MainProgram.dir/crc.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MainProgram.dir/crc.cpp.o -MF CMakeFiles/MainProgram.dir/crc.cpp.o.d -o CMakeFiles/MainProgram.dir/crc.cpp.o -c /home/peter/CLionProjects/CRC_HACK2/crc.cpp
 
 CMakeFiles/MainProgram.dir/crc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MainProgram.dir/crc.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peter/CLionProjects/CRC_HACK/crc.cpp > CMakeFiles/MainProgram.dir/crc.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peter/CLionProjects/CRC_HACK2/crc.cpp > CMakeFiles/MainProgram.dir/crc.cpp.i
 
 CMakeFiles/MainProgram.dir/crc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MainProgram.dir/crc.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peter/CLionProjects/CRC_HACK/crc.cpp -o CMakeFiles/MainProgram.dir/crc.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peter/CLionProjects/CRC_HACK2/crc.cpp -o CMakeFiles/MainProgram.dir/crc.cpp.s
 
 # Object files for target MainProgram
 MainProgram_OBJECTS = \
@@ -109,7 +109,7 @@ MainProgram: CMakeFiles/MainProgram.dir/main.cpp.o
 MainProgram: CMakeFiles/MainProgram.dir/crc.cpp.o
 MainProgram: CMakeFiles/MainProgram.dir/build.make
 MainProgram: CMakeFiles/MainProgram.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/peter/CLionProjects/CRC_HACK/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable MainProgram"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/peter/CLionProjects/CRC_HACK2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable MainProgram"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MainProgram.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +121,6 @@ CMakeFiles/MainProgram.dir/clean:
 .PHONY : CMakeFiles/MainProgram.dir/clean
 
 CMakeFiles/MainProgram.dir/depend:
-	cd /home/peter/CLionProjects/CRC_HACK/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peter/CLionProjects/CRC_HACK /home/peter/CLionProjects/CRC_HACK /home/peter/CLionProjects/CRC_HACK/cmake-build-debug /home/peter/CLionProjects/CRC_HACK/cmake-build-debug /home/peter/CLionProjects/CRC_HACK/cmake-build-debug/CMakeFiles/MainProgram.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/peter/CLionProjects/CRC_HACK2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peter/CLionProjects/CRC_HACK2 /home/peter/CLionProjects/CRC_HACK2 /home/peter/CLionProjects/CRC_HACK2/cmake-build-debug /home/peter/CLionProjects/CRC_HACK2/cmake-build-debug /home/peter/CLionProjects/CRC_HACK2/cmake-build-debug/CMakeFiles/MainProgram.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/MainProgram.dir/depend
 

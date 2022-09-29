@@ -1,4 +1,4 @@
-# Install script for directory: /home/peter/CLionProjects/CRC_HACK/googletest
+# Install script for directory: /home/peter/CLionProjects/CRC_HACK2/googletest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/peter/CLionProjects/CRC_HACK/cmake-build-debug/googletest/googlemock/cmake_install.cmake")
+  include("/home/peter/CLionProjects/CRC_HACK2/cmake-build-debug/googletest/googlemock/cmake_install.cmake")
 
 endif()
 

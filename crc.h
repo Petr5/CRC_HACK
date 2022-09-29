@@ -22,6 +22,9 @@ namespace crc{
         string str_to_hex(string ascii);
         unsigned int calculate_crc(string password);
         pair<string, bool> brute_force_dict(unsigned int hash_password);
+        string mask_brute(unsigned int known_hash, string& rule, int count = 0, string str = "");
+        string mask_brute_parallel(unsigned int known_hash, string rule, int count = 0, string str = "");
+        string help_mask_brute_parallel(unsigned int known_hash, string& rule, int count, string str, int nmb_of_thread, int numCPU);
     private:
         unsigned int CRC32_function(unsigned char *buf, unsigned long len);
     };

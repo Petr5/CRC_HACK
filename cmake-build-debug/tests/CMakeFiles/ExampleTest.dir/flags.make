@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /home/peter/CLionProjects/CRC_HACK/googletest/googletest/include -isystem /home/peter/CLionProjects/CRC_HACK/googletest/googletest
+CXX_INCLUDES = -isystem /home/peter/CLionProjects/CRC_HACK2/googletest/googletest/include -isystem /home/peter/CLionProjects/CRC_HACK2/googletest/googletest
 
 CXX_FLAGS = -g -fPIE
 

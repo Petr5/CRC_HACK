@@ -1,11 +1,15 @@
 #include "crc.h"
 #include <filesystem>
+#include <thread>
 using std::uint16_t;
 using namespace std;
 
 
 namespace crc{
     string alp = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    string lower = "abcdefghijklmnopqrstuvwxyz";
+    string upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    string digit = "0123456789";
     vector<string> brute_dict;
     string crc::str_to_hex(string ascii){
         char const hex_chars[16] = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F' };
@@ -44,7 +48,7 @@ namespace crc{
     }
 
     pair<string, bool> crc::brute_force_dict(unsigned int hash_password){
-        fstream fin("../500-worst-passwords2.txt");
+        fstream fin("/home/peter/CLionProjects/CRC_HACK2/cmake-build-debug/500-worst-passwords2.txt");
         string candidate_pwd;
         string res;
         if (!fin.is_open()){
@@ -66,7 +70,7 @@ namespace crc{
     string crc::brute_force(unsigned int known_hash){
         string str = "";
         string ans;
-        for (int i = 1; i < 5; ++i){
+        for (int i = 1; i < 4; ++i){
             make_word(str, i);
             for (int j = 0; j < brute_dict.size(); ++j){
                 if (calculate_crc(brute_dict[j]) == known_hash){
@@ -87,7 +91,71 @@ namespace crc{
                 make_word(s + alp[i], len - 1);
             }
     }
+    string crc::mask_brute(unsigned int known_hash, string& rule, int count, string str ){
+        if (calculate_crc(str) == known_hash){
+            return str;
+        }
+        else if (count == rule.size()) return "";
+        else{
+            string dict;
+            string ans;
+            if (rule[count] == 'l') dict = lower;
+            if (rule[count] == 'u') dict = upper;
+            if (rule[count] == 'd') dict = digit;
+            for (int i = 0; i < dict.size(); ++i){
+                string res = mask_brute(known_hash, rule, count + 1, str + dict[i]);
+                if (!res.empty()) {
+                    ans = res;
+                }
+            }
+            return ans;
+        }
+    }
+    string crc::help_mask_brute_parallel(unsigned int known_hash, string& rule, int count, string str, int nmb_of_thread, int numCPU){
+        if (calculate_crc(str) == known_hash){
+            return str;
+        }
+        else if (count == rule.size()) return "";
+        else{
+            string dict;
+            string ans;
+            if (rule[count] == 'l') dict = lower;
+            if (rule[count] == 'u') dict = upper;
+            if (rule[count] == 'd') dict = digit;
+            if (!count){
+                for (int i = ((int)dict.size() * (nmb_of_thread - 1)) / numCPU; i < (dict.size() * nmb_of_thread) / numCPU; ++i){
+                    string res = help_mask_brute_parallel(known_hash, rule, count + 1, str + dict[i], nmb_of_thread, numCPU);
+                    if (!res.empty()) {
+                        ans = res;
+                    }
+                }
+                return ans;
+            }
+            else{
+                for (int i = 0; i < dict.size(); ++i){
+                    string res = help_mask_brute_parallel(known_hash, rule, count + 1, str + dict[i], nmb_of_thread, numCPU);
+                    if (!res.empty()) {
+                        ans = res;
+                    }
+                }
+                return ans;
+            }
 
+        }
+    }
+    string crc::mask_brute_parallel(unsigned int known_hash, string rule, int count, string str ){
+        int numCPU = sysconf(_SC_NPROCESSORS_ONLN);
+        std::vector<std::thread> threads;
+        string password;
+        for (int i = 0; i < numCPU - 1; ++i){
+            threads.emplace_back([=,&password](){password += help_mask_brute_parallel(known_hash, const_cast<string &>(rule), count, str, i, numCPU);});
+        }
+        password += help_mask_brute_parallel(known_hash, const_cast<string &>(rule), count, str, numCPU, numCPU);
+        for (int i = 0; i < threads.size(); ++i)
+            if (threads[i].joinable())
+                threads[i].join();
+        return password;
+    }
 };
 
 

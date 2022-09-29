@@ -1,4 +1,4 @@
-# Install script for directory: /home/peter/CLionProjects/CRC_HACK/tests
+# Install script for directory: /home/peter/CLionProjects/CRC_HACK2/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
