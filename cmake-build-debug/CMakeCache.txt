@@ -339,13 +339,13 @@ googletest-distribution_IS_TOP_LEVEL:STATIC=OFF
 googletest-distribution_SOURCE_DIR:STATIC=/home/peter/CLionProjects/CRC_HACK2/googletest
 
 //Value Computed by CMake
-gtest_BINARY_DIR:STATIC=/home/peter/CLionProjects/CRC_HACK2/cmake-build-debug/googletest
+gtest_BINARY_DIR:STATIC=/home/peter/CLionProjects/CRC_HACK2/cmake-build-debug/googletest/googletest
 
 //Value Computed by CMake
 gtest_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-gtest_SOURCE_DIR:STATIC=/home/peter/CLionProjects/CRC_HACK2/googletest
+gtest_SOURCE_DIR:STATIC=/home/peter/CLionProjects/CRC_HACK2/googletest/googletest
 
 //Build gtest's sample programs.
 gtest_build_samples:BOOL=OFF
@@ -515,7 +515,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

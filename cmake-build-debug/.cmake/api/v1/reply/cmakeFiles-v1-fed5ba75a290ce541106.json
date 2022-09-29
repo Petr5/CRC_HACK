@@ -140,12 +140,69 @@
 			"path" : "googletest/CMakeLists.txt"
 		},
 		{
-			"path" : "googletest/cmake/internal_utils.cmake"
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeDependentOption.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindPythonInterp.cmake"
+			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/GNUInstallDirs.cmake"
+		},
+		{
+			"path" : "googletest/googlemock/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindThreads.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CheckLibraryExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"path" : "googletest/googlemock/cmake/gmock.pc.in"
+		},
+		{
+			"path" : "googletest/googlemock/cmake/gmock_main.pc.in"
+		},
+		{
+			"path" : "googletest/googletest/CMakeLists.txt"
+		},
+		{
+			"path" : "googletest/googletest/cmake/internal_utils.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindPython.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindPython/Support.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -191,6 +248,30 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
+		},
+		{
+			"path" : "googletest/googletest/cmake/Config.cmake.in"
+		},
+		{
+			"path" : "googletest/googletest/cmake/gtest.pc.in"
+		},
+		{
+			"path" : "googletest/googletest/cmake/gtest_main.pc.in"
 		},
 		{
 			"path" : "tests/CMakeLists.txt"

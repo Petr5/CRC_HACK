@@ -1147,7 +1147,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "3"
+			"value" : "5"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1895,7 +1895,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/peter/CLionProjects/CRC_HACK2/cmake-build-debug/googletest"
+			"value" : "/home/peter/CLionProjects/CRC_HACK2/cmake-build-debug/googletest/googletest"
 		},
 		{
 			"name" : "gtest_IS_TOP_LEVEL",
@@ -1919,7 +1919,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/peter/CLionProjects/CRC_HACK2/googletest"
+			"value" : "/home/peter/CLionProjects/CRC_HACK2/googletest/googletest"
 		},
 		{
 			"name" : "gtest_build_samples",

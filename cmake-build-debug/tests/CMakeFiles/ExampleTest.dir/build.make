@@ -92,9 +92,9 @@ ExampleTest_EXTERNAL_OBJECTS =
 
 tests/ExampleTest: tests/CMakeFiles/ExampleTest.dir/tests.cpp.o
 tests/ExampleTest: tests/CMakeFiles/ExampleTest.dir/build.make
-tests/ExampleTest: googletest/libgtest_main.a
+tests/ExampleTest: lib/libgtest_main.a
 tests/ExampleTest: libMain.a
-tests/ExampleTest: googletest/libgtest.a
+tests/ExampleTest: lib/libgtest.a
 tests/ExampleTest: tests/CMakeFiles/ExampleTest.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/peter/CLionProjects/CRC_HACK2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ExampleTest"
 	cd /home/peter/CLionProjects/CRC_HACK2/cmake-build-debug/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ExampleTest.dir/link.txt --verbose=$(VERBOSE)

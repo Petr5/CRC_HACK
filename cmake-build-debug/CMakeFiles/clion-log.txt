@@ -1,13 +1,5 @@
 /snap/clion/206/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /home/peter/CLionProjects/CRC_HACK2 -B /home/peter/CLionProjects/CRC_HACK2/cmake-build-debug
-CMake Deprecation Warning at googletest/CMakeLists.txt:43 (cmake_minimum_required):
-  Compatibility with CMake < 2.8.12 will be removed from a future version of
-  CMake.
-
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-
-
--- Found PythonInterp: /usr/bin/python3.10 (found version "3.10.4") 
+-- Found Python: /usr/bin/python3.10 (found version "3.10.4") found components: Interpreter 
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/peter/CLionProjects/CRC_HACK2/cmake-build-debug

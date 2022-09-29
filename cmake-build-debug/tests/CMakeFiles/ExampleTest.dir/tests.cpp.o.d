@@ -1,6 +1,7 @@
 tests/CMakeFiles/ExampleTest.dir/tests.cpp.o: \
  /home/peter/CLionProjects/CRC_HACK2/tests/tests.cpp \
- /usr/include/stdc-predef.h /usr/local/include/gtest/gtest.h \
+ /usr/include/stdc-predef.h \
+ /home/peter/CLionProjects/CRC_HACK2/googletest/googletest/include/gtest/gtest.h \
  /usr/include/c++/11/cstddef \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -169,11 +170,12 @@ tests/CMakeFiles/ExampleTest.dir/tests.cpp.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /usr/local/include/gtest/gtest-assertion-result.h \
- /usr/local/include/gtest/gtest-message.h /usr/include/c++/11/sstream \
- /usr/include/c++/11/istream /usr/include/c++/11/bits/istream.tcc \
+ /home/peter/CLionProjects/CRC_HACK2/googletest/googletest/include/gtest/gtest-assertion-result.h \
+ /home/peter/CLionProjects/CRC_HACK2/googletest/googletest/include/gtest/gtest-message.h \
+ /usr/include/c++/11/sstream /usr/include/c++/11/istream \
+ /usr/include/c++/11/bits/istream.tcc \
  /usr/include/c++/11/bits/sstream.tcc \
- /usr/local/include/gtest/internal/gtest-port.h \
+ /home/peter/CLionProjects/CRC_HACK2/googletest/googletest/include/gtest/internal/gtest-port.h \
  /usr/include/c++/11/stdlib.h /usr/include/string.h \
  /usr/include/strings.h /usr/include/c++/11/iostream \
  /usr/include/c++/11/locale \
@@ -198,8 +200,8 @@ tests/CMakeFiles/ExampleTest.dir/tests.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
- /usr/local/include/gtest/internal/custom/gtest-port.h \
- /usr/local/include/gtest/internal/gtest-port-arch.h \
+ /home/peter/CLionProjects/CRC_HACK2/googletest/googletest/include/gtest/internal/custom/gtest-port.h \
+ /home/peter/CLionProjects/CRC_HACK2/googletest/googletest/include/gtest/internal/gtest-port-arch.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
@@ -213,11 +215,13 @@ tests/CMakeFiles/ExampleTest.dir/tests.cpp.o: \
  /usr/include/c++/11/bits/unique_lock.h /usr/include/c++/11/mutex \
  /usr/include/c++/11/any /usr/include/c++/11/optional \
  /usr/include/c++/11/bits/enable_special_members.h \
- /usr/include/c++/11/variant /usr/local/include/gtest/gtest-death-test.h \
- /usr/local/include/gtest/internal/gtest-death-test-internal.h \
- /usr/local/include/gtest/gtest-matchers.h /usr/include/c++/11/atomic \
- /usr/local/include/gtest/gtest-printers.h /usr/include/c++/11/functional \
- /usr/include/c++/11/bits/std_function.h \
+ /usr/include/c++/11/variant \
+ /home/peter/CLionProjects/CRC_HACK2/googletest/googletest/include/gtest/gtest-death-test.h \
+ /home/peter/CLionProjects/CRC_HACK2/googletest/googletest/include/gtest/internal/gtest-death-test-internal.h \
+ /home/peter/CLionProjects/CRC_HACK2/googletest/googletest/include/gtest/gtest-matchers.h \
+ /usr/include/c++/11/atomic \
+ /home/peter/CLionProjects/CRC_HACK2/googletest/googletest/include/gtest/gtest-printers.h \
+ /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
  /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
  /usr/include/c++/11/bits/hashtable_policy.h \
  /usr/include/c++/11/bits/node_handle.h \
@@ -226,7 +230,7 @@ tests/CMakeFiles/ExampleTest.dir/tests.cpp.o: \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
- /usr/local/include/gtest/internal/gtest-internal.h \
+ /home/peter/CLionProjects/CRC_HACK2/googletest/googletest/include/gtest/internal/gtest-internal.h \
  /usr/include/x86_64-linux-gnu/sys/wait.h /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
@@ -256,20 +260,20 @@ tests/CMakeFiles/ExampleTest.dir/tests.cpp.o: \
  /usr/include/c++/11/bits/stl_multimap.h /usr/include/c++/11/set \
  /usr/include/c++/11/bits/stl_set.h \
  /usr/include/c++/11/bits/stl_multiset.h \
- /usr/local/include/gtest/internal/gtest-filepath.h \
- /usr/local/include/gtest/internal/gtest-string.h \
- /usr/local/include/gtest/internal/gtest-type-util.h \
+ /home/peter/CLionProjects/CRC_HACK2/googletest/googletest/include/gtest/internal/gtest-filepath.h \
+ /home/peter/CLionProjects/CRC_HACK2/googletest/googletest/include/gtest/internal/gtest-string.h \
+ /home/peter/CLionProjects/CRC_HACK2/googletest/googletest/include/gtest/internal/gtest-type-util.h \
  /usr/include/c++/11/cxxabi.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h \
- /usr/local/include/gtest/internal/custom/gtest-printers.h \
- /usr/local/include/gtest/gtest-param-test.h /usr/include/c++/11/iterator \
- /usr/include/c++/11/bits/stream_iterator.h \
- /usr/local/include/gtest/internal/gtest-param-util.h \
+ /home/peter/CLionProjects/CRC_HACK2/googletest/googletest/include/gtest/internal/custom/gtest-printers.h \
+ /home/peter/CLionProjects/CRC_HACK2/googletest/googletest/include/gtest/gtest-param-test.h \
+ /usr/include/c++/11/iterator /usr/include/c++/11/bits/stream_iterator.h \
+ /home/peter/CLionProjects/CRC_HACK2/googletest/googletest/include/gtest/internal/gtest-param-util.h \
  /usr/include/c++/11/cassert /usr/include/assert.h \
- /usr/local/include/gtest/gtest-test-part.h \
- /usr/local/include/gtest/gtest-typed-test.h \
- /usr/local/include/gtest/gtest_pred_impl.h \
- /usr/local/include/gtest/gtest_prod.h \
+ /home/peter/CLionProjects/CRC_HACK2/googletest/googletest/include/gtest/gtest-test-part.h \
+ /home/peter/CLionProjects/CRC_HACK2/googletest/googletest/include/gtest/gtest-typed-test.h \
+ /home/peter/CLionProjects/CRC_HACK2/googletest/googletest/include/gtest/gtest_pred_impl.h \
+ /home/peter/CLionProjects/CRC_HACK2/googletest/googletest/include/gtest/gtest_prod.h \
  /home/peter/CLionProjects/CRC_HACK2/tests/../crc.h \
  /usr/include/boost/crc.hpp /usr/include/boost/array.hpp \
  /usr/include/boost/detail/workaround.hpp \
