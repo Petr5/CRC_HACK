@@ -1,5 +1,5 @@
 CMakeFiles/Main.dir/tests/tests.cpp.o: \
- /home/peter/CLionProjects/CRC_HACK2/tests/tests.cpp \
+ /home/peter/CLionProjects/CRC_HACK/tests/tests.cpp \
  /usr/include/stdc-predef.h /usr/local/include/gtest/gtest.h \
  /usr/include/c++/11/cstddef \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -270,7 +270,7 @@ CMakeFiles/Main.dir/tests/tests.cpp.o: \
  /usr/local/include/gtest/gtest-typed-test.h \
  /usr/local/include/gtest/gtest_pred_impl.h \
  /usr/local/include/gtest/gtest_prod.h \
- /home/peter/CLionProjects/CRC_HACK2/tests/../crc.h \
+ /home/peter/CLionProjects/CRC_HACK/tests/../crc.h \
  /usr/include/boost/crc.hpp /usr/include/boost/array.hpp \
  /usr/include/boost/detail/workaround.hpp \
  /usr/include/boost/config/workaround.hpp /usr/include/boost/config.hpp \
