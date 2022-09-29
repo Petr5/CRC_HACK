@@ -16,7 +16,7 @@
 		"files" : 
 		[
 			"tests/CMakeLists.txt",
-			"googletest/googletest/CMakeLists.txt"
+			"googletest/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -41,7 +41,7 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 145,
+				"line" : 72,
 				"parent" : 3
 			}
 		]
@@ -55,25 +55,12 @@
 					"fragment" : "-g -fPIE"
 				}
 			],
-			"includes" : 
-			[
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "/home/peter/CLionProjects/CRC_HACK2/googletest/googletest/include"
-				},
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "/home/peter/CLionProjects/CRC_HACK2/googletest/googletest"
-				}
-			],
 			"language" : "CXX",
 			"languageStandard" : 
 			{
 				"backtraces" : 
 				[
-					2
+					1
 				],
 				"standard" : "17"
 			},
@@ -91,11 +78,11 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "gtest::@f95b5c00bd49b3b4698d"
+			"id" : "gtest::@b3026ea3adfb7c2366ee"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "gtest_main::@f95b5c00bd49b3b4698d"
+			"id" : "gtest_main::@b3026ea3adfb7c2366ee"
 		}
 	],
 	"id" : "ExampleTest::@a44f0ac069e85531cdee",
@@ -113,7 +100,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "../lib/libgtest_main.a",
+				"fragment" : "../googletest/libgtest_main.a",
 				"role" : "libraries"
 			},
 			{
@@ -123,7 +110,7 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "../lib/libgtest.a",
+				"fragment" : "../googletest/libgtest.a",
 				"role" : "libraries"
 			}
 		],

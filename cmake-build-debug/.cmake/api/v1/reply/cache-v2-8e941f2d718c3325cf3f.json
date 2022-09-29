@@ -14,6 +14,18 @@
 			"value" : "ON"
 		},
 		{
+			"name" : "BUILD_SHARED_LIBS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Build shared libraries (DLLs)."
+				}
+			],
+			"type" : "BOOL",
+			"value" : "OFF"
+		},
+		{
 			"name" : "CMAKE_ADDR2LINE",
 			"properties" : 
 			[
@@ -1135,7 +1147,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "5"
+			"value" : "3"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1570,6 +1582,18 @@
 			"value" : "[/usr/bin/python3.10][cfound components: Interpreter ][v3.10.4()]"
 		},
 		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding PythonInterp"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[/usr/bin/python3.10][v3.10.4()]"
+		},
+		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Threads",
 			"properties" : 
 			[
@@ -1628,6 +1652,22 @@
 			],
 			"type" : "STATIC",
 			"value" : "/home/peter/CLionProjects/CRC_HACK2"
+		},
+		{
+			"name" : "PYTHON_EXECUTABLE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/python3.10"
 		},
 		{
 			"name" : "ProcessorCount_cmd_nproc",
@@ -1855,7 +1895,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/peter/CLionProjects/CRC_HACK2/cmake-build-debug/googletest/googletest"
+			"value" : "/home/peter/CLionProjects/CRC_HACK2/cmake-build-debug/googletest"
 		},
 		{
 			"name" : "gtest_IS_TOP_LEVEL",
@@ -1879,7 +1919,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/peter/CLionProjects/CRC_HACK2/googletest/googletest"
+			"value" : "/home/peter/CLionProjects/CRC_HACK2/googletest"
 		},
 		{
 			"name" : "gtest_build_samples",
