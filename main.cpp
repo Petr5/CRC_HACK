@@ -50,5 +50,6 @@ int main(int argc, char* argv[]) {
         cout << "-2 - using mask for bruteforce" << endl;
     }
     cout << "Hash successfully cracked " << "password is " << password << endl;
+    
     return 0;
 }

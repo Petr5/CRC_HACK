@@ -1,6 +1,6 @@
-CMakeFiles/Main.dir/crc.cpp.o: \
- /home/peter/CLionProjects/CRC_HACK2/crc.cpp /usr/include/stdc-predef.h \
- /home/peter/CLionProjects/CRC_HACK2/crc.h /usr/include/c++/11/iostream \
+CMakeFiles/Main.dir/crc.cpp.o: /home/peter/CLionProjects/CRC_HACK/crc.cpp \
+ /usr/include/stdc-predef.h /home/peter/CLionProjects/CRC_HACK/crc.h \
+ /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \

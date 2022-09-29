@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/peter/CLionProjects/CRC_HACK2/crc.cpp" "CMakeFiles/Main.dir/crc.cpp.o" "gcc" "CMakeFiles/Main.dir/crc.cpp.o.d"
-  "/home/peter/CLionProjects/CRC_HACK2/main.cpp" "CMakeFiles/Main.dir/main.cpp.o" "gcc" "CMakeFiles/Main.dir/main.cpp.o.d"
-  "/home/peter/CLionProjects/CRC_HACK2/tests/tests.cpp" "CMakeFiles/Main.dir/tests/tests.cpp.o" "gcc" "CMakeFiles/Main.dir/tests/tests.cpp.o.d"
+  "/home/peter/CLionProjects/CRC_HACK/crc.cpp" "CMakeFiles/Main.dir/crc.cpp.o" "gcc" "CMakeFiles/Main.dir/crc.cpp.o.d"
+  "/home/peter/CLionProjects/CRC_HACK/main.cpp" "CMakeFiles/Main.dir/main.cpp.o" "gcc" "CMakeFiles/Main.dir/main.cpp.o.d"
+  "/home/peter/CLionProjects/CRC_HACK/tests/tests.cpp" "CMakeFiles/Main.dir/tests/tests.cpp.o" "gcc" "CMakeFiles/Main.dir/tests/tests.cpp.o.d"
   )
 
 # Targets to which this target links.

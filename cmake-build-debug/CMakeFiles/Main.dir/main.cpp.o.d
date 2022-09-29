@@ -1,5 +1,5 @@
 CMakeFiles/Main.dir/main.cpp.o: \
- /home/peter/CLionProjects/CRC_HACK2/main.cpp /usr/include/stdc-predef.h \
+ /home/peter/CLionProjects/CRC_HACK/main.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -307,4 +307,4 @@ CMakeFiles/Main.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
- /home/peter/CLionProjects/CRC_HACK2/crc.h
+ /home/peter/CLionProjects/CRC_HACK/crc.h
