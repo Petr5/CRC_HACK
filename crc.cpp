@@ -68,28 +68,12 @@ namespace crc{
     }
 
     string crc::brute_force(unsigned int known_hash){
-        string str = "";
-        string ans;
-        for (int i = 1; i < 4; ++i){
-            make_word(str, i);
-            for (int j = 0; j < brute_dict.size(); ++j){
-                if (calculate_crc(brute_dict[j]) == known_hash){
-                    ans = brute_dict[j];
-                }
-            }
-            if (ans != "") return ans;
-            brute_dict.clear();
-        }
-        return ans;
+        string rule = "aaaa";
+        return mask_brute(known_hash, rule);
     }
-    void crc::make_word(string s, int len){
-        if (!len){
-            brute_dict.push_back(s);
-        }
-        else
-            for (int i = 0; i < alp.size(); ++i){
-                make_word(s + alp[i], len - 1);
-            }
+    string crc::brute_force_parallel(unsigned int known_hash){
+        string rule = "aaaa";
+        return mask_brute_parallel(known_hash, rule);
     }
     string crc::mask_brute(unsigned int known_hash, string& rule, int count, string str ){
         if (calculate_crc(str) == known_hash){
@@ -102,6 +86,7 @@ namespace crc{
             if (rule[count] == 'l') dict = lower;
             if (rule[count] == 'u') dict = upper;
             if (rule[count] == 'd') dict = digit;
+            if (rule[count] == 'a') dict = alp;
             for (int i = 0; i < dict.size(); ++i){
                 string res = mask_brute(known_hash, rule, count + 1, str + dict[i]);
                 if (!res.empty()) {
@@ -122,6 +107,7 @@ namespace crc{
             if (rule[count] == 'l') dict = lower;
             if (rule[count] == 'u') dict = upper;
             if (rule[count] == 'd') dict = digit;
+            if (rule[count] == 'a') dict = alp;
             if (!count){
                 for (int i = ((int)dict.size() * (nmb_of_thread - 1)) / numCPU; i < (dict.size() * nmb_of_thread) / numCPU; ++i){
                     string res = help_mask_brute_parallel(known_hash, rule, count + 1, str + dict[i], nmb_of_thread, numCPU);
@@ -145,6 +131,7 @@ namespace crc{
     }
     string crc::mask_brute_parallel(unsigned int known_hash, string rule, int count, string str ){
         int numCPU = sysconf(_SC_NPROCESSORS_ONLN);
+        cout << "number using logical thread is " << endl;
         std::vector<std::thread> threads;
         string password;
         for (int i = 0; i < numCPU - 1; ++i){

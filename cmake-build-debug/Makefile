@@ -198,6 +198,19 @@ MainProgram/fast:
 .PHONY : MainProgram/fast
 
 #=============================================================================
+# Target rules for targets named my_parallel_build
+
+# Build rule for target.
+my_parallel_build: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_parallel_build
+.PHONY : my_parallel_build
+
+# fast build rule for target.
+my_parallel_build/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_parallel_build.dir/build.make CMakeFiles/my_parallel_build.dir/build
+.PHONY : my_parallel_build/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -353,6 +366,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... my_parallel_build"
 	@echo "... ExampleTest"
 	@echo "... Main"
 	@echo "... MainProgram"

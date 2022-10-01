@@ -68,6 +68,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DMULTITHREADING=1"/>
 					<Add directory="/usr/include/c++/11"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
 					<Add directory="/usr/include/c++/11/backward"/>
@@ -90,6 +91,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DMULTITHREADING=1"/>
 					<Add directory="/usr/include/c++/11"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
 					<Add directory="/usr/include/c++/11/backward"/>
@@ -100,6 +102,16 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/gmake -j4 -f &quot;/home/peter/CLionProjects/CRC_HACK/cmake-build-debug/Makefile&quot;  VERBOSE=1 MainProgram/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/peter/CLionProjects/CRC_HACK/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/peter/CLionProjects/CRC_HACK/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/peter/CLionProjects/CRC_HACK/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_parallel_build">
+				<Option working_dir="/home/peter/CLionProjects/CRC_HACK/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/peter/CLionProjects/CRC_HACK/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_parallel_build"/>
 					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/peter/CLionProjects/CRC_HACK/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/peter/CLionProjects/CRC_HACK/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/peter/CLionProjects/CRC_HACK/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>

@@ -21,3 +21,16 @@ add_library(${This} STATIC ${SOURCES} ${Headers})
 
 add_subdirectory(tests)
 add_executable(MainProgram main.cpp crc.cpp)
+add_custom_target(my_parallel_build
+        COMMAND ${CMAKE_COMMAND} --build . -j 2
+        WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
+        COMMENT "My parallel build with 5 cores")
+
+
+option(ENABLE_MULTHITHREADING "ENABLE_MULTHITHREADING" 1)
+
+if(ENABLE_MULTHITHREADING)
+    target_compile_definitions(MainProgram PUBLIC MULTITHREADING)
+else()
+    message("false")
+endif(ENABLE_MULTHITHREADING)

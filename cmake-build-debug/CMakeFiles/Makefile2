@@ -77,6 +77,7 @@ preinstall: tests/preinstall
 # The main recursive "clean" target.
 clean: CMakeFiles/Main.dir/clean
 clean: CMakeFiles/MainProgram.dir/clean
+clean: CMakeFiles/my_parallel_build.dir/clean
 clean: googletest/clean
 clean: tests/clean
 .PHONY : clean
@@ -198,6 +199,32 @@ MainProgram: CMakeFiles/MainProgram.dir/rule
 CMakeFiles/MainProgram.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MainProgram.dir/build.make CMakeFiles/MainProgram.dir/clean
 .PHONY : CMakeFiles/MainProgram.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/my_parallel_build.dir
+
+# All Build rule for target.
+CMakeFiles/my_parallel_build.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_parallel_build.dir/build.make CMakeFiles/my_parallel_build.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_parallel_build.dir/build.make CMakeFiles/my_parallel_build.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/peter/CLionProjects/CRC_HACK/cmake-build-debug/CMakeFiles --progress-num=18 "Built target my_parallel_build"
+.PHONY : CMakeFiles/my_parallel_build.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/my_parallel_build.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/CLionProjects/CRC_HACK/cmake-build-debug/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/my_parallel_build.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/CLionProjects/CRC_HACK/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/my_parallel_build.dir/rule
+
+# Convenience name for target.
+my_parallel_build: CMakeFiles/my_parallel_build.dir/rule
+.PHONY : my_parallel_build
+
+# clean rule for target.
+CMakeFiles/my_parallel_build.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_parallel_build.dir/build.make CMakeFiles/my_parallel_build.dir/clean
+.PHONY : CMakeFiles/my_parallel_build.dir/clean
 
 #=============================================================================
 # Target rules for target googletest/googlemock/CMakeFiles/gmock.dir

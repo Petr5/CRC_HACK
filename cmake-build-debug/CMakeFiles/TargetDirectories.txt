@@ -1,5 +1,6 @@
 /home/peter/CLionProjects/CRC_HACK/cmake-build-debug/CMakeFiles/Main.dir
 /home/peter/CLionProjects/CRC_HACK/cmake-build-debug/CMakeFiles/MainProgram.dir
+/home/peter/CLionProjects/CRC_HACK/cmake-build-debug/CMakeFiles/my_parallel_build.dir
 /home/peter/CLionProjects/CRC_HACK/cmake-build-debug/CMakeFiles/test.dir
 /home/peter/CLionProjects/CRC_HACK/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/peter/CLionProjects/CRC_HACK/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -17,7 +17,6 @@ using namespace std;
 namespace crc{
     class crc{
     public:
-        void make_word(string s, int len);
         string brute_force(unsigned int known_hash);
         string str_to_hex(string ascii);
         unsigned int calculate_crc(string password);
@@ -25,8 +24,11 @@ namespace crc{
         string mask_brute(unsigned int known_hash, string& rule, int count = 0, string str = "");
         string mask_brute_parallel(unsigned int known_hash, string rule, int count = 0, string str = "");
         string help_mask_brute_parallel(unsigned int known_hash, string& rule, int count, string str, int nmb_of_thread, int numCPU);
+        string brute_force_parallel(unsigned int known_hash);
     private:
         unsigned int CRC32_function(unsigned char *buf, unsigned long len);
+
+
     };
 }
 
